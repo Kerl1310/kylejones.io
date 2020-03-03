@@ -45,4 +45,4 @@ class NotFoundPage extends React.Component {
   }
 };
 
-export default styled(NotFoundPage)
+export default NotFoundPage
