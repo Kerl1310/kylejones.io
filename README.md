@@ -1,2 +1,2 @@
 # kylejones.io
-Personal website
+Source code for my personal website
