@@ -99,7 +99,7 @@ module.exports = {
     dev: 'https://dev.to/kerldev',
     email: 'kylejones1310@outlook.com',
   },
-  siteUrl: 'https://www.kylejones.io/',
+  siteUrl: 'https://kylejones.io/',
   //pathPrefix: 'kylejones.io', // Note: it must *not* have a trailing slash.
   siteCover: '/images/cover.jpeg',
   googleAnalyticsId: '',
