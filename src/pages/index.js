@@ -5,6 +5,7 @@ import {
   FaGithub,
   FaLinkedin,
   FaDev,
+  FaMedium,
   FaStackOverflow,
   FaEnvelope,
   FaTwitter,
@@ -69,6 +70,11 @@ class Home extends React.Component {
                   {siteConfig.social.dev && (
                     <a className="social-link dev" href={siteConfig.social.dev}>
                       <FaDev className="social-icon" size="32" />
+                    </a>
+                  )}
+                  {siteConfig.social.medium && (
+                    <a className="social-link medium" href={siteConfig.social.medium}>
+                      <FaMedium className="social-icon" size="32" />
                     </a>
                   )}
                   {siteConfig.social.twitter && (
@@ -151,6 +157,10 @@ export default styled(Home)`
   }
 
   a.social-link.dev:hover {
+    color: #24292e;
+  }
+
+  a.social-link.medium:hover {
     color: #24292e;
   }
 

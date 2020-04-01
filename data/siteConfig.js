@@ -95,6 +95,7 @@ module.exports = {
     twitter: 'https://twitter.com/kerldev/',
     linkedin: 'https://www.linkedin.com/in/kylejones1310/',
     github: 'https://github.com/kerl1310/',
+    medium: 'https://medium.com/@KerlDev',
     stackOverflow: 'https://stackoverflow.com/story/kylejones',
     dev: 'https://dev.to/kerldev',
     email: 'kylejones1310@outlook.com',
@@ -102,7 +103,7 @@ module.exports = {
   siteUrl: 'https://kylejones.io/',
   pathPrefix: 'https://kylejones.io', // Note: it must *not* have a trailing slash.
   siteCover: '/images/cover.jpeg',
-  googleAnalyticsId: '',
+  googleAnalyticsId: 'UA-162368123-1',
   background_color: '#ffffff',
   theme_color: '#25303B',
   display: 'minimal-ui',
