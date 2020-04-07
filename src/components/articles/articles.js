@@ -1,3 +1,6 @@
+import React from 'react'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
 import siteConfig from '../../../data/siteConfig'
 
 const ArticleLinkGroup = styled.div`
@@ -7,10 +10,10 @@ const ArticleLinkGroup = styled.div`
 
 const ArticleLink = styled(Link)`
   position: relative;
-  text-decoration: none;
+  text-decoration: bold;
   display: flex;
   align-items: center;
-  color: #fff;
+  color: #000;
   border: 0;
   margin: 0;
   margin-right: 0.5rem;
@@ -20,6 +23,7 @@ const ArticleLink = styled(Link)`
   z-index: 10;
 `
 
+// TODO: Convert this in future into a single row with multiple columns (Most Popular and Newest?)
 class Articles extends React.Component {
     render () {
       const { featuredArticles } = siteConfig
@@ -28,9 +32,12 @@ class Articles extends React.Component {
             <h2>Featured Articles</h2>
             <ArticleLinkGroup>
                 {featuredArticles.map((articleLink, i) => (
-                    <ArticleLink to={articleLink.url} key={`article-link-${i}`}>
-                        {articleLink.label}
-                    </ArticleLink>
+                    <a 
+                    className={`article-link-${i}`}
+                    href={articleLink.url}
+                    target='_blank'
+                    rel="noopener noreferrer"
+                  >{articleLink.label}</a>
                 ))}
             </ArticleLinkGroup>
         </div>
@@ -38,4 +45,12 @@ class Articles extends React.Component {
     }
 }
 
-export default Articles
+export default styled(Articles)`
+
+position: relative;
+
+a {
+    display: list-item;          /* This has to be "list-item"                                               */
+    list-style-type: disc;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+    list-style-position: inside;
+`

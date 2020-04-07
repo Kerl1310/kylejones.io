@@ -116,9 +116,9 @@ class Home extends React.Component {
             <Separator />
             <Timeline />
             <Separator />
-            <Repositories />
-            <Separator />
             <Articles />
+            <Separator />
+            <Repositories />
           </Container>
         </Wrapper>
       </Layout>
