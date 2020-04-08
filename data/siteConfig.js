@@ -100,6 +100,10 @@ module.exports = {
     dev: 'https://dev.to/kerldev',
     email: 'kylejones1310@outlook.com',
   },
+  featuredArticles: [{
+    label: 'A Deep Dive into AWS Firecracker',
+    url: 'https://dev.to/kerldev/a-deep-dive-into-aws-firecracker-4o32'
+  }],
   siteUrl: 'https://kylejones.io/',
   pathPrefix: 'https://kylejones.io', // Note: it must *not* have a trailing slash.
   siteCover: '/images/cover.jpeg',

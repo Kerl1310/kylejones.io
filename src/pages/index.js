@@ -20,6 +20,7 @@ import About from '../components/about'
 import Skills from '../components/skills'
 import Timeline from '../components/timeline'
 import Repositories from '../components/repositories'
+import Articles from '../components/articles'
 
 const Separator = styled.hr`
   margin-top: 24px;
@@ -114,6 +115,8 @@ class Home extends React.Component {
             </Row>
             <Separator />
             <Timeline />
+            <Separator />
+            <Articles />
             <Separator />
             <Repositories />
           </Container>
