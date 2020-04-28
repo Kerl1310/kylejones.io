@@ -100,14 +100,11 @@ module.exports = {
     dev: 'https://dev.to/kerldev',
     email: 'kylejones1310@outlook.com',
   },
-  featuredArticles: [{
-    label: 'A Deep Dive into AWS Firecracker',
-    url: 'https://dev.to/kerldev/a-deep-dive-into-aws-firecracker-4o32'
-  }],
   siteUrl: 'https://kylejones.io/',
   pathPrefix: 'https://kylejones.io', // Note: it must *not* have a trailing slash.
   siteCover: '/images/cover.jpeg',
   googleAnalyticsId: 'UA-162368123-1',
+  devApiKey: '1akogXrjLcbFZbYaB4uHvDKh',
   background_color: '#ffffff',
   theme_color: '#25303B',
   display: 'minimal-ui',
