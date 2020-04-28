@@ -3,17 +3,26 @@
   "private": true,
   "description": "Personal website for Kyle Jones",
   "version": "0.0.1",
-  "author": "Kyle Jones <kylejones1310@outlook.com>",
+  "author": 
+  {
+    "name": "Kyle Jones",
+    "email": "kylejones1310@outlook.com",
+    "url": "https://github.com/kerl1310"
+  },
   "dependencies": {
     "babel-plugin-styled-components": "1.10.6",
     "gatsby": "^2.19.26",
+    "gatsby-cli": "^2.12.0",
     "gatsby-image": "2.2.34",
     "gatsby-plugin-google-analytics": "2.1.29",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-offline": "3.0.27",
     "gatsby-plugin-react-helmet": "3.1.16",
+    "gatsby-plugin-robots-txt": "^1.5.0",
     "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-plugin-sitemap": "^2.3.5",
     "gatsby-plugin-styled-components": "3.1.14",
+    "gatsby-source-apiserver": "^2.1.4",
     "gatsby-source-filesystem": "2.1.40",
     "gatsby-transformer-sharp": "^2.4.3",
     "prop-types": "15.7.2",
@@ -25,8 +34,16 @@
     "simple-json-fetch": "1.0.1",
     "styled-components": "4.4.1"
   },
+  "devDependencies": {
+    "gatsby-source-github": "0.0.2",
+    "gh-pages": "^2.2.0",
+    "prettier": "1.19.1"
+  },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "portfolio",
+    "website",
+    "cv"
   ],
   "license": "MIT",
   "scripts": {
@@ -37,14 +54,12 @@
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
-  "devDependencies": {
-    "gh-pages": "^2.2.0",
-    "prettier": "1.19.1"
-  },
+  
   "repository": {
     "type": "git",
     "url": "https://github.com/kerl1310/kylejones.io"
   },
+  "homepage": "https://github.com/kerl1310/kylejones.io",
   "bugs": {
     "url": "https://github.com/kerl1310/kylejones.io/issues"
   }
