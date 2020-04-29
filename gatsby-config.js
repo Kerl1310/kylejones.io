@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env`,
+})
+
 const config = require("./data/siteConfig");
 
 const githubToken = process.env.GH_TOKEN;
@@ -57,15 +61,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: config.siteUrl,
-        sitemap: '${config.siteUrl}/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }],
-        output: '${config.siteUrl}/robots.txt',
-      },
-    },
+    `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -202,7 +198,7 @@ module.exports = {
             method: 'get',
             headers: {
               'Content-Type': 'application/json',
-              'api-key': config.devApiKey,
+              'api-key': devApiKey,
             },
             name: `articles`,
             schemaType: articleType,
