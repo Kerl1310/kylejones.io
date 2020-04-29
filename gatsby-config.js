@@ -1,4 +1,9 @@
 const config = require("./data/siteConfig");
+
+const githubToken = process.env.GH_TOKEN;
+const devApiKey = process.env.DEV_TOKEN;
+const googleAnalyticsId = process.env.GA_ID;
+
 const articleType = {
   type_of: 'String',
   id: 1,
@@ -77,14 +82,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: config.googleAnalyticsId,
+        trackingId: googleAnalyticsId,
       },
     },
     {
       resolve: 'gatsby-source-github',
       options: {
         headers: {
-          Authorization: `Bearer aa2b4f7409ad1284085cf51f56bd6d3737f897da`,
+          Authorization: `Bearer ${githubToken}`,
         },
         queries: [
           `{
@@ -127,7 +132,7 @@ module.exports = {
 
         headers: {
           'Content-Type': 'application/json',
-          'api-key': config.devApiKey,
+          'api-key': devApiKey,
         },
 
         // Request body

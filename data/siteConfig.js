@@ -103,8 +103,6 @@ module.exports = {
   siteUrl: 'https://kylejones.io/',
   pathPrefix: 'https://kylejones.io', // Note: it must *not* have a trailing slash.
   siteCover: '/images/cover.jpeg',
-  googleAnalyticsId: 'UA-162368123-1',
-  devApiKey: '1akogXrjLcbFZbYaB4uHvDKh',
   background_color: '#ffffff',
   theme_color: '#25303B',
   display: 'minimal-ui',
