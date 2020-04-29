@@ -2,15 +2,15 @@
   "name": "kylejones.io",
   "private": true,
   "description": "Personal website for Kyle Jones",
-  "version": "0.0.1",
-  "author": 
-  {
+  "version": "1.0.1",
+  "author": {
     "name": "Kyle Jones",
     "email": "kylejones1310@outlook.com",
     "url": "https://github.com/kerl1310"
   },
   "dependencies": {
     "babel-plugin-styled-components": "1.10.6",
+    "dependencies": "0.0.1",
     "gatsby": "^2.19.26",
     "gatsby-cli": "^2.12.0",
     "gatsby-image": "2.2.34",
@@ -24,6 +24,7 @@
     "gatsby-plugin-styled-components": "3.1.14",
     "gatsby-source-apiserver": "^2.1.4",
     "gatsby-source-filesystem": "2.1.40",
+    "gatsby-source-github": "0.0.2",
     "gatsby-transformer-sharp": "^2.4.3",
     "prop-types": "15.7.2",
     "react": "16.12.0",
@@ -35,12 +36,13 @@
     "styled-components": "4.4.1"
   },
   "devDependencies": {
-    "gatsby-source-github": "0.0.2",
     "gh-pages": "^2.2.0",
     "prettier": "1.19.1"
   },
   "keywords": [
     "gatsby",
+    "react",
+    "graphql",
     "portfolio",
     "website",
     "cv"
@@ -50,11 +52,11 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
+    "clean": "gh-pages-clean",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master -r https://$GH_TOKEN@github.com/kerl1310/kylejones.io.git",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
-  
   "repository": {
     "type": "git",
     "url": "https://github.com/kerl1310/kylejones.io"
