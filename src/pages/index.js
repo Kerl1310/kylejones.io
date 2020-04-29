@@ -26,11 +26,12 @@ const Separator = styled.hr`
   margin-top: 24px;
   margin-bottom: 16px;
 `
+const googleAnalyticsId = process.env.GA_ID;
 
 class Home extends React.Component {
   render () {
     // validate siteConfig settings
-    if (siteConfig.googleAnalyticsId === 'UA-000000000-1') {
+    if (googleAnalyticsId === 'UA-000000000-1') {
       console.error('WARNING: Please set a proper googleAnalyticsId. See https://analytics.google.com for details.');
     }
 
