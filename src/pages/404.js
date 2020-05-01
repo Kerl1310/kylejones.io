@@ -26,14 +26,11 @@ class NotFoundPage extends React.Component {
     return (
       <Layout location={this.props.location} noCover={true}>
         <SEO title="Page Not Found" />
-        <Hero
-          heroImg='/images/404.jpeg'
-          title=''
-        />
+        <Hero heroImg="/images/404.jpeg" title="" />
         <Wrapper>
           <MainTitle>404 Page Not Found</MainTitle>
           <Icon>
-            <img src='/images/ufo-and-cow.svg' alt='ufo and cow' />
+            <img src="/images/ufo-and-cow.svg" alt="ufo and cow" />
           </Icon>
           <Text>
             Looks like you've followed a broken link or entered a URL that
@@ -43,6 +40,6 @@ class NotFoundPage extends React.Component {
       </Layout>
     )
   }
-};
+}
 
 export default NotFoundPage

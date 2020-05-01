@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: "Hi, I'm Kyle!",
   siteDescription: `Personal website for Kyle Jones`,
-  keyWords: ['gatsbyjs', 'react', 'cv', 'portfolio', 'blog'],
+  keyWords: ['gatsbyjs', 'react', 'graphql', 'cv', 'portfolio', 'blog'],
   authorName: 'Kyle Jones',
   twitterUsername: 'kerldev',
   githubUsername: 'kerl1310',
@@ -37,6 +37,10 @@ module.exports = {
       level: 60
     },
     {
+      name: 'Serverless',
+      level: 60
+    },
+    {
       name: 'Terraform',
       level: 40
     }
@@ -52,7 +56,7 @@ module.exports = {
       duration: null,
       occupation: 'Senior Software Engineer',
       description:
-        'Supporting the design, commercialisation and continuous improvement of AMPLYFI’s suite of AI powered business intelligence products including DataVoyant Analyse and DataVoyant Companies.',
+        'Leading the design, commercialisation and continuous improvement of AMPLYFI’s suite of AI powered business intelligence products including DataVoyant Analyse and DataVoyant Companies.',
     },
     {
       company: 'AMPLYFI',
@@ -88,7 +92,7 @@ module.exports = {
       duration: '1 year',
       occupation: 'Application Developer',
       description:
-        'Responsible for the implementation and parameterization of the system, training and customer support. Acting also in person in real estate launches guaranteeing the success and good use of the tool.',
+        "Contributed to the design, customisation and extension of Siderise's various IT systems. Duties consisted of gathering requirements before researching and implementing potential solutions using C#.",
     },
   ],
   social: {
