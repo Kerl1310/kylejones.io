@@ -14,6 +14,7 @@ jobs:
         env:
           GA_ID: ${{ secrets.GA_ID }}
           DEV_TOKEN: ${{ secrets.DEV_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
           access-token: ${{ secrets.GH_TOKEN }}
           deploy-branch: master
