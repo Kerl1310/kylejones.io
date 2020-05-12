@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Container, Row, Col } from 'react-awesome-styled-grid'
+import siteConfig from '../../data/siteConfig'
 import Layout from '../components/layout'
+import Wrapper from '../components/wrapper'
 import SEO from '../components/SEO'
 
 const googleAnalyticsId = process.env.GA_ID
