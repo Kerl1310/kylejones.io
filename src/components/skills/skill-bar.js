@@ -5,8 +5,8 @@ const SkillBar = ({ className, name, level }) => {
   return (
     <div className={className}>
       <label htmlFor={`${name}-bar`}>{name}</label>
-      <div id={`${name}-bar`} className='skill__bar'>
-        <div className='skill__level'></div>
+      <div id={`${name}-bar`} className="skill__bar">
+        <div className="skill__level"></div>
       </div>
     </div>
   )
@@ -23,7 +23,7 @@ export default styled(SkillBar)`
     padding: 1px;
   }
   .skill__level {
-    background-color: #25303B;
+    background-color: #25303b;
     width: ${p => p.level || 0}%;
     height: 8px;
   }
