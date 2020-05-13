@@ -33,8 +33,11 @@ function Articles() {
                       width="512"
                       height="192"
                     ></img>
-                    <br></br>[{new Intl.DateTimeFormat("en-GB", "en-US").format(new Date(articleLink.published_at))}]{' '}
-                    <strong>{articleLink.title}</strong> -{' '}
+                    <br></br>[
+                    {new Intl.DateTimeFormat('en-GB', 'en-US').format(
+                      new Date(articleLink.published_at)
+                    )}
+                    ] <strong>{articleLink.title}</strong> -{' '}
                     {articleLink.page_views_count} views
                   </div>
                 </a>
@@ -43,9 +46,8 @@ function Articles() {
             </ArticleLinkGroup>
           </div>
         )
-      }
-    }
-  />
+      }}
+    />
   )
 }
 
@@ -72,4 +74,5 @@ const articlesQuery = graphql`
       title
       url
     }
-  }`
+  }
+`

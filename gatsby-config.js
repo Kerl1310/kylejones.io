@@ -4,7 +4,6 @@ require("dotenv").config({
 
 const config = require("./data/siteConfig");
 
-const githubToken = process.env.GH_TOKEN;
 const devApiKey = process.env.DEV_TOKEN;
 const googleAnalyticsId = process.env.GA_ID;
 const goodreadsApiKey = process.env.GOODREADS_KEY;

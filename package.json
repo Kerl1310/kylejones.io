@@ -4,9 +4,14 @@
   "description": "Personal website for Kyle Jones",
   "version": "1.0.1",
   "author": {
-    "name": "Kyle Jones",
+    "birthDate": "1992-10-13",
     "email": "kylejones1310@outlook.com",
-    "url": "https://github.com/kerl1310"
+    "gender": "Male",
+    "jobTitle": "Senior Software Engineer",
+    "knowsLanguage": "English",
+    "name": "Kyle Jones",
+    "telephone": "07432 829513",
+    "url": "https://kylejones.io"
   },
   "dependencies": {
     "@halkeye/gatsby-source-goodreads": "git+https://github.com/halkeye/gatsby-source-goodreads.git",

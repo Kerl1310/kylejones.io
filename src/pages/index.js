@@ -26,17 +26,19 @@ const Separator = styled.hr`
   margin-top: 24px;
   margin-bottom: 16px;
 `
-const googleAnalyticsId = process.env.GA_ID;
+const googleAnalyticsId = process.env.GA_ID
 
 class Home extends React.Component {
-  render () {
+  render() {
     // validate siteConfig settings
     if (googleAnalyticsId === 'UA-000000000-1') {
-      console.error('WARNING: Please set a proper googleAnalyticsId. See https://analytics.google.com for details.');
+      console.error(
+        'WARNING: Please set a proper googleAnalyticsId. See https://analytics.google.com for details.'
+      )
     }
 
     const title = siteConfig.siteTitle
-    const {keywords} = siteConfig
+    const { keywords } = siteConfig
     return (
       <Layout location={this.props.location}>
         <SEO title={title} keywords={keywords} />
@@ -75,7 +77,10 @@ class Home extends React.Component {
                     </a>
                   )}
                   {siteConfig.social.medium && (
-                    <a className="social-link medium" href={siteConfig.social.medium}>
+                    <a
+                      className="social-link medium"
+                      href={siteConfig.social.medium}
+                    >
                       <FaMedium className="social-icon" size="32" />
                     </a>
                   )}
@@ -140,7 +145,7 @@ export default styled(Home)`
   }
 
   .avatar__image {
-    box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.75);
     max-width: 200px;
     border-radius: 100px;
     margin: 0 auto 24px;
@@ -177,7 +182,7 @@ export default styled(Home)`
   }
 
   a.social-link.linkedin:hover {
-    color: #0077B5;
+    color: #0077b5;
   }
 
   a.social-link.email:hover {
