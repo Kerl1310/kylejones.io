@@ -6,6 +6,7 @@ const config = require("./data/siteConfig");
 
 const devApiKey = process.env.DEV_TOKEN;
 const googleAnalyticsId = process.env.GA_ID;
+const goodreadsApiKey = process.env.GOODREADS_KEY;
 
 const articleType = {
   type_of: 'String',
@@ -78,6 +79,45 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: googleAnalyticsId,
+      },
+    },
+    {
+      resolve: '@halkeye/gatsby-source-goodreads',
+      options: {
+        developerKey: goodreadsApiKey,
+        goodReadsUserId: '19330885-kyle-jones',
+        userShelf: 'currently-reading',
+      },
+    },
+    {
+      resolve: 'gatsby-source-github',
+      options: {
+        headers: {
+          Authorization: `Bearer ${githubToken}`,
+        },
+        queries: [
+          `{
+            viewer {
+              login
+              pinnedItems(first: 10) {
+                nodes {
+                  ... on Repository {
+                    id
+                    name
+                    stargazers {
+                      totalCount
+                    }
+                    primaryLanguage {
+                      name
+                    }
+                    url
+                    updatedAt
+                  }
+                }
+              }
+            }
+          }`,
+        ],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
