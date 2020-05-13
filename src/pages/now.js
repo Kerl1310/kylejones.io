@@ -24,10 +24,12 @@ class Now extends React.Component {
 
     return (
       <StaticQuery
-      query={goodreadsQuery}
+      query={nowQuery}
       render={data => {
                         const book = data.goodreadsBook.book
                         const authors = book.authors
+                        const artist = data.allSpotifyTopArtist.edges[0].node
+
                         // TODO: Add logic to add "and" and commas between values
                         return (
                           <Layout location={this.props.location}>
@@ -67,8 +69,15 @@ class Now extends React.Component {
                                       ))}
                                     </li>
                                     <li>
-                                      <strong>Listening to:</strong> Little
-                                      Richard
+                                      <strong>Listening to:</strong>{' '}
+                                      <a
+                                        className={'artist-link'}
+                                        href={artist.external_urls.spotify}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        {artist.name}
+                                      </a>
                                     </li>
                                     <li>
                                       <strong>Watching:</strong> Star Wars:
@@ -97,18 +106,34 @@ export default styled(Now)`
     margin-bottom: 40px;
   }`
 
-  const goodreadsQuery = graphql`
-    query GoodreadsQuery {
-      goodreadsBook(shelfNames: {eq: "currently-reading"}) {
-        book {
-          authors {
-            id
-            name
-            link
-          }
+const nowQuery = graphql`
+  query NowQuery {
+    goodreadsBook(shelfNames: { eq: "currently-reading" }) {
+      book {
+        authors {
+          id
+          name
+          link
+        }
         titleWithoutSeries
         link
         isbn13
       }
     }
-  }`
+    allSpotifyTopArtist(
+      filter: { time_range: { eq: "short_term" } }
+      sort: { fields: order }
+      limit: 1
+    ) {
+      edges {
+        node {
+          name
+          external_urls {
+            spotify
+          }
+          order
+        }
+      }
+    }
+  }
+`
