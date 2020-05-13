@@ -89,37 +89,6 @@ module.exports = {
         userShelf: 'currently-reading',
       },
     },
-    {
-      resolve: 'gatsby-source-github',
-      options: {
-        headers: {
-          Authorization: `Bearer ${githubToken}`,
-        },
-        queries: [
-          `{
-            viewer {
-              login
-              pinnedItems(first: 10) {
-                nodes {
-                  ... on Repository {
-                    id
-                    name
-                    stargazers {
-                      totalCount
-                    }
-                    primaryLanguage {
-                      name
-                    }
-                    url
-                    updatedAt
-                  }
-                }
-              }
-            }
-          }`,
-        ],
-      },
-    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     'gatsby-plugin-offline',
