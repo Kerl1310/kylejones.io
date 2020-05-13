@@ -116,5 +116,9 @@ module.exports = {
       label: 'Kyle Jones',
       url: '/',
     },
+    {
+      label: 'Now',
+      url: '/now',
+    },
   ],
 }
