@@ -8,8 +8,11 @@ const devApiKey = process.env.DEV_TOKEN;
 const googleAnalyticsId = process.env.GA_ID;
 const goodreadsApiKey = process.env.GOODREADS_KEY;
 const spotifyId = process.env.SPOTIFY_CLIENT_ID;
-const spotifySecret = process.env.SPOTIFY_CLIENT_SECRET
-const spotifyRefreshToken = process.env.SPOTIFY_REFRESH_TOKEN
+const spotifySecret = process.env.SPOTIFY_CLIENT_SECRET;
+const spotifyRefreshToken = process.env.SPOTIFY_REFRESH_TOKEN;
+const twitterConsumerKey = process.env.TWITTER_CONSUMER_KEY;
+const twitterConsumerSecret = process.env.TWITTER_CONSUMER_SECRET;
+const twitterBearerToken = process.env.TWITTER_BEARER_TOKEN;
 
 const articleType = {
   type_of: 'String',
@@ -82,6 +85,28 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: googleAnalyticsId,
+      },
+    },
+    {
+      resolve: `gatsby-source-twitter`,
+      options: {
+        credentials: {
+          consumer_key: twitterConsumerKey,
+          consumer_secret: twitterConsumerSecret,
+          bearer_token: twitterBearerToken
+        },
+        queries: {
+          KylesTweets: {
+            endpoint: `statuses/user_timeline`,
+              params: {
+                screen_name: "KerlDev",
+                include_rts: false,
+                exclude_replies: true,
+                tweet_mode: `extended`,
+                count: 20,
+              },
+          },
+        },
       },
     },
     {
