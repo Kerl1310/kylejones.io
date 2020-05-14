@@ -40,6 +40,7 @@ class Now extends React.Component {
                   <Row>
                     <div>
                       <h1>What I'm Up To Now</h1>
+                      <h2>Last Updated: 14/05/2020</h2>
                     </div>
                     <div className="now-content">
                       <ul>
@@ -112,7 +113,7 @@ export default styled(Now)`
     margin-left: 0;
   }
 
-  h1 {
+  h2 {
     margin-bottom: 40px;
   }
 `
