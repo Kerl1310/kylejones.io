@@ -8,8 +8,8 @@ const devApiKey = process.env.DEV_TOKEN;
 const googleAnalyticsId = process.env.GA_ID;
 const goodreadsApiKey = process.env.GOODREADS_KEY;
 const spotifyId = process.env.SPOTIFY_CLIENT_ID;
-const spotifySecret = process.env.SPOTIFY_CLIENT_SECRET
-const spotifyRefreshToken = process.env.SPOTIFY_REFRESH_TOKEN
+const spotifySecret = process.env.SPOTIFY_CLIENT_SECRET;
+const spotifyRefreshToken = process.env.SPOTIFY_REFRESH_TOKEN;
 
 const articleType = {
   type_of: 'String',
