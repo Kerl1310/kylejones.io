@@ -6,6 +6,10 @@ const config = require("./data/siteConfig");
 
 const devApiKey = process.env.DEV_TOKEN;
 const googleAnalyticsId = process.env.GA_ID;
+const goodreadsApiKey = process.env.GOODREADS_KEY;
+const spotifyId = process.env.SPOTIFY_CLIENT_ID;
+const spotifySecret = process.env.SPOTIFY_CLIENT_SECRET;
+const spotifyRefreshToken = process.env.SPOTIFY_REFRESH_TOKEN;
 
 const articleType = {
   type_of: 'String',
@@ -78,6 +82,26 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: googleAnalyticsId,
+      },
+    },
+    {
+      resolve: `gatsby-source-spotify`,
+      options: {
+        clientId: spotifyId,
+        clientSecret: spotifySecret,
+        refreshToken: spotifyRefreshToken,
+
+        fetchPlaylists: false, // optional. Set to false to disable fetching of your playlists
+        fetchRecent: false, // optional. Set to false to disable fetching of your recently played tracks
+        timeRanges: ['short_term'], // optional. Set time ranges to be fetched
+      },
+    },
+    {
+      resolve: '@halkeye/gatsby-source-goodreads',
+      options: {
+        developerKey: goodreadsApiKey,
+        goodReadsUserId: '19330885-kyle-jones',
+        userShelf: 'currently-reading',
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
