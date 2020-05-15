@@ -18,20 +18,16 @@ function Articles() {
             <h2>Featured Articles</h2>
             <ArticleLinkGroup>
               {' '}
-              {
-                articleLinks.map(articleLink => (
+              {articleLinks.map(articleLink => (
                 <a
-                  className={`article-link-${articleLink.title}`}
-                  href={articleLink.path}
+                  className={`article-link-${articleLink.node.frontmatter.title}`}
+                  href={articleLink.node.frontmatter.path}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div>
-                    <strong>{articleLink.title}</strong>
-                  </div>
+                  <strong>{articleLink.node.frontmatter.title}</strong>
                 </a>
-                 ))
-                 }
+              ))}
             </ArticleLinkGroup>
           </div>
         )
