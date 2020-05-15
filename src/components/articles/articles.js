@@ -12,37 +12,22 @@ function Articles() {
     <StaticQuery
       query={articlesQuery}
       render={data => {
-        const articleLink = data.internalArticles
+        const articleLinks = data.allMarkdownRemark.edges
         return (
           <div className="featuredArticles">
             <h2>Featured Articles</h2>
             <ArticleLinkGroup>
               {' '}
-              {
-                //  meta.map((articleLink, i) => (
+              {articleLinks.map(articleLink => (
                 <a
-                  className={`article-link-${articleLink.id}`}
-                  href={articleLink.canonical_url}
+                  className={`article-link-${articleLink.node.frontmatter.title}`}
+                  href={articleLink.node.frontmatter.path}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div>
-                    <img
-                      src={articleLink.cover_image}
-                      alt="Cover image for the article ${articleLink.title}"
-                      width="512"
-                      height="192"
-                    ></img>
-                    <br></br>[
-                    {new Intl.DateTimeFormat('en-GB', 'en-US').format(
-                      new Date(articleLink.published_at)
-                    )}
-                    ] <strong>{articleLink.title}</strong> -{' '}
-                    {articleLink.page_views_count} views
-                  </div>
+                  <strong>{articleLink.node.frontmatter.title}</strong>
                 </a>
-                // ))
-              }
+              ))}
             </ArticleLinkGroup>
           </div>
         )
@@ -59,20 +44,24 @@ a {
     display: list-item;          /* This has to be "list-item"                                               */
     list-style-type: none;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
     list-style-position: inside;
+}
 `
 
 const articlesQuery = graphql`
   query ArticlesQuery {
-    internalArticles {
-      id
-      cover_image
-      canonical_url
-      description
-      published_at
-      positive_reactions_count
-      page_views_count
-      title
-      url
+    allMarkdownRemark(
+      sort: { order: DESC, fields: frontmatter___date }
+      limit: 5
+    ) {
+      edges {
+        node {
+          frontmatter {
+            path
+            date
+            title
+          }
+        }
+      }
     }
   }
 `
