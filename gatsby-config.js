@@ -64,6 +64,20 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
+        ]
+      }
+    },
+    `gatsby-plugin-catch-links`,
     `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -94,6 +108,13 @@ module.exports = {
         fetchPlaylists: false, // optional. Set to false to disable fetching of your playlists
         fetchRecent: false, // optional. Set to false to disable fetching of your recently played tracks
         timeRanges: ['short_term'], // optional. Set time ranges to be fetched
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: 'pages',
       },
     },
     {

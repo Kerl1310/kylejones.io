@@ -59,6 +59,7 @@ a {
     display: list-item;          /* This has to be "list-item"                                               */
     list-style-type: none;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
     list-style-position: inside;
+}
 `
 
 const articlesQuery = graphql`
