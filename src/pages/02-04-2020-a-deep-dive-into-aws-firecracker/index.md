@@ -1,6 +1,6 @@
 ---
 path: "/a-deep-dive-into-aws-firecracker"
-date: "2020-04-02T14:28:06.000Z"
+date: "2020-04-02"
 title: "A Deep Dive into AWS Firecracker"
 tags:
     - aws
