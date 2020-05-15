@@ -90,10 +90,9 @@ module.exports = {
         clientId: spotifyId,
         clientSecret: spotifySecret,
         refreshToken: spotifyRefreshToken,
-
-        fetchPlaylists: false, // optional. Set to false to disable fetching of your playlists
-        fetchRecent: false, // optional. Set to false to disable fetching of your recently played tracks
-        timeRanges: ['short_term'], // optional. Set time ranges to be fetched
+        fetchPlaylists: false,
+        fetchRecent: false,
+        timeRanges: ['short_term'],
       },
     },
     {

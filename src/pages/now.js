@@ -7,6 +7,7 @@ import Layout from '../components/layout'
 import Hero from '../components/hero'
 import Wrapper from '../components/wrapper'
 import SEO from '../components/SEO'
+import Checkout from '../components/checkout'
 
 const googleAnalyticsId = process.env.GA_ID
 
