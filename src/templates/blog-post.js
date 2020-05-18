@@ -8,6 +8,7 @@ import Layout from '../components/layout'
 import Hero from '../components/hero'
 import Wrapper from '../components/wrapper'
 import SEO from '../components/SEO'
+import ShareButtons from '../components/shareButtons'
 
 const googleAnalyticsId = process.env.GA_ID
 
@@ -32,6 +33,7 @@ function BlogTemplate({ data }) {
   const post = data.markdownRemark
   const title = siteConfig.siteTitle
   const { keywords } = siteConfig
+  const fullUrl = siteConfig.pathPrefix + post.frontmatter.path
   
   return (
     <Layout location={post.frontmatter.path}>
@@ -59,6 +61,12 @@ function BlogTemplate({ data }) {
                     dangerouslySetInnerHTML={{ __html: post.html }}
                   />{' '}
                 </div>{' '}
+                <ShareButtons
+                  title={post.frontmatter.title}
+                  twitterHandle={siteConfig.twitterUsername}
+                  url={fullUrl}
+                  tags={post.frontmatter.tags}
+                />
               </div>
             </Col>
           </Row>
