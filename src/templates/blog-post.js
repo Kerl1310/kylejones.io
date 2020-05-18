@@ -34,7 +34,7 @@ function BlogTemplate({ data }) {
   const title = siteConfig.siteTitle
   const { keywords } = siteConfig
   const fullUrl = siteConfig.pathPrefix + post.frontmatter.path
-  
+
   return (
     <Layout location={post.frontmatter.path}>
       <SEO title={title} keywords={keywords} />
@@ -79,16 +79,16 @@ function BlogTemplate({ data }) {
 export default BlogTemplate
 
 export const pageQuery = graphql`
-         query BlogPostByPath($path: String!) {
-           markdownRemark(frontmatter: { path: { eq: $path } }) {
-             html
-             frontmatter {
-               date(formatString: "DD MMMM YYYY")
-               path
-               title
-               featuredImage
-               tags
-             }
-           }
-         }
-       `
+  query BlogPostByPath($path: String!) {
+    markdownRemark(frontmatter: { path: { eq: $path } }) {
+      html
+      frontmatter {
+        date(formatString: "DD MMMM YYYY")
+        path
+        title
+        featuredImage
+        tags
+      }
+    }
+  }
+`

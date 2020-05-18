@@ -38,59 +38,65 @@ class Now extends React.Component {
               <Wrapper className={this.props.className}>
                 <Container className="page-content" fluid>
                   <Row>
-                    <div>
-                      <h1>What I'm Up To Now</h1>
-                      <h2>Last Updated: 14/05/2020</h2>
-                    </div>
-                    <div className="now-content">
-                      <ul>
-                        <li>
-                          <strong>Reading:</strong>{' '}
-                          <a
-                            className={'book-link-${book.isbn}'}
-                            href={book.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            {book.titleWithoutSeries}
-                          </a>{' '}
-                          by{' '}
-                          {authors.map(author => (
-                            <React.Fragment key={author.id}>
-                              <a
-                                className={'author-link-${author.id}'}
-                                href={author.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                {author.name}
-                              </a>
-                            </React.Fragment>
-                          ))}
-                        </li>
-                        <li>
-                          <strong>Listening to:</strong>{' '}
-                          <a
-                            className={'artist-link'}
-                            href={artist.external_urls.spotify}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            {artist.name}
-                          </a>
-                        </li>
-                        <li>
-                          <strong>Watching:</strong> Star Wars: Rebels
-                        </li>
-                        <li>
-                          <strong>Learning about:</strong> Gatsby and React
-                        </li>
-                        <li>
-                          <strong>Working on:</strong> This website and
-                          decorating our new home
-                        </li>
-                      </ul>
-                    </div>
+                    <Col>
+                      <div>
+                        <h1>What I'm Up To Now</h1>
+                        <h2>Last Updated: 14/05/2020</h2>
+                      </div>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <div className="now-content">
+                        <ul>
+                          <li>
+                            <strong>Reading:</strong>{' '}
+                            <a
+                              className={'book-link-${book.isbn}'}
+                              href={book.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {book.titleWithoutSeries}
+                            </a>{' '}
+                            by{' '}
+                            {authors.map(author => (
+                              <React.Fragment key={author.id}>
+                                <a
+                                  className={'author-link-${author.id}'}
+                                  href={author.link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  {author.name}
+                                </a>
+                              </React.Fragment>
+                            ))}
+                          </li>
+                          <li>
+                            <strong>Listening to:</strong>{' '}
+                            <a
+                              className={'artist-link'}
+                              href={artist.external_urls.spotify}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {artist.name}
+                            </a>
+                          </li>
+                          <li>
+                            <strong>Watching:</strong> Star Wars: Rebels
+                          </li>
+                          <li>
+                            <strong>Learning about:</strong> Gatsby and React
+                          </li>
+                          <li>
+                            <strong>Working on:</strong> This website and
+                            decorating our new home
+                          </li>
+                        </ul>
+                      </div>
+                    </Col>
                   </Row>
                 </Container>
               </Wrapper>

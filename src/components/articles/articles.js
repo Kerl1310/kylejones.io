@@ -20,7 +20,8 @@ function Articles() {
             <ArticleLinkGroup>
               {' '}
               {articleLinks.map(articleLink => (
-                <Link to={articleLink.node.frontmatter.path}
+                <Link
+                  to={articleLink.node.frontmatter.path}
                   target="__blank"
                   rel="noopener noreferrer"
                 >
@@ -36,14 +37,13 @@ function Articles() {
 }
 
 export default styled(Articles)`
+  position: relative;
 
-position: relative;
-
-a {
-    display: list-item;          /* This has to be "list-item"                                               */
-    list-style-type: none;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+  a {
+    display: list-item; /* This has to be "list-item"                                               */
+    list-style-type: none; /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
     list-style-position: inside;
-}
+  }
 `
 
 const articlesQuery = graphql`
