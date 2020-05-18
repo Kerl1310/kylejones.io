@@ -12,33 +12,30 @@ import {
   RedditIcon,
 } from 'react-share'
 
-function ShareButtons ({ twitterHandle, url, title, tags }) {
+function ShareButtons({ twitterHandle, url, title, tags }) {
   return (
-  <div>
-    <FacebookShareButton url={url}>
-      <FacebookIcon />
-    </FacebookShareButton>
+    <div>
+      <FacebookShareButton url={url}>
+        <FacebookIcon />
+      </FacebookShareButton>
 
-    <TwitterShareButton
-      url={url}
-      title={title}
-      hashtags={tags}
-    >
-      <TwitterIcon />
-    </TwitterShareButton>
+      <TwitterShareButton url={url} title={title} hashtags={tags}>
+        <TwitterIcon />
+      </TwitterShareButton>
 
-    <LinkedinShareButton url={url}>
-      <LinkedinIcon />
-    </LinkedinShareButton>
+      <LinkedinShareButton url={url}>
+        <LinkedinIcon />
+      </LinkedinShareButton>
 
-    <RedditShareButton url={url} title={title}>
-      <RedditIcon />
-    </RedditShareButton>
+      <RedditShareButton url={url} title={title}>
+        <RedditIcon />
+      </RedditShareButton>
 
-    <WhatsappShareButton url={url} title={title}>
-      <WhatsappIcon />
-    </WhatsappShareButton>
-  </div>
-)}
+      <WhatsappShareButton url={url} title={title}>
+        <WhatsappIcon />
+      </WhatsappShareButton>
+    </div>
+  )
+}
 
 export default ShareButtons
