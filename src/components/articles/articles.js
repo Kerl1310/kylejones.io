@@ -1,5 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 const ArticleLinkGroup = styled.div`
@@ -19,14 +20,12 @@ function Articles() {
             <ArticleLinkGroup>
               {' '}
               {articleLinks.map(articleLink => (
-                <a
-                  className={`article-link-${articleLink.node.frontmatter.title}`}
-                  href={articleLink.node.frontmatter.path}
-                  target="_blank"
+                <Link to={articleLink.node.frontmatter.path}
+                  target="__blank"
                   rel="noopener noreferrer"
                 >
                   <strong>{articleLink.node.frontmatter.title}</strong>
-                </a>
+                </Link>
               ))}
             </ArticleLinkGroup>
           </div>
