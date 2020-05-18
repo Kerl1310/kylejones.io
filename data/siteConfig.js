@@ -120,5 +120,9 @@ module.exports = {
       label: 'Now',
       url: '/now',
     },
+    {
+      label: 'Blog',
+      url: '/blog'
+    }
   ],
 }
