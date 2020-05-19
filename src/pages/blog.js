@@ -127,7 +127,7 @@ const blogQuery = graphql`
             date
             title
           }
-          excerpt(pruneLength: 250)
+          excerpt(pruneLength: 285)
         }
       }
     }
