@@ -71,6 +71,7 @@ class Blog extends React.Component {
                             >
                               {articleLink.node.frontmatter.title}
                             </Link>
+                            <p>{articleLink.node.excerpt}</p>
                             <Separator />
                           </li>
                         ))}
@@ -126,6 +127,7 @@ const blogQuery = graphql`
             date
             title
           }
+          excerpt(pruneLength: 285)
         }
       }
     }
