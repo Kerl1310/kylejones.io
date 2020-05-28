@@ -41,7 +41,7 @@ class Now extends React.Component {
                     <Col>
                       <div>
                         <h1>What I'm Up To Now</h1>
-                        <h2>Last Updated: 14/05/2020</h2>
+                        <h2>Last Updated: 28/05/2020</h2>
                       </div>
                     </Col>
                   </Row>
@@ -85,14 +85,14 @@ class Now extends React.Component {
                             </a>
                           </li>
                           <li>
-                            <strong>Watching:</strong> Star Wars: Rebels
+                            <strong>Watching:</strong>{' '}Star Wars: Rebels
                           </li>
                           <li>
                             <strong>Learning about:</strong> Gatsby and React
                           </li>
                           <li>
-                            <strong>Working on:</strong> This website and
-                            decorating our new home
+                            <strong>Working on:</strong> This website,
+                            decorating our new home and training our new puppy, Archie.
                           </li>
                         </ul>
                       </div>
@@ -117,6 +117,16 @@ export default styled(Now)`
   ul {
     list-style-type: none;
     margin-left: 0;
+  }
+
+  ul li a:link, ul li a:visited {
+    color: black;
+    text-decoration: none;
+  }
+
+  ul li a:hover, ul li a:active {
+    color: black;
+    text-decoration: underline;
   }
 
   h2 {
