@@ -91,8 +91,8 @@ class Now extends React.Component {
                             <strong>Learning about:</strong> Gatsby and React
                           </li>
                           <li>
-                            <strong>Working on:</strong> This website and
-                            decorating our new home
+                            <strong>Working on:</strong> This website,
+                            decorating our new home and training our new puppy, Archie.
                           </li>
                         </ul>
                       </div>
@@ -117,6 +117,10 @@ export default styled(Now)`
   ul {
     list-style-type: none;
     margin-left: 0;
+  }
+
+  ul li a {
+    color: black;
   }
 
   h2 {
