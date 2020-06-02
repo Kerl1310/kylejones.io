@@ -26,7 +26,7 @@ function BlogTemplate({ data }) {
 
   return (
     <Layout location={post.frontmatter.path}>
-      <SEO title={title} keywords={keywords} />
+      <SEO title={post.frontmatter.title} keywords={keywords} description={post.frontmatter.title} />
       <Hero heroImg={siteConfig.siteCover} title={title} />
       <Wrapper>
         <Container className="page-content" fluid>
