@@ -7,6 +7,7 @@ tags:
     - open-source
     - serverless
 featuredImage: "/aws-firecracker-architecture.png"
+isFeatured: true
 ---
 Firecracker is a Virtual Machine Monitor, written in [Rust](https://www.rust-lang.org/) that Amazon Web Services use to power it's Serverless Compute services - [Lambda](https://aws.amazon.com/lambda/) and [Fargate](https://aws.amazon.com/fargate/). Firecracker makes use of Linux's [Kernel-based Virtual Machine](https://www.linux-kvm.org/page/Main_Page) virtualisation infrastructure to provide its products with MicroVMs.
 
