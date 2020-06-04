@@ -19,11 +19,47 @@ isFeatured: false
 ![S3 Storage Classes in order from fastest, most frequently accessed to the slowest and least frequently accessed.](/s3-storage-classes.png)
 
 ## Security
-As a part of [Amazon's Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/) for security, the majority of S3's storage classes offer secure upload and downloading using SSL endpoints via HTTPS as well as encryption at rest using server-side encryption (SSE). The SSE provides three options for secret keys:
+As a part of [Amazon's Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/) for security, S3 requires both an appropriate [Access Control List (ACL)](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html) and an [Identity and Access Management (IAM)](https://aws.amazon.com/iam) policy to allow a user to access the service or a particular resource, whether that resource is a bucket or an object.
+#### Example IAM Policy
+```
+{
+   "Version":"2012-10-17",
+   "Statement":[
+      {
+         "Effect":"Allow",
+         "Action":[
+            "s3:ListAllMyBuckets"
+         ],
+         "Resource":"arn:aws:s3:::*"
+      },
+      {
+         "Effect":"Allow",
+         "Action":[
+            "s3:ListBucket",
+            "s3:GetBucketLocation"
+         ],
+         "Resource":"arn:aws:s3:::my-bucket"
+      },
+      {
+         "Effect":"Allow",
+         "Action":[
+            "s3:PutObject",
+            "s3:PutObjectAcl",
+            "s3:GetObject",
+            "s3:GetObjectAcl",
+            "s3:DeleteObject"
+         ],
+         "Resource":"arn:aws:s3:::my-bucket/*"
+      }
+   ]
+}
+```
+The majority of S3's storage classes offer secure upload and downloading using SSL endpoints via HTTPS as well as encryption at rest using server-side encryption (SSE). The SSE provides three options for secret keys:
  * S3 Managed Keys (SSE-S3) is an integrated solution where Amazon handles key management and key protection using [AES-256](https://www.atpinc.com/blog/what-is-aes-256-encryption).
  * Customer Managed Keys (SSE-C) allows you to use S3 to perform the encryption and decryption of your objects using AES-256 while retaining control of the keys.
  * Key Management Service Keys (SSE-KMS) allows you to use [AWS Key Management Service (AWS KMS)](https://aws.amazon.com/kms/) to manage encryption keys, which provides additional security benefits including separate permissions for the master key, a number of different encryption algorithms (including [RSA](https://hackernoon.com/how-does-rsa-work-f44918df914b)) and an audit trail. This option supports efforts to comply with [PCI-DSS](https://www.pcicomplianceguide.org/faq/), [HIPAA/HITECH](https://cpl.thalesgroup.com/faq/americas-compliance/what-hipaa-hitech) and [FedRAMP](https://www.fedramp.gov).
 Glacier and Glacier Deep Archive storage classes are encrypted at rest by default, whereas with the other classes encryption at rest is optional.
+Additionally, AWS also offers the ability to turn on Multi-Factor Authentication (MFA) for delete operations in S3.
 
 ## Pricing
 S3 is priced by usage, with each tier priced slightly differently. The service is billed on a number of factors:
