@@ -5,7 +5,13 @@ import styled from 'styled-components'
 
 const ArticleLinkGroup = styled.div`
   display: flex;
-  flex-direction: row;
+  width: 100%;
+  flex-direction: column;
+`
+
+const ArticleLink = styled.div`
+  display: block;
+  width: 100%;
 `
 
 function Articles() {
@@ -15,18 +21,20 @@ function Articles() {
       render={data => {
         const articleLinks = data.allMarkdownRemark.edges
         return (
-          <div className="featuredArticles">
-            <h2>Featured Articles</h2>
+          <div className="recentArticles">
+            <h2>Recent Articles</h2>
             <ArticleLinkGroup>
               {' '}
               {articleLinks.map(articleLink => (
-                <Link
-                  to={articleLink.node.frontmatter.path}
-                  target="__blank"
-                  rel="noopener noreferrer"
-                >
-                  <strong>{articleLink.node.frontmatter.title}</strong>
-                </Link>
+                <ArticleLink>
+                  <Link
+                    to={articleLink.node.frontmatter.path}
+                    target="__blank"
+                    rel="noopener noreferrer"
+                  >
+                    <strong>{articleLink.node.frontmatter.title}</strong>
+                  </Link>
+                </ArticleLink>
               ))}
             </ArticleLinkGroup>
           </div>
