@@ -7,7 +7,7 @@ This pull request is a:
 
 - [ ] Bugfix (non-breaking change which fixes an issue)
 - [ ] New feature (non-breaking change which adds functionality)
-
+- [ ] Blog post
 
 ## Checklist
 
