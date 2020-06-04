@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import styled from 'styled-components'
 import { graphql } from 'gatsby'
 import Tag from '../components/tag'
 import { Container, Row, Col } from 'react-awesome-styled-grid'
@@ -9,6 +10,11 @@ import Hero from '../components/hero'
 import Wrapper from '../components/wrapper'
 import SEO from '../components/SEO'
 import ShareButtons from '../components/shareButtons'
+
+const Separator = styled.hr`
+  margin-top: 16px;
+  margin-bottom: 16px;
+`
 
 const googleAnalyticsId = process.env.GA_ID
 
@@ -45,17 +51,13 @@ function BlogTemplate({ data }) {
                       <Tag text={tag} className="blog-post-tag"/>
                     </React.Fragment>
                   ))}
+                  <Separator />
                   <div
                     className="blog-post-content"
                     dangerouslySetInnerHTML={{ __html: post.html }}
                   />{' '}
                 </div>{' '}
-                <ShareButtons
-                  title={post.frontmatter.title}
-                  twitterHandle={siteConfig.twitterUsername}
-                  url={fullUrl}
-                  tags={post.frontmatter.tags}
-                />
+                <ShareButtons/>
               </div>
             </Col>
           </Row>
