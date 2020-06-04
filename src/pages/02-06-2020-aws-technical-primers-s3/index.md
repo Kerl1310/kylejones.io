@@ -4,7 +4,7 @@ date: "2020-06-02"
 title: "AWS Technical Primers - S3"
 tags:
     - aws
-featuredImage: "/aws-s3-cover.png"
+featuredImage: "/aws-technical-primers-s3.png"
 isFeatured: false
 ---
 ## Overview
