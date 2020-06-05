@@ -12,6 +12,10 @@ const ArticleLinkGroup = styled.div`
 const ArticleLink = styled.div`
   display: block;
   width: 100%;
+
+  :not(:last-of-type) {
+    margin-bottom: 16px;
+  } 
 `
 
 function Articles() {
@@ -66,6 +70,8 @@ const articlesQuery = graphql`
             path
             date
             title
+            isFeatured
+            featuredImage
           }
         }
       }
