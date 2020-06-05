@@ -7,7 +7,6 @@ tags:
 featuredImage: "/aws-technical-primers-s3.png"
 isFeatured: false
 ---
-## Overview
 [Amazon Simple Storage Service (S3)](https://aws.amazon.com/s3) is a key-based object storage cloud service with 99.999999999% (11 9s) of durability across multiple availability zones. It is infinitely scalable with a maximum individual object size of 5TB, and a maximum single upload size of 5GB. Amazon recommends that objects larger than 100MB should be uploaded using the service's Multipart Upload feature. S3 features a number of different storage classes:
  * Standard
  * Intelligent-Tiering

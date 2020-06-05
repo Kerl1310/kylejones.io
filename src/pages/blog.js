@@ -12,7 +12,7 @@ import Link from 'gatsby-link'
 const googleAnalyticsId = process.env.GA_ID
 
 const Separator = styled.hr`
-  margin-top: 24px;
+  margin-top: 16px;
   margin-bottom: 16px;
   width: 100%;
 `
