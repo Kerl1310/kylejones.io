@@ -30,7 +30,6 @@ class Now extends React.Component {
           const authors = book.authors
           const artist = data.allSpotifyTopArtist.edges[0].node
 
-          // TODO: Add logic to add "and" and commas between values
           return (
             <Layout location={this.props.location}>
               <SEO title={title} keywords={keywords} />
@@ -41,7 +40,7 @@ class Now extends React.Component {
                     <Col>
                       <div>
                         <h1>What I'm Up To Now</h1>
-                        <h2>Last Updated: 28/05/2020</h2>
+                        <h2>Last Updated: 05/06/2020</h2>
                       </div>
                     </Col>
                   </Row>
@@ -63,7 +62,8 @@ class Now extends React.Component {
                             {authors.map(author => (
                               <React.Fragment key={author.id}>
                                 <a
-                                  className={'author-link-${author.id}'}
+                                  className={'author-link'}
+                                  id={'author-link-${author.id}'}
                                   href={author.link}
                                   target="_blank"
                                   rel="noopener noreferrer"
@@ -85,14 +85,15 @@ class Now extends React.Component {
                             </a>
                           </li>
                           <li>
-                            <strong>Watching:</strong>{' '}Star Wars: Rebels
+                            <strong>Watching:</strong> Star Wars: Rebels
                           </li>
                           <li>
                             <strong>Learning about:</strong> Gatsby and React
                           </li>
                           <li>
                             <strong>Working on:</strong> This website,
-                            decorating our new home and training our new puppy, Archie.
+                            decorating our new home and training our new puppy,
+                            Archie.
                           </li>
                         </ul>
                       </div>
@@ -114,17 +115,27 @@ export default styled(Now)`
     margin-bottom: 40px;
   }
 
+  .author-link :not(:last-of-type) :after {
+    content: ', ';
+  }
+
+  .author-link :nth-last-child(2) :not(:first-child) :after {
+    content: ' and ';
+  }
+
   ul {
     list-style-type: none;
     margin-left: 0;
   }
 
-  ul li a:link, ul li a:visited {
+  ul li a:link,
+  ul li a:visited {
     color: black;
     text-decoration: none;
   }
 
-  ul li a:hover, ul li a:active {
+  ul li a:hover,
+  ul li a:active {
     color: black;
     text-decoration: underline;
   }
