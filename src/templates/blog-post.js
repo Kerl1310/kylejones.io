@@ -29,10 +29,10 @@ function BlogTemplate({ data }) {
   const title = siteConfig.siteTitle
   const { keywords } = siteConfig
   const fullUrl = siteConfig.pathPrefix + post.frontmatter.path
-
+  const featuredImageUrl = siteConfig.pathPrefix + post.frontmatter.featuredImage
   return (
     <Layout location={post.frontmatter.path}>
-      <SEO title={post.frontmatter.title} keywords={keywords} description={post.frontmatter.title} />
+      <SEO title={post.frontmatter.title} keywords={keywords} description={post.excerpt} featuredImage={featuredImageUrl} url={fullUrl} />
       <Hero heroImg={siteConfig.siteCover} title={title} />
       <Wrapper>
         <Container className="page-content" fluid>
@@ -80,6 +80,7 @@ export const pageQuery = graphql`
         featuredImage
         tags
       }
+      excerpt(pruneLength: 285)
     }
   }
 `
