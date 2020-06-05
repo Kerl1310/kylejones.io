@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: "Hi, I'm Kyle!",
   siteDescription: `Personal website for Kyle Jones`,
-  keyWords: ['gatsbyjs', 'spotify', 'goodreads', 'github', 'dev', 'software engineering', 'react', 'graphql', 'cv', 'portfolio', 'blog'],
+  keyWords: ['gatsbyjs', 'spotify', 'goodreads', 'github', 'software engineering', 'react', 'graphql', 'cv', 'portfolio', 'blog'],
   authorName: 'Kyle Jones',
   twitterUsername: 'kerldev',
   githubUsername: 'kerl1310',

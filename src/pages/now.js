@@ -30,7 +30,6 @@ class Now extends React.Component {
           const authors = book.authors
           const artist = data.allSpotifyTopArtist.edges[0].node
 
-          // TODO: Add logic to add "and" and commas between values
           return (
             <Layout location={this.props.location}>
               <SEO title={title} keywords={keywords} />
@@ -41,7 +40,7 @@ class Now extends React.Component {
                     <Col>
                       <div>
                         <h1>What I'm Up To Now</h1>
-                        <h2>Last Updated: 28/05/2020</h2>
+                        <h2>Last Updated: 05/06/2020</h2>
                       </div>
                     </Col>
                   </Row>
