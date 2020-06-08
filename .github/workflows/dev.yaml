@@ -1,0 +1,35 @@
+name: build
+on:
+  push:
+    branches-ignore:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+      - uses: actions/checkout@v2
+
+      - name: Build
+      - uses: jzweifel/gatsby-cli-github-action@master
+        env:
+            GA_ID: ${{ secrets.GA_ID }}
+            GH_TOKEN: ${{ secrets.GH_TOKEN }}
+            GOODREADS_KEY: ${{ secrets.GOODREADS_KEY }}
+            GOODREADS_SECRET_KEY: ${{ secrets.GOODREADS_SECRET_KEY }}
+            SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+            SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+            SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+        with:
+          gatsby-arg: build
+
+      - name: Test
+        run: jest
+
+
+      - name: Build and Deploy to Github Pages
+      - uses: enriikke/gatsby-gh-pages-action@v2
+        
+        with:
+          access-token: ${{ secrets.GH_TOKEN }}
+          deploy-branch: master
