@@ -6,9 +6,7 @@ import Wrapper from '../Wrapper'
 
 describe('Wrapper', () => {
   it('renders correctly', () => {
-    const tree = renderer
-      .create(<Wrapper className='my-wrapper' />)
-      .toJSON()
+    const tree = renderer.create(<Wrapper className="my-wrapper" />).toJSON()
     expect(tree).toMatchSnapshot()
   })
 })

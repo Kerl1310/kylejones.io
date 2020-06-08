@@ -15,7 +15,7 @@ const ArticleLink = styled.div`
 
   :not(:last-of-type) {
     margin-bottom: 16px;
-  } 
+  }
 `
 
 function Articles() {
@@ -33,9 +33,7 @@ function Articles() {
                 <React.Fragment key={articleLink.node.frontmatter.path}>
                   <ArticleLink
                     className="recent-articles-link-container"
-                    id={
-                      `recent-articles-link-container-${articleLink.node.frontmatter.path}`
-                    }
+                    id={`recent-articles-link-container-${articleLink.node.frontmatter.path}`}
                   >
                     <Link
                       className="recent-articles-link"

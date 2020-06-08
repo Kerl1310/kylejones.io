@@ -1,4 +1,4 @@
-name: build
+name: dev
 on:
   push:
     branches-ignore:
@@ -10,8 +10,14 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v2
 
+      - name: Install dependencies
+        run: yarn install --prod --pure-lockfile
+
+      - name: Lint
+        run: yarn run lint
+
       - name: Build
-        uses: jzweifel/gatsby-cli-github-action@master
+        run: yarn run build
         env:
             GA_ID: ${{ secrets.GA_ID }}
             GH_TOKEN: ${{ secrets.GH_TOKEN }}

@@ -8,10 +8,10 @@ describe('ShareButtons', () => {
     const tree = renderer
       .create(
         <ShareButtons
-          twitterHandle='my-twitter-handle'
-          url='https://localhost/my-article'
-          title='my-title'
-          tags='my-tag'
+          twitterHandle="my-twitter-handle"
+          url="https://localhost/my-article"
+          title="my-title"
+          tags="my-tag"
         />
       )
       .toJSON()

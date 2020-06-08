@@ -17,8 +17,8 @@ beforeEach(() => {
                 title: 'my-title',
                 isFeatured: true,
                 featuredImage: '/my-image.png',
-              }
-            }
+              },
+            },
           },
           {
             node: {
@@ -28,20 +28,18 @@ beforeEach(() => {
                 title: 'my-second-title',
                 isFeatured: false,
                 featuredImage: '/my-second-image.jpg',
-              }
-            }
-          }
-        ]
-      }
+              },
+            },
+          },
+        ],
+      },
     })
   )
 })
 
 describe('Articles', () => {
   it('renders correctly', () => {
-    const tree = renderer
-      .create(<Articles />)
-      .toJSON()
+    const tree = renderer.create(<Articles />).toJSON()
     expect(tree).toMatchSnapshot()
   })
 })

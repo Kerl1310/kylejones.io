@@ -6,9 +6,7 @@ import Hero from '../hero'
 describe('Hero', () => {
   it('renders correctly', () => {
     const tree = renderer
-      .create(<Hero
-            heroImg='/my-image.jpeg'
-            title='my-title' />)
+      .create(<Hero heroImg="/my-image.jpeg" title="my-title" />)
       .toJSON()
     expect(tree).toMatchSnapshot()
   })

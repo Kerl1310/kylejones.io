@@ -5,9 +5,7 @@ import Repositories from '../repositories'
 
 describe('Repositories', () => {
   it('renders correctly', () => {
-    const tree = renderer
-      .create(<Repositories/>)
-      .toJSON()
+    const tree = renderer.create(<Repositories />).toJSON()
     expect(tree).toMatchSnapshot()
   })
 })

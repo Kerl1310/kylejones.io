@@ -29,7 +29,8 @@ function BlogTemplate({ data }) {
   const title = siteConfig.siteTitle
   const { keywords } = siteConfig
   const fullUrl = siteConfig.pathPrefix + post.frontmatter.path
-  const featuredImageUrl = siteConfig.pathPrefix + post.frontmatter.featuredImage
+  const featuredImageUrl =
+    siteConfig.pathPrefix + post.frontmatter.featuredImage
   return (
     <Layout location={post.frontmatter.path}>
       <SEO

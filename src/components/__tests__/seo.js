@@ -12,8 +12,8 @@ beforeEach(() => {
           title: "Hi, I'm Kyle!",
           description: 'Personal website for Kyle Jones',
           author: 'Kyle Jones',
-        }
-      }
+        },
+      },
     })
   )
 })
@@ -23,11 +23,11 @@ describe('SEO', () => {
     const tree = renderer
       .create(
         <SEO
-          url='https://localhost/my-article'
-          title='My Title'
-          keywords={['my-keyword','my-second-keyword']}
-          description='my-description'
-          featuredImage='https://localhost/my-article-image.jpg'
+          url="https://localhost/my-article"
+          title="My Title"
+          keywords={['my-keyword', 'my-second-keyword']}
+          description="my-description"
+          featuredImage="https://localhost/my-article-image.jpg"
         />
       )
       .toJSON()
