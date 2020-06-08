@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Container, Row, Col } from 'react-awesome-styled-grid'
+import React from 'react';
+import styled from 'styled-components';
+import { Container, Row, Col } from 'react-awesome-styled-grid';
 import {
   FaGithub,
   FaLinkedin,
@@ -9,24 +9,24 @@ import {
   FaStackOverflow,
   FaEnvelope,
   FaTwitter,
-} from 'react-icons/fa'
-import siteConfig from '../../data/siteConfig'
+} from 'react-icons/fa';
+import siteConfig from '../../data/siteConfig';
 
-import Layout from '../components/layout'
-import Hero from '../components/hero'
-import SEO from '../components/SEO'
-import Wrapper from '../components/wrapper'
-import About from '../components/about'
-import Skills from '../components/skills'
-import Timeline from '../components/timeline'
-import Repositories from '../components/repositories'
-import Articles from '../components/articles'
+import Layout from '../components/layout';
+import Hero from '../components/hero';
+import SEO from '../components/seo';
+import Wrapper from '../components/wrapper';
+import About from '../components/about';
+import Skills from '../components/skills';
+import Timeline from '../components/timeline';
+import Repositories from '../components/repositories';
+import Articles from '../components/articles';
 
 const Separator = styled.hr`
   margin-top: 24px;
   margin-bottom: 16px;
-`
-const googleAnalyticsId = process.env.GA_ID
+`;
+const googleAnalyticsId = process.env.GA_ID;
 
 class Home extends React.Component {
   render() {
@@ -34,11 +34,11 @@ class Home extends React.Component {
     if (googleAnalyticsId === 'UA-000000000-1') {
       console.error(
         'WARNING: Please set a proper googleAnalyticsId. See https://analytics.google.com for details.'
-      )
+      );
     }
 
-    const title = siteConfig.siteTitle
-    const { keywords } = siteConfig
+    const title = siteConfig.siteTitle;
+    const { keywords } = siteConfig;
     return (
       <Layout location={this.props.location}>
         <SEO title={title} keywords={keywords} />
@@ -128,7 +128,7 @@ class Home extends React.Component {
           </Container>
         </Wrapper>
       </Layout>
-    )
+    );
   }
 }
 
@@ -188,4 +188,4 @@ export default styled(Home)`
   a.social-link.email:hover {
     color: #c23a2b;
   }
-`
+`;

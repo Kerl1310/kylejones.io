@@ -1,21 +1,21 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-import styled from 'styled-components'
-import { Container, Row, Col } from 'react-awesome-styled-grid'
-import siteConfig from '../../data/siteConfig'
-import Layout from '../components/layout'
-import Hero from '../components/hero'
-import Wrapper from '../components/wrapper'
-import SEO from '../components/SEO'
-import Link from 'gatsby-link'
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import styled from 'styled-components';
+import { Container, Row, Col } from 'react-awesome-styled-grid';
+import siteConfig from '../../data/siteConfig';
+import Layout from '../components/layout';
+import Hero from '../components/hero';
+import Wrapper from '../components/wrapper';
+import SEO from '../components/SEO';
+import Link from 'gatsby-link';
 
-const googleAnalyticsId = process.env.GA_ID
+const googleAnalyticsId = process.env.GA_ID;
 
 const Separator = styled.hr`
   margin-top: 16px;
   margin-bottom: 16px;
   width: 100%;
-`
+`;
 
 class Blog extends React.Component {
   render() {
@@ -23,17 +23,17 @@ class Blog extends React.Component {
     if (googleAnalyticsId === 'UA-000000000-1') {
       console.error(
         'WARNING: Please set a proper googleAnalyticsId. See https://analytics.google.com for details.'
-      )
+      );
     }
 
-    const title = siteConfig.siteTitle
-    const { keywords } = siteConfig
+    const title = siteConfig.siteTitle;
+    const { keywords } = siteConfig;
 
     return (
       <StaticQuery
         query={blogQuery}
         render={data => {
-          const articleLinks = data.allMarkdownRemark.edges
+          const articleLinks = data.allMarkdownRemark.edges;
 
           return (
             <Layout location={this.props.location}>
@@ -81,10 +81,10 @@ class Blog extends React.Component {
                 </Container>
               </Wrapper>
             </Layout>
-          )
+          );
         }}
       />
-    )
+    );
   }
 }
 
@@ -112,7 +112,7 @@ export default styled(Blog)`
   .blog-post-date {
     font-size: 12px;
   }
-`
+`;
 
 const blogQuery = graphql`
   query BlogQuery {
@@ -132,4 +132,4 @@ const blogQuery = graphql`
       }
     }
   }
-`
+`;

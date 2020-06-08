@@ -1,36 +1,36 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import styled from 'styled-components'
-import { graphql } from 'gatsby'
-import Tag from '../components/tag'
-import { Container, Row, Col } from 'react-awesome-styled-grid'
-import siteConfig from '../../data/siteConfig'
-import Layout from '../components/layout'
-import Hero from '../components/hero'
-import Wrapper from '../components/wrapper'
-import SEO from '../components/SEO'
-import ShareButtons from '../components/shareButtons'
+import React from 'react';
+import Helmet from 'react-helmet';
+import styled from 'styled-components';
+import { graphql } from 'gatsby';
+import Tag from '../components/tag';
+import { Container, Row, Col } from 'react-awesome-styled-grid';
+import siteConfig from '../../data/siteConfig';
+import Layout from '../components/layout';
+import Hero from '../components/hero';
+import Wrapper from '../components/wrapper';
+import SEO from '../components/SEO';
+import ShareButtons from '../components/shareButtons';
 
 const Separator = styled.hr`
   margin-top: 16px;
   margin-bottom: 16px;
-`
+`;
 
-const googleAnalyticsId = process.env.GA_ID
+const googleAnalyticsId = process.env.GA_ID;
 
 function BlogTemplate({ data }) {
   if (googleAnalyticsId === 'UA-000000000-1') {
     console.error(
       'WARNING: Please set a proper googleAnalyticsId. See https://analytics.google.com for details.'
-    )
+    );
   }
 
-  const post = data.markdownRemark
-  const title = siteConfig.siteTitle
-  const { keywords } = siteConfig
-  const fullUrl = siteConfig.pathPrefix + post.frontmatter.path
+  const post = data.markdownRemark;
+  const title = siteConfig.siteTitle;
+  const { keywords } = siteConfig;
+  const fullUrl = siteConfig.pathPrefix + post.frontmatter.path;
   const featuredImageUrl =
-    siteConfig.pathPrefix + post.frontmatter.featuredImage
+    siteConfig.pathPrefix + post.frontmatter.featuredImage;
   return (
     <Layout location={post.frontmatter.path}>
       <SEO
@@ -76,10 +76,10 @@ function BlogTemplate({ data }) {
         </Container>
       </Wrapper>
     </Layout>
-  )
+  );
 }
 
-export default BlogTemplate
+export default BlogTemplate;
 
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
@@ -95,4 +95,4 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 285)
     }
   }
-`
+`;

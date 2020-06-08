@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const TagButton = styled.button`
   background-color: #25303b;
@@ -27,14 +27,14 @@ const TagButton = styled.button`
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
   }
-`
+`;
 
 const Tag = ({ className, text }) => {
   return (
     <TagButton id={text} className={className}>
       {text}
     </TagButton>
-  )
-}
+  );
+};
 
-export default Tag
+export default Tag;

@@ -1,14 +1,14 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-import styled from 'styled-components'
-import { Container, Row, Col } from 'react-awesome-styled-grid'
-import siteConfig from '../../data/siteConfig'
-import Layout from '../components/layout'
-import Hero from '../components/hero'
-import Wrapper from '../components/wrapper'
-import SEO from '../components/SEO'
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import styled from 'styled-components';
+import { Container, Row, Col } from 'react-awesome-styled-grid';
+import siteConfig from '../../data/siteConfig';
+import Layout from '../components/layout';
+import Hero from '../components/hero';
+import Wrapper from '../components/wrapper';
+import SEO from '../components/SEO';
 
-const googleAnalyticsId = process.env.GA_ID
+const googleAnalyticsId = process.env.GA_ID;
 
 class Now extends React.Component {
   render() {
@@ -16,19 +16,19 @@ class Now extends React.Component {
     if (googleAnalyticsId === 'UA-000000000-1') {
       console.error(
         'WARNING: Please set a proper googleAnalyticsId. See https://analytics.google.com for details.'
-      )
+      );
     }
 
-    const title = siteConfig.siteTitle
-    const { keywords } = siteConfig
+    const title = siteConfig.siteTitle;
+    const { keywords } = siteConfig;
 
     return (
       <StaticQuery
         query={nowQuery}
         render={data => {
-          const book = data.goodreadsBook.book
-          const authors = book.authors
-          const artist = data.allSpotifyTopArtist.edges[0].node
+          const book = data.goodreadsBook.book;
+          const authors = book.authors;
+          const artist = data.allSpotifyTopArtist.edges[0].node;
 
           return (
             <Layout location={this.props.location}>
@@ -102,10 +102,10 @@ class Now extends React.Component {
                 </Container>
               </Wrapper>
             </Layout>
-          )
+          );
         }}
       />
-    )
+    );
   }
 }
 
@@ -143,7 +143,7 @@ export default styled(Now)`
   h2 {
     margin-bottom: 40px;
   }
-`
+`;
 
 const nowQuery = graphql`
   query NowQuery {
@@ -175,4 +175,4 @@ const nowQuery = graphql`
       }
     }
   }
-`
+`;

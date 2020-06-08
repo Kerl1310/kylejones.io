@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import SkillBar from './skill-bar'
+import React from 'react';
+import styled from 'styled-components';
+import SkillBar from './skill-bar';
 
 export default styled(({ className, title = 'Skills', skills = [] }) => {
   return (
@@ -10,7 +10,7 @@ export default styled(({ className, title = 'Skills', skills = [] }) => {
         <SkillBar key={skill.name} name={skill.name} level={skill.level} />
       ))}
     </div>
-  )
+  );
 })`
   width: 100%;
-`
+`;

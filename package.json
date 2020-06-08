@@ -4,6 +4,8 @@
   "description": "Personal website for Kyle Jones",
   "version": "1.1.0",
   "author": {
+    "@context": "https://schema.org",
+    "@type": "Author",
     "birthDate": "1992-10-13",
     "email": "kylejones1310@outlook.com",
     "gender": "Male",

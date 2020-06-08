@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -11,14 +11,14 @@ import {
   WhatsappIcon,
   RedditShareButton,
   RedditIcon,
-} from 'react-share'
+} from 'react-share';
 
 const Spacer = styled.span`
   padding: 1px 4px;
   margin-bottom: 10px;
   color: white;
   display: inline-block;
-`
+`;
 
 function ShareButtons({ twitterHandle, url, title, tags }) {
   return (
@@ -43,7 +43,7 @@ function ShareButtons({ twitterHandle, url, title, tags }) {
         <WhatsappIcon size="48" round="true" />
       </WhatsappShareButton>
     </div>
-  )
+  );
 }
 
-export default ShareButtons
+export default ShareButtons;
