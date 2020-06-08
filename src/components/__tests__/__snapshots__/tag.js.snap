@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tag renders correctly 1`] = `
+<button
+  className="sc-bdVaJa jqdVfZ my-tag"
+  id="my-tag-text"
+>
+  my-tag-text
+</button>
+`;

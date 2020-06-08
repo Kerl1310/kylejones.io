@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Skills renders correctly 1`] = `
+<div
+  className="sc-bwzfXH jwfMIB"
+>
+  <h1>
+    Skills
+  </h1>
+  <div
+    className="sc-bdVaJa jQkEGY"
+  >
+    <label
+      htmlFor="my-skill-bar"
+    >
+      my-skill
+    </label>
+    <div
+      className="skill__bar"
+      id="my-skill-bar"
+    >
+      <div
+        className="skill__level"
+      />
+    </div>
+  </div>
+</div>
+`;

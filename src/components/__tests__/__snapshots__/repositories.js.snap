@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Repositories renders correctly 1`] = `
+<div
+  className="sc-bwzfXH cPAiWF"
+>
+  <h2>
+    Latest repositories on Github
+  </h2>
+  <div
+    className="repositories__loader"
+  >
+    <div
+      className="sc-bdVaJa lbHbBB"
+    >
+      <div />
+      <div />
+      <div />
+      <div />
+    </div>
+  </div>
+</div>
+`;

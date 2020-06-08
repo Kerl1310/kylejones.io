@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wrapper renders correctly 1`] = `
+<main
+  className="sc-bdVaJa hNWmWv my-wrapper"
+  role="main"
+/>
+`;
