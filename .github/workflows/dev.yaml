@@ -28,4 +28,4 @@ jobs:
             SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
 
       - name: Test
-        run: jest
+        run: yarn run test

@@ -10,6 +10,9 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v2
 
+      - name: Lint
+        run: yarn run lint
+        
       - name: Build and Deploy to Github Pages
         uses: enriikke/gatsby-gh-pages-action@v2
         env:

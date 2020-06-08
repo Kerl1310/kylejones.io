@@ -14,7 +14,7 @@ exports[`Articles renders correctly 1`] = `
   >
      
     <div
-      className="sc-bwzfXH hLZZVN recent-articles-link-container"
+      className="sc-bwzfXH lnbGxt recent-articles-link-container"
       id="recent-articles-link-container-/my-path"
     >
       <a
@@ -32,7 +32,7 @@ exports[`Articles renders correctly 1`] = `
       </a>
     </div>
     <div
-      className="sc-bwzfXH hLZZVN recent-articles-link-container"
+      className="sc-bwzfXH lnbGxt recent-articles-link-container"
       id="recent-articles-link-container-/my-second-path"
     >
       <a

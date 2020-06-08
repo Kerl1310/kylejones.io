@@ -70,7 +70,7 @@
     "clean": "gh-pages-clean",
     "deploy": "gatsby build --prefix-paths && gh-pages-clean && gh-pages -d public -b master -r https://$GH_TOKEN@github.com/kerl1310/kylejones.io.git",
     "lint": "prettier --write \"src/**/*.js\"",
-    "test": "jest"
+    "test": "jest -u"
   },
   "repository": {
     "type": "git",
