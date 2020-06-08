@@ -8,7 +8,7 @@ import siteConfig from '../../data/siteConfig';
 import Layout from '../components/layout';
 import Hero from '../components/hero';
 import Wrapper from '../components/wrapper';
-import SEO from '../components/SEO';
+import SEO from '../components/seo';
 import ShareButtons from '../components/shareButtons';
 
 const Separator = styled.hr`
