@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero renders correctly 1`] = `
+<div
+  className="sc-bdVaJa gjdwiW sc-bxivhb cCNszn"
+>
+  <div
+    className="sc-bwzfXH GNvwd"
+  >
+    <h1
+      className="sc-htpNat UaOJJ"
+    >
+      my-title
+    </h1>
+  </div>
+</div>
+`;

@@ -26,7 +26,7 @@ function ShareButtons({ twitterHandle, url, title, tags }) {
       <FacebookShareButton url={url}>
         <FacebookIcon size="48" round="true" />
       </FacebookShareButton>
-      <Spacer/>
+      <Spacer />
       <TwitterShareButton url={url} title={title} hashtags={tags}>
         <TwitterIcon size="48" round="true" />
       </TwitterShareButton>
