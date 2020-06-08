@@ -2,7 +2,7 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import { StaticQuery } from 'gatsby'
 
-import SEO from '../seo'
+import SEO from '../SEO'
 
 beforeEach(() => {
   StaticQuery.mockImplementationOnce(({ render }) =>

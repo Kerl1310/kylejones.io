@@ -1,8 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import siteConfig from '../../../data/siteConfig'
 
-import Wrapper from '../Wrapper'
+import Wrapper from '../wrapper'
 
 describe('Wrapper', () => {
   it('renders correctly', () => {
