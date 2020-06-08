@@ -69,7 +69,7 @@
     "start": "npm run develop",
     "clean": "gh-pages-clean",
     "deploy": "gatsby build --prefix-paths && gh-pages-clean && gh-pages -d public -b master -r https://$GH_TOKEN@github.com/kerl1310/kylejones.io.git",
-    "format": "prettier --write \"src/**/*.js\"",
+    "lint": "prettier --write \"src/**/*.js\"",
     "test": "jest"
   },
   "repository": {
