@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       - name: Build
-      - uses: jzweifel/gatsby-cli-github-action@master
+        uses: jzweifel/gatsby-cli-github-action@master
         env:
             GA_ID: ${{ secrets.GA_ID }}
             GH_TOKEN: ${{ secrets.GH_TOKEN }}
