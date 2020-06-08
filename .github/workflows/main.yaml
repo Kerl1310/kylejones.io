@@ -31,7 +31,7 @@ jobs:
         run: yarn run test
 
       - name: Build and Deploy to Github Pages
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/master-source'
         uses: enriikke/gatsby-gh-pages-action@v2
         env:
           GA_ID: ${{ secrets.GA_ID }}
