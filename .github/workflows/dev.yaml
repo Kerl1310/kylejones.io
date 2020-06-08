@@ -25,11 +25,3 @@ jobs:
 
       - name: Test
         run: jest
-
-
-      - name: Build and Deploy to Github Pages
-      - uses: enriikke/gatsby-gh-pages-action@v2
-        
-        with:
-          access-token: ${{ secrets.GH_TOKEN }}
-          deploy-branch: master
