@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Articles renders correctly 1`] = `
+<div
+  className="recent-articles-container"
+>
+  <h2
+    className="recent-articles-title"
+  >
+    Recent Articles
+  </h2>
+  <div
+    className="sc-bdVaJa iDvsqb recent-articles-link-group-container"
+  >
+     
+    <div
+      className="sc-bwzfXH hLZZVN recent-articles-link-container"
+      id="recent-articles-link-container-/my-path"
+    >
+      <a
+        className="recent-articles-link"
+        href="/my-path"
+        id="recent-articles-link-/my-path"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        rel="noopener noreferrer"
+        target="__blank"
+      >
+        <strong>
+          my-title
+        </strong>
+      </a>
+    </div>
+    <div
+      className="sc-bwzfXH hLZZVN recent-articles-link-container"
+      id="recent-articles-link-container-/my-second-path"
+    >
+      <a
+        className="recent-articles-link"
+        href="/my-second-path"
+        id="recent-articles-link-/my-second-path"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        rel="noopener noreferrer"
+        target="__blank"
+      >
+        <strong>
+          my-second-title
+        </strong>
+      </a>
+    </div>
+  </div>
+</div>
+`;

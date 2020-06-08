@@ -32,7 +32,13 @@ function BlogTemplate({ data }) {
   const featuredImageUrl = siteConfig.pathPrefix + post.frontmatter.featuredImage
   return (
     <Layout location={post.frontmatter.path}>
-      <SEO title={post.frontmatter.title} keywords={keywords} description={post.excerpt} featuredImage={featuredImageUrl} url={fullUrl} />
+      <SEO
+        title={post.frontmatter.title}
+        keywords={keywords}
+        description={post.excerpt}
+        featuredImage={featuredImageUrl}
+        url={fullUrl}
+      />
       <Hero heroImg={siteConfig.siteCover} title={title} />
       <Wrapper>
         <Container className="page-content" fluid>
@@ -48,7 +54,7 @@ function BlogTemplate({ data }) {
                   <h1>{post.frontmatter.title}</h1>{' '}
                   {post.frontmatter.tags.map(tag => (
                     <React.Fragment key={tag}>
-                      <Tag text={tag} className="blog-post-tag"/>
+                      <Tag text={tag} className="blog-post-tag" />
                     </React.Fragment>
                   ))}
                   <Separator />
@@ -57,7 +63,12 @@ function BlogTemplate({ data }) {
                     dangerouslySetInnerHTML={{ __html: post.html }}
                   />{' '}
                 </div>{' '}
-                <ShareButtons/>
+                <ShareButtons
+                  twitterHandle={siteConfig.twitterUsername}
+                  url={fullUrl}
+                  title={post.frontmatter.title}
+                  tags={post.frontmatter.tags}
+                />
               </div>
             </Col>
           </Row>

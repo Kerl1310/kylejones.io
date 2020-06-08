@@ -25,20 +25,29 @@ function Articles() {
       render={data => {
         const articleLinks = data.allMarkdownRemark.edges
         return (
-          <div className="recentArticles">
-            <h2>Recent Articles</h2>
-            <ArticleLinkGroup>
+          <div className="recent-articles-container">
+            <h2 className="recent-articles-title">Recent Articles</h2>
+            <ArticleLinkGroup className="recent-articles-link-group-container">
               {' '}
               {articleLinks.map(articleLink => (
-                <ArticleLink>
-                  <Link
-                    to={articleLink.node.frontmatter.path}
-                    target="__blank"
-                    rel="noopener noreferrer"
+                <React.Fragment key={articleLink.node.frontmatter.path}>
+                  <ArticleLink
+                    className="recent-articles-link-container"
+                    id={
+                      `recent-articles-link-container-${articleLink.node.frontmatter.path}`
+                    }
                   >
-                    <strong>{articleLink.node.frontmatter.title}</strong>
-                  </Link>
-                </ArticleLink>
+                    <Link
+                      className="recent-articles-link"
+                      id={`recent-articles-link-${articleLink.node.frontmatter.path}`}
+                      to={articleLink.node.frontmatter.path}
+                      target="__blank"
+                      rel="noopener noreferrer"
+                    >
+                      <strong>{articleLink.node.frontmatter.title}</strong>
+                    </Link>
+                  </ArticleLink>
+                </React.Fragment>
               ))}
             </ArticleLinkGroup>
           </div>
