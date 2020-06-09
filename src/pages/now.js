@@ -40,7 +40,7 @@ class Now extends React.Component {
                     <Col>
                       <div>
                         <h1>What I'm Up To Now</h1>
-                        <h2>Last Updated: 05/06/2020</h2>
+                        <h2>Last Updated: {data.site.buildTime}</h2>
                       </div>
                     </Col>
                   </Row>
@@ -147,6 +147,9 @@ export default styled(Now)`
 
 const nowQuery = graphql`
   query NowQuery {
+    site {
+      buildTime(formatString: "DD/MM/YYYY")
+    }
     goodreadsBook(shelfNames: { eq: "currently-reading" }) {
       book {
         authors {
