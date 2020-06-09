@@ -1,7 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 
-const TagButton = styled.button`
+const Tag = ({ className, text, path }) => {
+  return (
+    <Link
+      id={text}
+      className={className}
+      to={path}
+      target="__blank"
+      rel="noopener noreferrer"
+    >
+      {text}
+    </Link>
+  )
+}
+
+export default styled(Tag)`
   background-color: #25303b;
   color: white;
   border-radius: 5px 5px 5px;
@@ -28,13 +43,3 @@ const TagButton = styled.button`
     transition-duration: 0.3s;
   }
 `
-
-const Tag = ({ className, text }) => {
-  return (
-    <TagButton id={text} className={className}>
-      {text}
-    </TagButton>
-  )
-}
-
-export default Tag

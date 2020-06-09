@@ -31,6 +31,7 @@ function BlogTemplate({ data }) {
   const fullUrl = siteConfig.pathPrefix + post.frontmatter.path
   const featuredImageUrl =
     siteConfig.pathPrefix + post.frontmatter.featuredImage
+
   return (
     <Layout location={post.frontmatter.path}>
       <SEO
@@ -55,7 +56,11 @@ function BlogTemplate({ data }) {
                   <h1>{post.frontmatter.title}</h1>{' '}
                   {post.frontmatter.tags.map(tag => (
                     <React.Fragment key={tag}>
-                      <Tag text={tag} className="blog-post-tag" />
+                      <Tag
+                        className="blog-post-tag"
+                        path={`/tags/${tag}`}
+                        text={tag}
+                      />
                     </React.Fragment>
                   ))}
                   <Separator />
