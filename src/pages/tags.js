@@ -20,7 +20,7 @@ class TagsPage extends React.Component {
       );
     }
 
-    const { keywords, title } = siteConfig;
+    const { keywords, siteTitle, siteUrl } = siteConfig;
 
     return (
       <StaticQuery
@@ -30,8 +30,13 @@ class TagsPage extends React.Component {
 
           return (
             <Layout location={this.props.location}>
-              <SEO title={title} keywords={keywords} />
-              <Hero heroImg={siteConfig.siteCover} title={title} />
+              <SEO
+                title={siteTitle}
+                keywords={keywords}
+                description={`Listing page for all tags`}
+                url={`${siteUrl}tags`}
+              />
+              <Hero heroImg={siteConfig.siteCover} title={siteTitle} />
               <Wrapper className={this.props.className}>
                 <Container className="page-content" fluid>
                   <Row>
