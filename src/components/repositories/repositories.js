@@ -1,28 +1,28 @@
-import React from 'react'
-import jsonFetch from 'simple-json-fetch'
-import styled from 'styled-components'
-import siteConfig from '../../../data/siteConfig'
+import React from 'react';
+import jsonFetch from 'simple-json-fetch';
+import styled from 'styled-components';
+import siteConfig from '../../../data/siteConfig';
 
-import Loader from '../loader'
+import Loader from '../loader';
 
-const endpoint = `https://api.github.com/users/${siteConfig.githubUsername}/repos?type=owner&sort=updated&per_page=5&page=1`
+const endpoint = `https://api.github.com/users/${siteConfig.githubUsername}/repos?type=owner&sort=updated&per_page=5&page=1`;
 
 class Repositories extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       repos: [],
       status: 'loading',
-    }
+    };
   }
   async componentDidMount() {
-    const repos = await jsonFetch(endpoint)
+    const repos = await jsonFetch(endpoint);
     if (repos.json && repos.json.length) {
-      this.setState({ repos: repos.json, status: 'ready' })
+      this.setState({ repos: repos.json, status: 'ready' });
     }
   }
   render() {
-    const { status } = this.state
+    const { status } = this.state;
     return (
       <div className={this.props.className}>
         <h2>Latest repositories on Github</h2>
@@ -55,7 +55,7 @@ class Repositories extends React.Component {
           </React.Fragment>
         )}
       </div>
-    )
+    );
   }
 }
 
@@ -92,4 +92,4 @@ export default styled(Repositories)`
   hr {
     margin-top: 16px;
   }
-`
+`;
