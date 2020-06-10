@@ -1,7 +1,7 @@
-import React from 'react'
-import renderer from 'react-test-renderer'
+import React from 'react';
+import renderer from 'react-test-renderer';
 
-import ShareButtons from '../shareButtons'
+import ShareButtons from '../shareButtons';
 
 describe('ShareButtons', () => {
   it('renders correctly', () => {
@@ -14,7 +14,7 @@ describe('ShareButtons', () => {
           tags="my-tag"
         />
       )
-      .toJSON()
-    expect(tree).toMatchSnapshot()
-  })
-})
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});

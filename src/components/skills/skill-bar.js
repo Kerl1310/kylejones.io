@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const SkillBar = ({ className, name, level }) => {
   return (
@@ -9,10 +9,10 @@ const SkillBar = ({ className, name, level }) => {
         <div className="skill__level"></div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-SkillBar.displaName = 'SkillBar'
+SkillBar.displaName = 'SkillBar';
 
 export default styled(SkillBar)`
   width: 100%;
@@ -27,4 +27,4 @@ export default styled(SkillBar)`
     width: ${p => p.level || 0}%;
     height: 8px;
   }
-`
+`;

@@ -1,25 +1,25 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-import Layout from '../components/layout'
-import Hero from '../components/hero'
-import Wrapper from '../components/wrapper'
-import SEO from '../components/SEO'
+import Layout from '../components/layout';
+import Hero from '../components/hero';
+import Wrapper from '../components/wrapper';
+import SEO from '../components/SEO';
 
 const MainTitle = styled.h1`
   line-height: 1.5;
   text-align: center;
   font-size: 3rem;
-`
+`;
 
 const Icon = styled.div`
   width: 150px;
   margin: 0 auto;
-`
+`;
 
 const Text = styled.p`
   text-align: center;
-`
+`;
 
 class NotFoundPage extends React.Component {
   render() {
@@ -38,8 +38,8 @@ class NotFoundPage extends React.Component {
           </Text>
         </Wrapper>
       </Layout>
-    )
+    );
   }
 }
 
-export default NotFoundPage
+export default NotFoundPage;

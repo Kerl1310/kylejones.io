@@ -1,8 +1,8 @@
-import React from 'react'
-import renderer from 'react-test-renderer'
-import { StaticQuery } from 'gatsby'
+import React from 'react';
+import renderer from 'react-test-renderer';
+import { StaticQuery } from 'gatsby';
 
-import SEO from '../SEO'
+import SEO from '../SEO';
 
 beforeEach(() => {
   StaticQuery.mockImplementationOnce(({ render }) =>
@@ -15,8 +15,8 @@ beforeEach(() => {
         },
       },
     })
-  )
-})
+  );
+});
 
 describe('SEO', () => {
   it('renders correctly', () => {
@@ -30,7 +30,7 @@ describe('SEO', () => {
           featuredImage="https://localhost/my-article-image.jpg"
         />
       )
-      .toJSON()
-    expect(tree).toMatchSnapshot()
-  })
-})
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
