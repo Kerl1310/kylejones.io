@@ -55,8 +55,8 @@ class Blog extends React.Component {
                         {articleLinks.map(articleLink => (
                           <li
                             id={`blog-post-${articleLink.node.frontmatter.date}`}
-                            className="blog-post"
-                          >
+                            key={`blog-post-${articleLink.node.frontmatter.date}`}
+                            className="blog-post">
                             <div className="blog-post-date">
                               <h4>
                                 {new Date(
@@ -81,7 +81,7 @@ class Blog extends React.Component {
                 </Container>
               </Wrapper>
             </Layout>
-          )
+          );
         }}
       />
     )

@@ -8,6 +8,19 @@ import Wrapper from '../components/wrapper'
 import SEO from '../components/SEO'
 import { Link, graphql } from 'gatsby'
 
+const BlogPostListItem = styled.li`
+  list-style-type: none;
+  margin-left: 0;
+  width: 100%;
+`;
+
+const BlogPostList = styled.ul`
+  list-style-type: none;
+  margin-left: 0;
+  width: 100%;
+`;
+
+
 const googleAnalyticsId = process.env.GA_ID
 
 function TagPage({ pageContext, data }) {
@@ -18,11 +31,9 @@ function TagPage({ pageContext, data }) {
     )
   }
 
-  const siteTitle = siteConfig.siteTitle
-  const { keywords } = siteConfig
-  const tag = pageContext.tag
-  const totalCount = data.allMarkdownRemark.totalCount
-  const edges = data.allMarkdownRemark.edges
+  const { siteTitle, siteCover, pathPrefix, keywords } = siteConfig;
+  const { tag } = pageContext
+  const { edges, totalCount } = data.allMarkdownRemark
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? '' : 's'
   } tagged with "${tag}"`
@@ -34,9 +45,9 @@ function TagPage({ pageContext, data }) {
         title={`${tag} listing page`}
         keywords={keywords}
         description={`Listing page for blog posts with the tag ${tag}`}
-        url={`${siteConfig.pathPrefix}${tagPath}`}
+        url={`${pathPrefix}${tagPath}`}
       />
-      <Hero heroImg={siteConfig.siteCover} title={siteTitle} />
+      <Hero heroImg={siteCover} title={siteTitle} />
       <Wrapper>
         <Container className="page-content" fluid>
           <Row>
@@ -48,24 +59,38 @@ function TagPage({ pageContext, data }) {
           </Row>
           <Row>
             <Col>
-              <ul>
-                {edges.map(({ node }) => {
-                  const path = node.frontmatter.path
-                  const articleTitle = node.frontmatter.title
-                  return (
-                    <li key={path}>
-                      <Link to={path}>{articleTitle}</Link>
-                    </li>
-                  )
-                })}
-              </ul>
-              <Link to="/tags">All tags</Link>
+              <BlogPostList>
+                {edges.map(articleLink => (
+                  <BlogPostListItem
+                    className="blog-post"
+                    key={articleLink.node.frontmatter.path}
+                    id={articleLink.node.frontmatter.path}
+                  >
+                    <div className="blog-post-date">
+                      <h4>
+                        {new Date(
+                          articleLink.node.frontmatter.date
+                        ).toLocaleDateString('en-GB')}
+                      </h4>
+                    </div>
+                    <Link
+                      to={articleLink.node.frontmatter.path}
+                      target="__blank"
+                      rel="noopener noreferrer"
+                    >
+                      {articleLink.node.frontmatter.title}
+                    </Link>
+                    {/* <p>{articleLink.node.excerpt}</p> */}
+                  </BlogPostListItem>
+                ))}
+              </BlogPostList>
             </Col>
           </Row>
+          <Link to="/tags">All tags</Link>
         </Container>
       </Wrapper>
     </Layout>
-  )
+  );
 }
 
 export default styled(TagPage)`
@@ -88,7 +113,11 @@ export default styled(TagPage)`
   ul li:last-child hr {
     display: none;
   }
-`
+
+  .blog-post-date {
+    font-size: 12px;
+  }
+`;
 
 export const pageQuery = graphql`
   query($tag: String) {

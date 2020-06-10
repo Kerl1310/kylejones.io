@@ -21,14 +21,13 @@ class TagsPage extends React.Component {
       )
     }
 
-    const title = siteConfig.siteTitle
-    const { keywords } = siteConfig
+    const { keywords, title } = siteConfig
 
     return (
       <StaticQuery
         query={pageQuery}
         render={data => {
-          const group = data.allMarkdownRemark.group
+          const { group } = data.allMarkdownRemark
 
           return (
             <Layout location={this.props.location}>
