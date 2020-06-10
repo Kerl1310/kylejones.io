@@ -1,16 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import kebabCase from 'lodash/kebabCase'
-import { Link, StaticQuery, graphql } from 'gatsby'
-import styled from 'styled-components'
-import { Container, Row, Col } from 'react-awesome-styled-grid'
-import siteConfig from '../../data/siteConfig'
-import Layout from '../components/layout'
-import Hero from '../components/hero'
-import Wrapper from '../components/wrapper'
-import SEO from '../components/SEO'
+import React from 'react';
+import kebabCase from 'lodash/kebabCase';
+import { Link, StaticQuery, graphql } from 'gatsby';
+import styled from 'styled-components';
+import { Container, Row, Col } from 'react-awesome-styled-grid';
+import siteConfig from '../../data/siteConfig';
+import Layout from '../components/layout';
+import Hero from '../components/hero';
+import Wrapper from '../components/wrapper';
+import SEO from '../components/SEO';
 
-const googleAnalyticsId = process.env.GA_ID
+const googleAnalyticsId = process.env.GA_ID;
 
 class TagsPage extends React.Component {
   render() {
@@ -18,16 +17,16 @@ class TagsPage extends React.Component {
     if (googleAnalyticsId === 'UA-000000000-1') {
       console.error(
         'WARNING: Please set a proper googleAnalyticsId. See https://analytics.google.com for details.'
-      )
+      );
     }
 
-    const { keywords, title } = siteConfig
+    const { keywords, title } = siteConfig;
 
     return (
       <StaticQuery
         query={pageQuery}
         render={data => {
-          const { group } = data.allMarkdownRemark
+          const { group } = data.allMarkdownRemark;
 
           return (
             <Layout location={this.props.location}>
@@ -59,10 +58,10 @@ class TagsPage extends React.Component {
                 </Container>
               </Wrapper>
             </Layout>
-          )
+          );
         }}
       />
-    )
+    );
   }
 }
 
@@ -86,7 +85,7 @@ export default styled(TagsPage)`
   ul li:last-child hr {
     display: none;
   }
-`
+`;
 
 export const pageQuery = graphql`
   query {
@@ -102,4 +101,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

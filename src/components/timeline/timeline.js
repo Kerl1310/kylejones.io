@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import { config } from 'react-awesome-styled-grid'
-import siteConfig from '../../../data/siteConfig'
+import React from 'react';
+import styled from 'styled-components';
+import { config } from 'react-awesome-styled-grid';
+import siteConfig from '../../../data/siteConfig';
 
 const Timeline = ({ className }) => {
   return (
@@ -29,8 +29,8 @@ const Timeline = ({ className }) => {
           </article>
         ))}
     </div>
-  )
-}
+  );
+};
 
 export default styled(Timeline)`
   position: relative;
@@ -159,4 +159,4 @@ export default styled(Timeline)`
     background: #fff;
   }
   `}
-`
+`;

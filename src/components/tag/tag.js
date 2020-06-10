@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Link } from 'gatsby'
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 const Tag = ({ className, text, path }) => {
   return (
@@ -13,8 +13,8 @@ const Tag = ({ className, text, path }) => {
     >
       {text}
     </Link>
-  )
-}
+  );
+};
 
 export default styled(Tag)`
   background-color: #25303b;
@@ -42,4 +42,4 @@ export default styled(Tag)`
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
   }
-`
+`;

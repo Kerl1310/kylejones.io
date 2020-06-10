@@ -1,8 +1,8 @@
-import React from 'react'
-import renderer from 'react-test-renderer'
-import { StaticQuery } from 'gatsby'
+import React from 'react';
+import renderer from 'react-test-renderer';
+import { StaticQuery } from 'gatsby';
 
-import Articles from '../articles'
+import Articles from '../articles';
 
 beforeEach(() => {
   StaticQuery.mockImplementationOnce(({ render }) =>
@@ -34,12 +34,12 @@ beforeEach(() => {
         ],
       },
     })
-  )
-})
+  );
+});
 
 describe('Articles', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<Articles />).toJSON()
-    expect(tree).toMatchSnapshot()
-  })
-})
+    const tree = renderer.create(<Articles />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});

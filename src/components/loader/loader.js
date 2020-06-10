@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const Loader = ({ className }) => {
   return (
@@ -9,8 +9,8 @@ const Loader = ({ className }) => {
       <div></div>
       <div></div>
     </div>
-  )
-}
+  );
+};
 
 export default styled(Loader)`
   display: inline-block;
@@ -47,4 +47,4 @@ export default styled(Loader)`
       transform: rotate(360deg);
     }
   }
-`
+`;

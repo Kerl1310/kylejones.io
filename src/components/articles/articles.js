@@ -1,13 +1,13 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-import Link from 'gatsby-link'
-import styled from 'styled-components'
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Link from 'gatsby-link';
+import styled from 'styled-components';
 
 const ArticleLinkGroup = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
-`
+`;
 
 const ArticleLink = styled.div`
   display: block;
@@ -16,14 +16,14 @@ const ArticleLink = styled.div`
   :not(:last-of-type) {
     margin-bottom: 16px;
   }
-`
+`;
 
 function Articles() {
   return (
     <StaticQuery
       query={articlesQuery}
       render={data => {
-        const articleLinks = data.allMarkdownRemark.edges
+        const articleLinks = data.allMarkdownRemark.edges;
         return (
           <div className="recent-articles-container">
             <h2 className="recent-articles-title">Recent Articles</h2>
@@ -49,10 +49,10 @@ function Articles() {
               ))}
             </ArticleLinkGroup>
           </div>
-        )
+        );
       }}
     />
-  )
+  );
 }
 
 export default styled(Articles)`
@@ -63,7 +63,7 @@ export default styled(Articles)`
     list-style-type: none; /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
     list-style-position: inside;
   }
-`
+`;
 
 const articlesQuery = graphql`
   query ArticlesQuery {
@@ -84,4 +84,4 @@ const articlesQuery = graphql`
       }
     }
   }
-`
+`;

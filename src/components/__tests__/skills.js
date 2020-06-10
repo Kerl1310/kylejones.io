@@ -1,7 +1,7 @@
-import React from 'react'
-import renderer from 'react-test-renderer'
+import React from 'react';
+import renderer from 'react-test-renderer';
 
-import Skills from '../skills'
+import Skills from '../skills';
 
 describe('Skills', () => {
   it('renders correctly', () => {
@@ -17,7 +17,7 @@ describe('Skills', () => {
           ]}
         />
       )
-      .toJSON()
-    expect(tree).toMatchSnapshot()
-  })
-})
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});

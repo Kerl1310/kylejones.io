@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Wrapper = styled.main.attrs({
   role: 'main',
@@ -20,6 +20,6 @@ const Wrapper = styled.main.attrs({
     width: 90%;
     padding: 25px;
   }
-`
+`;
 
-export default Wrapper
+export default Wrapper;
