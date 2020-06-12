@@ -1,11 +1,11 @@
-import React from 'react'
-import renderer from 'react-test-renderer'
+import React from 'react';
+import renderer from 'react-test-renderer';
 
-import Repositories from '../repositories'
+import Repositories from '../repositories';
 
 describe('Repositories', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<Repositories />).toJSON()
-    expect(tree).toMatchSnapshot()
-  })
-})
+    const tree = renderer.create(<Repositories />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
