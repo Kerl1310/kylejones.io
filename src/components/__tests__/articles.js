@@ -12,22 +12,22 @@ beforeEach(() => {
           {
             node: {
               frontmatter: {
-                path: '/my-path',
-                date: '01-01-0001',
+                path: './my-path',
+                date: '01-01-2001',
                 title: 'my-title',
                 isFeatured: true,
-                featuredImage: '/my-image.png',
+                featuredImage: './my-image.png',
               },
             },
           },
           {
             node: {
               frontmatter: {
-                path: '/my-second-path',
-                date: '02-02-0002',
+                path: './my-second-path',
+                date: '02-02-2002',
                 title: 'my-second-title',
                 isFeatured: false,
-                featuredImage: '/my-second-image.jpg',
+                featuredImage: './my-second-image.jpg',
               },
             },
           },
