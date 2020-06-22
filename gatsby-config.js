@@ -9,6 +9,7 @@ const goodreadsApiKey = process.env.GOODREADS_KEY;
 const spotifyId = process.env.SPOTIFY_CLIENT_ID;
 const spotifySecret = process.env.SPOTIFY_CLIENT_SECRET;
 const spotifyRefreshToken = process.env.SPOTIFY_REFRESH_TOKEN;
+const omdbKey = process.env.OMDB_KEY;
 
 module.exports = {
   siteMetadata: {
@@ -22,6 +23,16 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: '@kerl1310/gatsby-source-omdb',
+      options: {
+        apiKey: omdbKey,
+        text: 'Star Wars: Rebels',
+        type: 'series',
+        returnType: 'json',
+        plot: 'full'
+      },
+    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
