@@ -12,21 +12,21 @@ function SEO({ description, lang, meta, keywords, title, featuredImage, url }) {
           description || data.site.siteMetadata.description;
         return (
           <React.Fragment>
-            <script type="application/ld+json">
+            <script data-schema="Author" type="application/ld+json">
               {' '}
               {`
           {
-            "@context": "https://schema.org",
-            "@type": "Author",
-            "birthDate": "1992-10-13",
-            "email": "kylejones1310@outlook.com",
-            "gender": "Male",
-            "jobTitle": "Senior Software Engineer",
-            "knowsLanguage": "English",
-            "name": "Kyle Jones",
-            "telephone": "07432 829513",
-            "url": "https://kylejones.io"
-            "name": "Kyle Jones",
+            \"@context\": \"https://schema.org\",
+            \"@type\": \"Author\",
+            \"birthDate\": \"1992-10-13\",
+            \"email\": \"kylejones1310@outlook.com\\",
+            \"gender\": \"Male\",
+            \"jobTitle\": \"Senior Software Engineer\",
+            \"knowsLanguage\": \"English\",
+            \"name\": \"Kyle Jones\",
+            \"telephone\": \"07432 829513\",
+            \"url\": \"https://kylejones.io\"
+            \"name\": \"Kyle Jones\",
           }
         `}
             </script>
