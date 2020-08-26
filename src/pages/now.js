@@ -85,13 +85,13 @@ class Now extends React.Component {
                             </a>
                           </li>
                           <li>
-                            <strong>Watching:</strong> Star Wars: Rebels
+                            <strong>Watching:</strong> Star Wars: The Clone Wars
                           </li>
                           <li>
-                            <strong>Learning about:</strong> Gatsby and React
+                            <strong>Learning about:</strong> Machine Learning and React
                           </li>
                           <li>
-                            <strong>Working on:</strong> This website,
+                            <strong>Working on:</strong> New blog posts,
                             decorating our new home and training our new puppy,
                             Archie.
                           </li>
