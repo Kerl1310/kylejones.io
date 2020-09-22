@@ -21,6 +21,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-preact`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-feed`,
