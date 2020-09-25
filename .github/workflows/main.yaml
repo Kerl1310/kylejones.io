@@ -3,6 +3,7 @@ on:
   push:
     branches-ignore:
       - master
+      - production
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,7 +32,7 @@ jobs:
         run: yarn run test
 
       - name: Build and Deploy to Github Pages
-        if: github.ref == 'refs/heads/master-source'
+        if: github.ref == 'refs/heads/production-source'
         uses: enriikke/gatsby-gh-pages-action@v2
         env:
           GA_ID: ${{ secrets.GA_ID }}
@@ -43,4 +44,4 @@ jobs:
           SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
         with:
           access-token: ${{ secrets.GH_TOKEN }}
-          deploy-branch: master
+          deploy-branch: production

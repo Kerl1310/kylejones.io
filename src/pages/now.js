@@ -49,7 +49,7 @@ class Now extends React.Component {
                       <div className="now-content">
                         <ul>
                           <li>
-                            <strong>Reading:</strong>{' '}
+                            <strong>Reading: </strong>
                             <a
                               className={`book-link-${book.isbn}`}
                               href={book.link}
@@ -74,7 +74,7 @@ class Now extends React.Component {
                             ))}
                           </li>
                           <li>
-                            <strong>Listening to:</strong>{' '}
+                            <strong>Listening to: </strong>
                             <a
                               className={'artist-link'}
                               href={artist.external_urls.spotify}
@@ -85,15 +85,13 @@ class Now extends React.Component {
                             </a>
                           </li>
                           <li>
-                            <strong>Watching:</strong> Star Wars: Rebels
+                            <strong>Watching: </strong>{siteConfig.now.watching}
                           </li>
                           <li>
-                            <strong>Learning about:</strong> Gatsby and React
+                            <strong>Learning about: </strong>{siteConfig.now.learning}
                           </li>
                           <li>
-                            <strong>Working on:</strong> This website,
-                            decorating our new home and training our new puppy,
-                            Archie.
+                            <strong>Working on: </strong>{siteConfig.now.working_on}
                           </li>
                         </ul>
                       </div>
