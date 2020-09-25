@@ -7,6 +7,11 @@ module.exports = {
   githubUsername: 'kerl1310',
   authorAvatar: '/images/avatar.jpeg',
   authorDescription: `Passionate backend software engineer with significant experience in several programming languages such as <strong>C#</strong>, <strong>C++</strong> and <strong>Python</strong>. I have worked with a variety of tools including <strong>Amazon Web Services</strong> and <strong>Docker</strong>, as well as with established frameworks such as <strong>Serverless</strong> and <strong>Terraform</strong>.<br>When I'm not coding, you can find me reading (especially science fiction novels), going for walks or runs and playing video games.`,
+  now: {
+    watching: "Star Wars: The Clone Wars",
+    learning: "Gatsby, React and TypeScript.",
+    working_on: "This website and more blog posts.",
+  },
   skills: [
     {
       name: 'Amazon Web Services',
