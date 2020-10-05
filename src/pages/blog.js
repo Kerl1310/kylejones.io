@@ -3,7 +3,6 @@ import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'react-awesome-styled-grid';
 import siteConfig from '../../data/siteConfig';
-import Layout from '../components/layout';
 import Hero from '../components/hero';
 import Wrapper from '../components/wrapper';
 import SEO from '../components/SEO';

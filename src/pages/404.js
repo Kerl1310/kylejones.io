@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Layout from '../components/layout';
 import Hero from '../components/hero';
 import Wrapper from '../components/wrapper';
 import SEO from '../components/SEO';

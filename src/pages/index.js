@@ -11,8 +11,6 @@ import {
   FaTwitter,
 } from 'react-icons/fa';
 import siteConfig from '../../data/siteConfig';
-
-import Layout from '../components/layout';
 import Hero from '../components/hero';
 import SEO from '../components/SEO';
 import Wrapper from '../components/wrapper';
