@@ -18,11 +18,18 @@ module.exports = {
     ...config,
   },
   plugins: [
+    `gatsby-plugin-i18n`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-preact`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: `${__dirname}/src/components/layout/layout.js`
+      }
+    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
