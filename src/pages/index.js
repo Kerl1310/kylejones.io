@@ -40,7 +40,7 @@ class Home extends React.Component {
     const title = siteConfig.siteTitle;
     const { keywords } = siteConfig;
     return (
-      <Layout location={this.props.location}>
+      <>
         <SEO title={title} keywords={keywords} />
 
         <Hero heroImg={siteConfig.siteCover} title={title} />
@@ -127,7 +127,7 @@ class Home extends React.Component {
             <Repositories />
           </Container>
         </Wrapper>
-      </Layout>
+      </>
     );
   }
 }

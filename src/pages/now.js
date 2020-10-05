@@ -31,7 +31,7 @@ class Now extends React.Component {
           const artist = data.allSpotifyTopArtist.edges[0].node;
 
           return (
-            <Layout location={this.props.location}>
+            <>
               <SEO title={title} keywords={keywords} />
               <Hero heroImg={siteConfig.siteCover} title={title} />
               <Wrapper className={this.props.className}>
@@ -99,7 +99,7 @@ class Now extends React.Component {
                   </Row>
                 </Container>
               </Wrapper>
-            </Layout>
+            </>
           );
         }}
       />

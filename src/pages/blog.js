@@ -36,7 +36,7 @@ class Blog extends React.Component {
           const articleLinks = data.allMarkdownRemark.edges;
 
           return (
-            <Layout location={this.props.location}>
+            <>
               <SEO title={title} keywords={keywords} />
               <Hero heroImg={siteConfig.siteCover} title={title} />
               <Wrapper className={this.props.className}>
@@ -81,7 +81,7 @@ class Blog extends React.Component {
                   </Row>
                 </Container>
               </Wrapper>
-            </Layout>
+            </>
           );
         }}
       />

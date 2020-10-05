@@ -75,7 +75,7 @@ export default ({ location, data }) => {
   }
 
   return (
-    <Layout>
+    <>
       <SEO title={'404'} />
       <Hero title="" />
       <Wrapper>
@@ -95,7 +95,7 @@ export default ({ location, data }) => {
               </HomeButton>
             </Link>
       </Wrapper>
-    </Layout>
+    </>
   );
 };
 

@@ -33,7 +33,7 @@ function BlogTemplate({ data }) {
     siteConfig.pathPrefix + post.frontmatter.featuredImage;
 
   return (
-    <Layout location={post.frontmatter.path}>
+    <>
       <SEO
         title={post.frontmatter.title}
         keywords={keywords}
@@ -80,7 +80,7 @@ function BlogTemplate({ data }) {
           </Row>
         </Container>
       </Wrapper>
-    </Layout>
+    </>
   );
 }
 
