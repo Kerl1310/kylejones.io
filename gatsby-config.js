@@ -18,7 +18,6 @@ module.exports = {
     ...config,
   },
   plugins: [
-    `gatsby-plugin-i18n`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
