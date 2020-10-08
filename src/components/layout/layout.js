@@ -6,7 +6,7 @@ import Header from '../header';
 const Layout = ({ children, t, i18n }) => {
   return (
       <>
-        <Suspense fallback={<h1>Loading page...</h1>}>
+        {/* <Suspense fallback={<h1>Loading page...</h1>}> */}
           <Header/>
             <ResetCSS />
             <GlobalStyle />
@@ -16,7 +16,7 @@ const Layout = ({ children, t, i18n }) => {
           <footer>
             © {new Date().getFullYear()}
           </footer>
-        </Suspense>
+        {/* </Suspense> */}
       </>
   )
 }
