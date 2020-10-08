@@ -24,6 +24,12 @@ module.exports = {
     `gatsby-plugin-preact`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve('./src/components/layout/layout.js')
+      }
+    },
+    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `

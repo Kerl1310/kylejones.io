@@ -3,7 +3,6 @@ import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'react-awesome-styled-grid';
 import siteConfig from '../../data/siteConfig';
-import Layout from '../components/layout';
 import Hero from '../components/hero';
 import Wrapper from '../components/wrapper';
 import SEO from '../components/SEO';
@@ -31,7 +30,7 @@ class Now extends React.Component {
           const artist = data.allSpotifyTopArtist.edges[0].node;
 
           return (
-            <Layout location={this.props.location}>
+            <>
               <SEO title={title} keywords={keywords} />
               <Hero heroImg={siteConfig.siteCover} title={title} />
               <Wrapper className={this.props.className}>
@@ -99,7 +98,7 @@ class Now extends React.Component {
                   </Row>
                 </Container>
               </Wrapper>
-            </Layout>
+            </>
           );
         }}
       />
