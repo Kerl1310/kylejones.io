@@ -35,11 +35,15 @@ module.exports = {
     },
     {
       name: 'Java',
-      level: 40
+      level: 60
     },
     {
       name: 'Python',
       level: 60
+    },
+    {
+      name: 'React',
+      level: 40
     },
     {
       name: 'Serverless',
@@ -48,6 +52,10 @@ module.exports = {
     {
       name: 'Terraform',
       level: 40
+    },
+    {
+      name: 'TypeScript',
+      level: 50
     }
   ],
   jobs: [
