@@ -156,7 +156,6 @@ const nowQuery = graphql`
         }
         titleWithoutSeries
         link
-        isbn13
       }
     }
     allSpotifyTopArtist(
