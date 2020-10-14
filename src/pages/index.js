@@ -8,7 +8,6 @@ import {
   FaMedium,
   FaStackOverflow,
   FaEnvelope,
-  FaTwitter,
 } from 'react-icons/fa';
 import siteConfig from '../../data/siteConfig';
 import Hero from '../components/hero';
@@ -82,14 +81,6 @@ class Home extends React.Component {
                       <FaMedium className="social-icon" size="32" />
                     </a>
                   )}
-                  {siteConfig.social.twitter && (
-                    <a
-                      className="social-link twitter"
-                      href={siteConfig.social.twitter}
-                    >
-                      <FaTwitter className="social-icon" size="32" />
-                    </a>
-                  )}
                   {siteConfig.social.stackOverflow && (
                     <a
                       className="social-link stackOverflow"
@@ -157,10 +148,6 @@ export default styled(Home)`
   .social-link {
     padding: 8px;
     color: #555;
-  }
-
-  a.social-link.twitter:hover {
-    color: #1da1f2;
   }
 
   a.social-link.dev:hover {
