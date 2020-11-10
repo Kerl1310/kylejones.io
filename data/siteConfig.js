@@ -9,7 +9,7 @@ module.exports = {
   authorDescription: `Passionate backend software engineer with significant experience in several programming languages such as <strong>C#</strong>, <strong>C++</strong> and <strong>Python</strong>. I have worked with a variety of tools including <strong>Amazon Web Services</strong> and <strong>Docker</strong>, as well as with established frameworks such as <strong>Serverless</strong> and <strong>Terraform</strong>.<br>When I'm not coding, you can find me reading (especially science fiction novels), going for walks or runs and playing video games.`,
   now: {
     watching: "Star Wars: The Clone Wars",
-    learning: "Gatsby, React and TypeScript.",
+    learning: "Kubernetes, React, Ruby, TypeScript.",
     working_on: "This website and more blog posts.",
   },
   skills: [
@@ -60,13 +60,25 @@ module.exports = {
   ],
   jobs: [
     {
+      company: 'Made Tech',
+      begin: {
+        month: 'oct',
+        year: '2020',
+      },
+      url: 'https://www.madetech.com/',
+      duration: null,
+      occupation: 'Software Engineer 2',
+      description:
+        '',
+    },
+    {
       company: 'AMPLYFI',
       begin: {
         month: 'may',
         year: '2019',
       },
       url: 'https://www.amplyfi.com/',
-      duration: null,
+      duration: '18 months',
       occupation: 'Senior Software Engineer',
       description:
         'Leading the design, commercialisation and continuous improvement of AMPLYFI’s suite of AI powered business intelligence products including DataVoyant Analyse and DataVoyant Companies.',
@@ -109,7 +121,6 @@ module.exports = {
     },
   ],
   social: {
-    twitter: 'https://twitter.com/kerldev/',
     linkedin: 'https://www.linkedin.com/in/kylejones1310/',
     github: 'https://github.com/kerl1310/',
     medium: 'https://medium.com/@KerlDev',
