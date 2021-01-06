@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import PropTypes from 'prop-types';
 import { ResetCSS, GlobalStyle } from '../styles';
 import Header from '../header';
+import Footer from '../footer';
 
 const Layout = ({ children, t, i18n }) => {
   return (
@@ -13,9 +14,7 @@ const Layout = ({ children, t, i18n }) => {
             <div>
               <main>{children}</main>
             </div>
-          <footer>
-            © {new Date().getFullYear()}
-          </footer>
+          <Footer/>
         {/* </Suspense> */}
       </>
   )
