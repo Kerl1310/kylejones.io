@@ -30,6 +30,8 @@ jobs:
             SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
             SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
             SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+            STEAM_KEY: ${{ secrets.STEAM_KEY }}
+            STEAM_USER: ${{ secrets.STEAM_USER }}
 
       - name: Test
         run: yarn run test
@@ -45,6 +47,8 @@ jobs:
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
           SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+          STEAM_KEY: ${{ secrets.STEAM_KEY }}
+          STEAM_USER: ${{ secrets.STEAM_USER }}
         with:
           access-token: ${{ secrets.GH_TOKEN }}
           deploy-branch: production
