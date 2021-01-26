@@ -5,7 +5,6 @@ import { graphql } from 'gatsby';
 import Tag from '../components/tag';
 import { Container, Row, Col } from 'react-awesome-styled-grid';
 import siteConfig from '../../data/siteConfig';
-import Layout from '../components/layout';
 import Hero from '../components/hero';
 import Wrapper from '../components/wrapper';
 import SEO from '../components/SEO';
@@ -35,7 +34,7 @@ function BlogTemplate({ data }) {
   const canonical = post.frontmatter.canonicalUrl;
 
   return (
-    <Layout location={post.frontmatter.path}>
+    <>
       <SEO
         title={post.frontmatter.title}
         keywords={keywords}
@@ -83,7 +82,7 @@ function BlogTemplate({ data }) {
           </Row>
         </Container>
       </Wrapper>
-    </Layout>
+    </>
   );
 }
 

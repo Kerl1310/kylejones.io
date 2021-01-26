@@ -3,7 +3,6 @@ import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'react-awesome-styled-grid';
 import siteConfig from '../../data/siteConfig';
-import Layout from '../components/layout';
 import Hero from '../components/hero';
 import Wrapper from '../components/wrapper';
 import SEO from '../components/SEO';
@@ -29,9 +28,10 @@ class Now extends React.Component {
           const book = data.goodreadsBook.book;
           const authors = book.authors;
           const artist = data.allSpotifyTopArtist.edges[0].node;
+          const game = data.allSteamGame.edges[0].node;
 
           return (
-            <Layout location={this.props.location}>
+            <>
               <SEO title={title} keywords={keywords} />
               <Hero heroImg={siteConfig.siteCover} title={title} />
               <Wrapper className={this.props.className}>
@@ -49,7 +49,7 @@ class Now extends React.Component {
                       <div className="now-content">
                         <ul>
                           <li>
-                            <strong>Reading:</strong>{' '}
+                            <strong>Reading: </strong>
                             <a
                               className={`book-link-${book.isbn}`}
                               href={book.link}
@@ -74,7 +74,7 @@ class Now extends React.Component {
                             ))}
                           </li>
                           <li>
-                            <strong>Listening to:</strong>{' '}
+                            <strong>Listening to: </strong>
                             <a
                               className={'artist-link'}
                               href={artist.external_urls.spotify}
@@ -85,15 +85,24 @@ class Now extends React.Component {
                             </a>
                           </li>
                           <li>
-                            <strong>Watching:</strong> Star Wars: Rebels
+                            <strong>Watching: </strong>{siteConfig.now.watching}
                           </li>
                           <li>
-                            <strong>Learning about:</strong> Gatsby and React
+                            <strong>Playing: </strong>
+                            <a
+                              className={'game-link'}
+                              href={`https://store.steampowered.com/app/${game.steamId}`}
+                              target='_blank'
+                              rel='noopener noreferrer'
+                            >
+                              {game.name}
+                            </a>
                           </li>
                           <li>
-                            <strong>Working on:</strong> This website,
-                            decorating our new home and training our new puppy,
-                            Archie.
+                            <strong>Learning about: </strong>{siteConfig.now.learning}
+                          </li>
+                          <li>
+                            <strong>Working on: </strong>{siteConfig.now.working_on}
                           </li>
                         </ul>
                       </div>
@@ -101,7 +110,7 @@ class Now extends React.Component {
                   </Row>
                 </Container>
               </Wrapper>
-            </Layout>
+            </>
           );
         }}
       />
@@ -150,7 +159,9 @@ const nowQuery = graphql`
     site {
       buildTime(formatString: "DD/MM/YYYY")
     }
-    goodreadsBook(shelfNames: { eq: "currently-reading" }) {
+    goodreadsBook(
+      shelfNames: { eq: "currently-reading" }
+    ) {
       book {
         authors {
           id
@@ -159,7 +170,21 @@ const nowQuery = graphql`
         }
         titleWithoutSeries
         link
-        isbn13
+      }
+    }
+    allSteamGame(
+      sort: { order: DESC, fields: playtime_2weeks },
+      limit: 1
+    ) {
+      edges {
+        node {
+          steamId
+          name
+          playtime_2weeks
+          playtime_forever
+          img_icon_url
+          img_logo_url
+        }
       }
     }
     allSpotifyTopArtist(

@@ -8,11 +8,8 @@ import {
   FaMedium,
   FaStackOverflow,
   FaEnvelope,
-  FaTwitter,
 } from 'react-icons/fa';
 import siteConfig from '../../data/siteConfig';
-
-import Layout from '../components/layout';
 import Hero from '../components/hero';
 import SEO from '../components/SEO';
 import Wrapper from '../components/wrapper';
@@ -40,7 +37,7 @@ class Home extends React.Component {
     const title = siteConfig.siteTitle;
     const { keywords } = siteConfig;
     return (
-      <Layout location={this.props.location}>
+      <>
         <SEO title={title} keywords={keywords} />
 
         <Hero heroImg={siteConfig.siteCover} title={title} />
@@ -51,7 +48,7 @@ class Home extends React.Component {
               <Col xs={4} className="avatar">
                 <img
                   className="avatar__image"
-                  src="/images/avatar.jpeg"
+                  src={siteConfig.authorAvatar}
                   alt="user avatar"
                 />
                 <div className="social">
@@ -82,14 +79,6 @@ class Home extends React.Component {
                       href={siteConfig.social.medium}
                     >
                       <FaMedium className="social-icon" size="32" />
-                    </a>
-                  )}
-                  {siteConfig.social.twitter && (
-                    <a
-                      className="social-link twitter"
-                      href={siteConfig.social.twitter}
-                    >
-                      <FaTwitter className="social-icon" size="32" />
                     </a>
                   )}
                   {siteConfig.social.stackOverflow && (
@@ -127,7 +116,7 @@ class Home extends React.Component {
             <Repositories />
           </Container>
         </Wrapper>
-      </Layout>
+      </>
     );
   }
 }
@@ -159,10 +148,6 @@ export default styled(Home)`
   .social-link {
     padding: 8px;
     color: #555;
-  }
-
-  a.social-link.twitter:hover {
-    color: #1da1f2;
   }
 
   a.social-link.dev:hover {

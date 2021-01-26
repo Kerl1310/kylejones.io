@@ -9,6 +9,8 @@ const goodreadsApiKey = process.env.GOODREADS_KEY;
 const spotifyId = process.env.SPOTIFY_CLIENT_ID;
 const spotifySecret = process.env.SPOTIFY_CLIENT_SECRET;
 const spotifyRefreshToken = process.env.SPOTIFY_REFRESH_TOKEN;
+const steamKey = process.env.STEAM_KEY;
+const steamUser = process.env.STEAM_USER;
 
 module.exports = {
   siteMetadata: {
@@ -21,7 +23,14 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-preact`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve('./src/components/layout/layout.js')
+      }
+    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -120,6 +129,13 @@ module.exports = {
         fetchRecent: false, // optional. Set to false to disable fetching of your recently played tracks
         timeRanges: ['short_term'], // optional. Set time ranges to be fetched
       },
+    },
+    {
+    resolve: "gatsby-source-steam",
+      options: {
+        api_key: steamKey,
+        user_id: steamUser
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,

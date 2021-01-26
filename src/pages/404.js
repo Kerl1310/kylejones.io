@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Layout from '../components/layout';
 import Hero from '../components/hero';
 import Wrapper from '../components/wrapper';
 import SEO from '../components/SEO';
@@ -75,7 +74,7 @@ export default ({ location, data }) => {
   }
 
   return (
-    <Layout>
+    <>
       <SEO title={'404'} />
       <Hero title="" />
       <Wrapper>
@@ -95,7 +94,7 @@ export default ({ location, data }) => {
               </HomeButton>
             </Link>
       </Wrapper>
-    </Layout>
+    </>
   );
 };
 
