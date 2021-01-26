@@ -31,7 +31,8 @@ function BlogTemplate({ data }) {
   const fullUrl = siteConfig.pathPrefix + post.frontmatter.path;
   const featuredImageUrl =
     siteConfig.pathPrefix + post.frontmatter.featuredImage;
-  const canonical = post.frontmatter.canonicalUrl;
+  const canonicalUrl = post.frontmatter.canonicalUrl;
+  const canonicalText = post.frontmatter.canonicalText;
 
   return (
     <>
@@ -65,7 +66,7 @@ function BlogTemplate({ data }) {
                     </React.Fragment>
                   ))}
                   <Separator />
-                  <BlogCanonicalLink canonical={canonical}/>
+                  <BlogCanonicalLink canonicalUrl={canonicalUrl} canonicalText={canonicalText}/>
                   <div
                     className="blog-post-content"
                     dangerouslySetInnerHTML={{ __html: post.html }}
@@ -73,7 +74,7 @@ function BlogTemplate({ data }) {
                 </div>{' '}
                 <ShareButtons
                   twitterHandle={siteConfig.twitterUsername}
-                  url={canonical}
+                  url={canonicalUrl}
                   title={post.frontmatter.title}
                   tags={post.frontmatter.tags}
                 />
@@ -99,6 +100,7 @@ export const pageQuery = graphql`
         featuredImage
         tags
         canonicalUrl
+        canonicalText
       }
       excerpt(pruneLength: 285)
     }

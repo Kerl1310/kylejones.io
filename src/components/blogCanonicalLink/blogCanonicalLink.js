@@ -7,16 +7,16 @@ const Separator = styled.hr`
   margin-bottom: 16px;
 `;
 
-const BlogCanonicalLink = ({canonical}) => {
-        if (canonical) {
+const BlogCanonicalLink = ({canonicalUrl, canonicalText = null}) => {
+        if (canonicalUrl) {
             return (
             <div>
-                <p>Originally published{' '}
+                <p>Originally published at{' '}
                     <Link
-                        to={canonical}
+                        to={canonicalUrl}
                         target="__blank"
                         rel="noopener noreferrer">
-                        here.
+                        {!!(canonicalText) ? canonicalText : canonicalUrl}
                     </Link>
                 </p>
                 <Separator />

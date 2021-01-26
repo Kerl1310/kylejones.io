@@ -7,6 +7,7 @@ tags:
     - hacktoberfest
 featuredImage: "/how-hacktoberfest-and-open-source-software-are-driving-innovation.png"
 isFeatured: true
+canonicalText: "amplyfi.com"
 canonicalUrl: "https://www.amplyfi.com/2020/10/01/how-hacktoberfest-and-open-source-software-are-driving-innovation"
 ---
 Business landscapes around the world are constantly evolving with every organisation clambering to innovate so that they can better react to the changing conditions in which they exist and uncover new opportunities to help them to drive their growth and profits. However, in a world where true innovation is scarce and many companies resort to rehashing old ideas, how do you foster an environment that truly cultivates ideation?
