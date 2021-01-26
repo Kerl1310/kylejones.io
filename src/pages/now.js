@@ -28,6 +28,7 @@ class Now extends React.Component {
           const book = data.goodreadsBook.book;
           const authors = book.authors;
           const artist = data.allSpotifyTopArtist.edges[0].node;
+          const game = data.allSteamGame.edges[0].node;
 
           return (
             <>
@@ -85,6 +86,17 @@ class Now extends React.Component {
                           </li>
                           <li>
                             <strong>Watching: </strong>{siteConfig.now.watching}
+                          </li>
+                          <li>
+                            <strong>Playing: </strong>
+                            <a
+                              className={'game-link'}
+                              href={`https://store.steampowered.com/app/${game.steamId}`}
+                              target='_blank'
+                              rel='noopener noreferrer'
+                            >
+                              {game.name}
+                            </a>
                           </li>
                           <li>
                             <strong>Learning about: </strong>{siteConfig.now.learning}
@@ -147,7 +159,9 @@ const nowQuery = graphql`
     site {
       buildTime(formatString: "DD/MM/YYYY")
     }
-    goodreadsBook(shelfNames: { eq: "currently-reading" }) {
+    goodreadsBook(
+      shelfNames: { eq: "currently-reading" }
+    ) {
       book {
         authors {
           id
@@ -156,6 +170,21 @@ const nowQuery = graphql`
         }
         titleWithoutSeries
         link
+      }
+    }
+    allSteamGame(
+      sort: { order: DESC, fields: playtime_2weeks },
+      limit: 1
+    ) {
+      edges {
+        node {
+          steamId
+          name
+          playtime_2weeks
+          playtime_forever
+          img_icon_url
+          img_logo_url
+        }
       }
     }
     allSpotifyTopArtist(
