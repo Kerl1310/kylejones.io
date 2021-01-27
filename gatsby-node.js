@@ -44,6 +44,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 featuredImage
                 isFeatured
                 tags
+                canonicalUrl
               }
             }
           }
