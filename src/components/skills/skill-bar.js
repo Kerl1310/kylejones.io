@@ -12,7 +12,7 @@ const SkillBar = ({ className, name, level }) => {
   );
 };
 
-SkillBar.displaName = 'SkillBar';
+SkillBar.displayName = 'SkillBar';
 
 export default styled(SkillBar)`
   width: 100%;

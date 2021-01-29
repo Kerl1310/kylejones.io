@@ -6,6 +6,13 @@ import siteConfig from '../../data/siteConfig';
 import Hero from '../components/hero';
 import Wrapper from '../components/wrapper';
 import SEO from '../components/SEO';
+import Reading from '../components/now/reading';
+import Watching from '../components/now/watching';
+import Listening from '../components/now/listening';
+import Playing from '../components/now/playing';
+import Learning from '../components/now/learning';
+import Working from '../components/now/working';
+
 
 const googleAnalyticsId = process.env.GA_ID;
 
@@ -48,62 +55,12 @@ class Now extends React.Component {
                     <Col>
                       <div className="now-content">
                         <ul>
-                          <li>
-                            <strong>Reading: </strong>
-                            <a
-                              className={`book-link-${book.isbn}`}
-                              href={book.link}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              {book.titleWithoutSeries}
-                            </a>{' '}
-                            by{' '}
-                            {authors.map(author => (
-                              <React.Fragment key={author.id}>
-                                <a
-                                  className={'author-link'}
-                                  id={`author-link-${author.id}`}
-                                  href={author.link}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                >
-                                  {author.name}
-                                </a>
-                              </React.Fragment>
-                            ))}
-                          </li>
-                          <li>
-                            <strong>Listening to: </strong>
-                            <a
-                              className={'artist-link'}
-                              href={artist.external_urls.spotify}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              {artist.name}
-                            </a>
-                          </li>
-                          <li>
-                            <strong>Watching: </strong>{siteConfig.now.watching}
-                          </li>
-                          <li>
-                            <strong>Playing: </strong>
-                            <a
-                              className={'game-link'}
-                              href={`https://store.steampowered.com/app/${game.steamId}`}
-                              target='_blank'
-                              rel='noopener noreferrer'
-                            >
-                              {game.name}
-                            </a>
-                          </li>
-                          <li>
-                            <strong>Learning about: </strong>{siteConfig.now.learning}
-                          </li>
-                          <li>
-                            <strong>Working on: </strong>{siteConfig.now.working_on}
-                          </li>
+                          <Reading book={book} authors={authors}/>
+                          <Listening artist={artist}/>
+                          <Watching/>
+                          <Playing game={game}/>
+                          <Learning/>
+                          <Working/>
                         </ul>
                       </div>
                     </Col>
