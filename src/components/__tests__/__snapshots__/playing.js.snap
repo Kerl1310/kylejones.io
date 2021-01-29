@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Playing renders correctly 1`] = `
+<li>
+  <strong>
+    Playing: 
+  </strong>
+  <a
+    className="game-link"
+    href="https://store.steampowered.com/app/220"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Half Life 2
+  </a>
+</li>
+`;

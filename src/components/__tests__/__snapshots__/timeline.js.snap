@@ -19,6 +19,51 @@ exports[`Timeline renders correctly 1`] = `
         <span
           className="timeline__month"
         >
+          oct
+        </span>
+        <span
+          className="timeline__year"
+        >
+          2020
+        </span>
+      </span>
+      <h2
+        className="timeline__title"
+      >
+        Software Engineer 2
+         at 
+        <a
+          href="https://www.madetech.com/"
+        >
+          Made Tech
+        </a>
+         
+        <br />
+        <small
+          className="timeline__title--small"
+        >
+          (
+          present
+          )
+        </small>
+      </h2>
+      <p>
+        
+      </p>
+    </div>
+  </article>
+  <article
+    className="timeline__item"
+  >
+    <div
+      className="inner"
+    >
+      <span
+        className="timeline__date"
+      >
+        <span
+          className="timeline__month"
+        >
           may
         </span>
         <span
@@ -43,7 +88,7 @@ exports[`Timeline renders correctly 1`] = `
           className="timeline__title--small"
         >
           (
-          present
+          18 months
           )
         </small>
       </h2>

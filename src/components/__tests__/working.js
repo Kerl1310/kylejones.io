@@ -1,14 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import CoffeeButton from '../coffeeButton';
+import Working from '../now/working';
 
-describe('CoffeeButton', () => {
+describe('Working', () => {
   it('renders correctly', () => {
     const tree = renderer
-      .create(
-        <CoffeeButton />
-      )
+      .create(<Working />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Working renders correctly 1`] = `
+<li>
+  <strong>
+    Working on
+    : 
+  </strong>
+  This website and more blog posts.
+</li>
+`;
