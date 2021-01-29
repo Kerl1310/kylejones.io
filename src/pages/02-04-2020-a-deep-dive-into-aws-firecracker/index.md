@@ -4,7 +4,7 @@ date: "2020-04-02"
 title: "A Deep Dive into AWS Firecracker"
 tags:
     - aws
-    - open-source
+    - opensource
     - serverless
 featuredImage: "/aws-firecracker-architecture.png"
 isFeatured: true

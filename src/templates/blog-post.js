@@ -9,6 +9,7 @@ import Hero from '../components/hero';
 import Wrapper from '../components/wrapper';
 import SEO from '../components/SEO';
 import ShareButtons from '../components/shareButtons';
+import BlogCanonicalLink from '../components/blogCanonicalLink';
 
 const Separator = styled.hr`
   margin-top: 16px;
@@ -30,6 +31,8 @@ function BlogTemplate({ data }) {
   const fullUrl = siteConfig.pathPrefix + post.frontmatter.path;
   const featuredImageUrl =
     siteConfig.pathPrefix + post.frontmatter.featuredImage;
+  const canonicalUrl = post.frontmatter.canonicalUrl;
+  const canonicalText = post.frontmatter.canonicalText;
 
   return (
     <>
@@ -63,6 +66,7 @@ function BlogTemplate({ data }) {
                     </React.Fragment>
                   ))}
                   <Separator />
+                  <BlogCanonicalLink canonicalUrl={canonicalUrl} canonicalText={canonicalText}/>
                   <div
                     className="blog-post-content"
                     dangerouslySetInnerHTML={{ __html: post.html }}
@@ -70,7 +74,7 @@ function BlogTemplate({ data }) {
                 </div>{' '}
                 <ShareButtons
                   twitterHandle={siteConfig.twitterUsername}
-                  url={fullUrl}
+                  url={canonicalUrl}
                   title={post.frontmatter.title}
                   tags={post.frontmatter.tags}
                 />
@@ -95,6 +99,8 @@ export const pageQuery = graphql`
         title
         featuredImage
         tags
+        canonicalUrl
+        canonicalText
       }
       excerpt(pruneLength: 285)
     }
