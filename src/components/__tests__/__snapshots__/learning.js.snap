@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Learning renders correctly 1`] = `
+<li>
+  <strong>
+    Learning
+    : 
+  </strong>
+  Kubernetes, React, Ruby, TypeScript.
+</li>
+`;

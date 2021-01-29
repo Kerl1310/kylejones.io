@@ -1,14 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import CoffeeButton from '../coffeeButton';
+import ActivityBase from '../now/activityBase';
 
-describe('CoffeeButton', () => {
+describe('ActivityBase', () => {
   it('renders correctly', () => {
     const tree = renderer
-      .create(
-        <CoffeeButton />
-      )
+      .create(<ActivityBase label="my-label" content="my-content" />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

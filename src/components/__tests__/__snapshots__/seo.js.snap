@@ -1,3 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SEO renders correctly 1`] = `null`;
+exports[`SEO renders correctly 1`] = `
+<script
+  data-schema="Author"
+  type="application/ld+json"
+>
+   
+  
+          {
+            "@context": "https://schema.org",
+            "@type": "Author",
+            "birthDate": "1992-10-13",
+            "email": "kylejones1310@outlook.com\\",
+            "gender": "Male",
+            "jobTitle": "Senior Software Engineer",
+            "knowsLanguage": "English",
+            "name": "Kyle Jones",
+            "telephone": "07432 829513",
+            "url": "https://kylejones.io"
+            "name": "Kyle Jones",
+          }
+        
+</script>
+`;
