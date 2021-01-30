@@ -1,0 +1,14 @@
+{
+        "en": {
+                "translation": {
+                        "heading": "What I'm Up To",
+                        "subheading": "Last Updated: "
+                }
+        },
+        "cy": {
+                "translation": {
+                        "heading": "Hello World",
+                        "subheading": "Last Updated: "
+                }
+        }
+}
