@@ -2,6 +2,8 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
+import '../i18n';
+import { useTranslation } from 'react-i18next';
 
 const ArticleLinkGroup = styled.div`
   display: flex;
@@ -18,7 +20,9 @@ const ArticleLink = styled.div`
   }
 `;
 
-function Articles() {
+const Articles = () => {
+  const { t } = useTranslation();
+  
   return (
     <StaticQuery
       query={articlesQuery}
@@ -26,7 +30,7 @@ function Articles() {
         const articleLinks = data.allMarkdownRemark.edges;
         return (
           <div className="recent-articles-container">
-            <h2 className="recent-articles-title">Recent Articles</h2>
+            <h2 className="recent-articles-title">{t("articlesTitle")}</h2>
             <ArticleLinkGroup className="recent-articles-link-group-container">
               {' '}
               {articleLinks.map(articleLink => (

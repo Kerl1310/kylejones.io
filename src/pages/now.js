@@ -27,9 +27,11 @@ const Now = () => {
     // const changeLanguage = (lng) => {
     //   i18n.changeLanguage(lng);
     // }
-    const title = siteConfig.siteTitle;
+
+    
     const { keywords } = siteConfig;
     const { t } = useTranslation();
+    const title = t("heroText");
   
     return (
       <StaticQuery

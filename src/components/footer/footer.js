@@ -1,5 +1,4 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import CoffeeButton from '../coffeeButton';
 
@@ -24,7 +23,7 @@ const FooterNav = styled.div`
 const FooterLinkGroup = styled.div`
 `;
 
-class Footer extends React.Component {
+class Footer extends Component {
   render() {
     return (
       <FooterWrapper>

@@ -2,11 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import { config } from 'react-awesome-styled-grid';
 import siteConfig from '../../../data/siteConfig';
+import '../i18n';
+import { useTranslation } from 'react-i18next';
 
 const Timeline = ({ className }) => {
+
+  const { t } = useTranslation();
+
   return (
     <div className={className}>
-      <h1>Experience</h1>
+      <h1>{t("experienceTitle")}</h1>
       {siteConfig.jobs &&
         siteConfig.jobs.map(job => (
           <article

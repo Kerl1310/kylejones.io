@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { FaGithub } from 'react-icons/fa';
 import siteConfig from '../../../data/siteConfig';
+
+import '../i18n';
+import { withTranslation } from 'react-i18next';
 
 const HeaderWrapper = styled.header`
   position: fixed;
@@ -71,9 +74,16 @@ const GithubLink = styled(({ className }) => (
   z-index: 10;
 `;
 
-class Header extends React.Component {
+// const changeLanguage = (lng) => {
+//   i18n.changeLanguage(lng);
+//  <button onClick={() => changeLanguage('cy')}>cy</button>
+//  <button onClick={() => changeLanguage('en')}>en</button>
+// }
+
+class Header extends Component {
   render() {
     const { headerLinks } = siteConfig;
+    const { t } = this.props
 
     return (
       <HeaderWrapper>
@@ -81,7 +91,7 @@ class Header extends React.Component {
           <HeaderLinkGroup>
             {headerLinks.map((headerLink, i) => (
               <HeaderLink to={headerLink.url} key={`header-link-${i}`}>
-                {headerLink.label}
+                {t(`${headerLink.label}`)}
               </HeaderLink>
             ))}
           </HeaderLinkGroup>
@@ -92,4 +102,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+export default withTranslation()(Header);
