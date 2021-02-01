@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'react-awesome-styled-grid';
@@ -13,7 +13,7 @@ import Playing from '../components/now/playing';
 import Learning from '../components/now/learning';
 import Working from '../components/now/working';
 import '../components/i18n';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, withTranslation } from 'react-i18next';
 
 const googleAnalyticsId = process.env.GA_ID;
 
@@ -30,7 +30,7 @@ const Now = () => {
     const title = siteConfig.siteTitle;
     const { keywords } = siteConfig;
     const { t } = useTranslation();
-
+  
     return (
       <StaticQuery
         query={nowQuery}
@@ -49,8 +49,8 @@ const Now = () => {
                   <Row>
                     <Col>
                       <div>
-                        <h1>{t("heading")}</h1>
-                        <h2>Last Updated: {data.site.buildTime}</h2>
+                        <h1>{t("nowHeading")}</h1>
+                        <h2>{t("nowSubheading")} {data.site.buildTime}</h2>
                       </div>
                     </Col>
                   </Row>
@@ -76,6 +76,7 @@ const Now = () => {
       />
     );
 };
+
 
 export default styled(Now)`
   .page-content {

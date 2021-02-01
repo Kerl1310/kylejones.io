@@ -1,14 +1,14 @@
 {
         "en": {
                 "translation": {
-                        "heading": "What I'm Up To",
-                        "subheading": "Last Updated: "
+                                "nowHeading": "What I'm Up To",
+                                "nowSubheading": "Last Updated: "
                 }
         },
         "cy": {
                 "translation": {
-                        "heading": "Hello World",
-                        "subheading": "Last Updated: "
+                                "nowHeading": "Beth Rydw I'n Ei Wneud",
+                                "nowSubheading": "Wedi'i Ddiweddaru Ddiwethaf: "
                 }
         }
 }
