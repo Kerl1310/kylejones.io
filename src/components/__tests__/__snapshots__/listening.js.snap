@@ -3,7 +3,8 @@
 exports[`Listening renders correctly 1`] = `
 <li>
   <strong>
-    Listening to: 
+    Listening to
+    : 
   </strong>
   <a
     className="artist-link"
