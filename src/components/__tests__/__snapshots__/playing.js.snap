@@ -3,7 +3,8 @@
 exports[`Playing renders correctly 1`] = `
 <li>
   <strong>
-    Playing: 
+    Playing
+    : 
   </strong>
   <a
     className="game-link"

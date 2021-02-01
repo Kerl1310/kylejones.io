@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'react-awesome-styled-grid';
@@ -7,6 +7,8 @@ import Hero from '../components/hero';
 import Wrapper from '../components/wrapper';
 import SEO from '../components/SEO';
 import Link from 'gatsby-link';
+import '../components/i18n';
+import { withTranslation } from 'react-i18next';
 
 const googleAnalyticsId = process.env.GA_ID;
 
@@ -16,7 +18,7 @@ const Separator = styled.hr`
   width: 100%;
 `;
 
-class Blog extends React.Component {
+class Blog extends Component {
   render() {
     // Validate siteConfig settings
     if (googleAnalyticsId === 'UA-000000000-1') {
@@ -25,7 +27,8 @@ class Blog extends React.Component {
       );
     }
 
-    const title = siteConfig.siteTitle;
+    const { t } = this.props;
+    const title = t("heroText");
     const { keywords } = siteConfig;
 
     return (
@@ -43,7 +46,7 @@ class Blog extends React.Component {
                   <Row>
                     <Col>
                       <div>
-                        <h1>Blog</h1>
+                        <h1>{t("blogTitle")}</h1>
                       </div>
                     </Col>
                   </Row>
@@ -88,7 +91,9 @@ class Blog extends React.Component {
   }
 }
 
-export default styled(Blog)`
+const blogComponent = withTranslation()(Blog);
+
+export default styled(blogComponent)`
   .page-content {
     display: block;
     max-width: 100%;

@@ -3,7 +3,8 @@
 exports[`Reading renders correctly 1`] = `
 <li>
   <strong>
-    Reading: 
+    Reading
+    : 
   </strong>
   <a
     className="book-link-9780553803709"

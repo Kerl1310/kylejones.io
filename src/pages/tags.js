@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import kebabCase from 'lodash/kebabCase';
 import { Link, StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
@@ -10,7 +10,7 @@ import SEO from '../components/SEO';
 
 const googleAnalyticsId = process.env.GA_ID;
 
-class TagsPage extends React.Component {
+class TagsPage extends Component {
   render() {
     // Validate siteConfig settings
     if (googleAnalyticsId === 'UA-000000000-1') {

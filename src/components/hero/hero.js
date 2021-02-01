@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { withPrefix } from 'gatsby';
 import siteConfig from '../../../data/siteConfig';
 import styled from 'styled-components';
@@ -28,7 +28,7 @@ const HeroTitle = styled.h1`
   text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.6);
 `;
 
-class Hero extends React.Component {
+class Hero extends Component {
   render() {
     const { title, className } = this.props;
 

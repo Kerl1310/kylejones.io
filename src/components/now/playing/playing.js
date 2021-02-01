@@ -1,9 +1,12 @@
 import React from 'react';
+import '../../i18n';
+import { useTranslation } from 'react-i18next';
 
 const Playing = ({game}) => {
+    const { t } = useTranslation();
     return (
         <li>
-            <strong>Playing: </strong>
+            <strong>{t("playingLabel")}: </strong>
             <a
                 className={'game-link'}
                 href={`https://store.steampowered.com/app/${game.steamId}`}

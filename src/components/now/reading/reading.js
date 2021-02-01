@@ -1,9 +1,12 @@
 import React from 'react';
+import '../../i18n';
+import { useTranslation } from 'react-i18next';
 
 const Reading = ({book, authors}) => {
+    const { t } = useTranslation();
     return (
         <li>
-            <strong>Reading: </strong>
+            <strong>{t("readingLabel")}: </strong>
             <a
             className={`book-link-${book.isbn}`}
             href={book.link}

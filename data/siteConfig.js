@@ -141,11 +141,11 @@ module.exports = {
       url: '/',
     },
     {
-      label: 'Now',
+      label: 'nowTitle',
       url: '/now',
     },
     {
-      label: 'Blog',
+      label: 'blogTitle',
       url: '/blog'
     }
   ],

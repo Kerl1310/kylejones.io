@@ -12,22 +12,27 @@ import Listening from '../components/now/listening';
 import Playing from '../components/now/playing';
 import Learning from '../components/now/learning';
 import Working from '../components/now/working';
-
+import '../components/i18n';
+import { useTranslation, withTranslation } from 'react-i18next';
 
 const googleAnalyticsId = process.env.GA_ID;
 
-class Now extends React.Component {
-  render() {
+const Now = () => {
     // Validate siteConfig settings
     if (googleAnalyticsId === 'UA-000000000-1') {
       console.error(
         'WARNING: Please set a proper googleAnalyticsId. See https://analytics.google.com for details.'
       );
     }
+    // const changeLanguage = (lng) => {
+    //   i18n.changeLanguage(lng);
+    // }
 
-    const title = siteConfig.siteTitle;
+    
     const { keywords } = siteConfig;
-
+    const { t } = useTranslation();
+    const title = t("heroText");
+  
     return (
       <StaticQuery
         query={nowQuery}
@@ -41,13 +46,13 @@ class Now extends React.Component {
             <>
               <SEO title={title} keywords={keywords} />
               <Hero heroImg={siteConfig.siteCover} title={title} />
-              <Wrapper className={this.props.className}>
+              <Wrapper>
                 <Container className="page-content" fluid>
                   <Row>
                     <Col>
                       <div>
-                        <h1>What I'm Up To Now</h1>
-                        <h2>Last Updated: {data.site.buildTime}</h2>
+                        <h1>{t("nowHeading")}</h1>
+                        <h2>{t("nowSubheading")} {data.site.buildTime}</h2>
                       </div>
                     </Col>
                   </Row>
@@ -72,8 +77,8 @@ class Now extends React.Component {
         }}
       />
     );
-  }
-}
+};
+
 
 export default styled(Now)`
   .page-content {
