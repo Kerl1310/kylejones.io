@@ -15,7 +15,7 @@ const Layout = ({ children, pageContext: { locale } }) => {
 
   return (
       <>
-        <Suspense fallback={<h1>Loading page...</h1>}>
+        {/* <Suspense fallback={<h1>Loading page...</h1>}> */}
         <LocaleContext.Provider value={{ locale }}>
           <I18nextProvider i18n={i18n}>
             <Header/>
@@ -27,7 +27,7 @@ const Layout = ({ children, pageContext: { locale } }) => {
             <Footer/>
           </I18nextProvider>
         </LocaleContext.Provider>
-        </Suspense>
+        {/* </Suspense> */}
       </>
   )
 }
