@@ -20,7 +20,7 @@ const Spacer = styled.span`
   display: inline-block;
 `;
 
-const ShareButtons = ({ twitterHandle, url, title, tags }) => {
+const ShareButtons = ({ url, title, tags }) => {
   return (
     <div>
       <FacebookShareButton url={url}>
