@@ -5,6 +5,8 @@ import Wrapper from '../components/wrapper';
 import SEO from '../components/SEO';
 import { Link, graphql } from 'gatsby';
 import StringSimilarity from 'string-similarity';
+import '../components/i18n';
+import { withTranslation } from 'react-i18next/';
 
 const HomeButton = styled.button`
   background-color: #25303b;
@@ -40,11 +42,12 @@ const MainTitle = styled.h1`
   font-size: 3rem;
 `;
 
-export default ({ location, data }) => {
+const MissingPage = ({ location, data }) => {
   const pages = data.allSitePage.nodes.map(({ path }) => path);
   const pathname = location.pathname;
   const result = StringSimilarity.findBestMatch(pathname, pages).bestMatch;
-  
+  const { t } = this.props;
+
   function renderContent() {
     return result.rating > 0.7 ? (
       <>
@@ -77,7 +80,7 @@ export default ({ location, data }) => {
   return (
     <>
       <SEO title={'404'} />
-      <Hero title="" />
+      <Hero title={t("heroText")} />
       <Wrapper>
             {renderContent()}
             <Link
@@ -98,6 +101,8 @@ export default ({ location, data }) => {
     </>
   );
 };
+
+export default withTranslation()(MissingPage);
 
 export const pageQuery = graphql`
          {

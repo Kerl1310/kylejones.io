@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'react-awesome-styled-grid';
-import siteConfig from '../../data/siteConfig';
+import { siteCover, pathPrefix, keywords } from '../../data/siteConfig';
 import Hero from '../components/hero';
 import Wrapper from '../components/wrapper';
 import SEO from '../components/SEO';
 import { Link, graphql } from 'gatsby';
+import '../components/i18n';
+import { useTranslation } from 'react-i18next';
 
 const BlogPostListItem = styled.li`
   list-style-type: none;
@@ -21,20 +23,19 @@ const BlogPostList = styled.ul`
 
 const googleAnalyticsId = process.env.GA_ID;
 
-function TagPageTemplate({ pageContext, data }) {
-  // Validate siteConfig settings
+const TagPageTemplate = ({ pageContext, data }) => {
+  
   if (googleAnalyticsId === 'UA-000000000-1') {
     console.error(
       'WARNING: Please set a proper googleAnalyticsId. See https://analytics.google.com for details.'
     );
   }
 
-  const { siteTitle, siteCover, pathPrefix, keywords } = siteConfig;
   const { tag } = pageContext;
   const { edges } = data.allMarkdownRemark;
   const tagHeader = `Posts Tagged With "${tag}"`;
   const tagPath = `tags/${tag}`;
-
+  const { t } = useTranslation();
   return (
     <>
       <SEO
@@ -43,7 +44,7 @@ function TagPageTemplate({ pageContext, data }) {
         description={`Listing page for blog posts with the tag ${tag}`}
         url={`${pathPrefix}${tagPath}`}
       />
-      <Hero heroImg={siteCover} title={siteTitle} />
+      <Hero heroImg={siteCover} title={t("heroText")} />
       <Wrapper>
         <Container className="page-content" fluid>
           <Row>

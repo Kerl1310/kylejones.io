@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { FaGithub } from 'react-icons/fa';
-import siteConfig from '../../../data/siteConfig';
+import { githubUsername, headerLinks} from '../../../data/siteConfig';
 
 import '../i18n';
 import { withTranslation } from 'react-i18next';
@@ -54,7 +54,7 @@ const HeaderLink = styled(Link)`
 const GithubLink = styled(({ className }) => (
   <a
     className={className}
-    href={`https://github.com/${siteConfig.githubUsername}`}
+    href={`https://github.com/${githubUsername}`}
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -82,7 +82,6 @@ const GithubLink = styled(({ className }) => (
 
 class Header extends Component {
   render() {
-    const { headerLinks } = siteConfig;
     const { t } = this.props
 
     return (

@@ -20,7 +20,7 @@ const Spacer = styled.span`
   display: inline-block;
 `;
 
-function ShareButtons({ twitterHandle, url, title, tags }) {
+const ShareButtons = ({ twitterHandle, url, title, tags }) => {
   return (
     <div>
       <FacebookShareButton url={url}>
@@ -43,7 +43,7 @@ function ShareButtons({ twitterHandle, url, title, tags }) {
         <WhatsappIcon size="48" round="true" />
       </WhatsappShareButton>
     </div>
-  );
-}
+  )
+};
 
 export default ShareButtons;

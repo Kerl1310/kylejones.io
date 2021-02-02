@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import jsonFetch from 'simple-json-fetch';
 import styled from 'styled-components';
-import siteConfig from '../../../data/siteConfig';
+import { githubUsername } from '../../../data/siteConfig';
 
 import Loader from '../loader';
 import '../i18n';
 import { withTranslation } from 'react-i18next';
 
-const endpoint = `https://api.github.com/users/${siteConfig.githubUsername}/repos?type=owner&sort=updated&per_page=5&page=1`;
+const endpoint = `https://api.github.com/users/${githubUsername}/repos?type=owner&sort=updated&per_page=5&page=1`;
 
 class Repositories extends Component {
   constructor(props) {
