@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'react-awesome-styled-grid';
 import {
@@ -18,6 +18,8 @@ import Skills from '../components/skills';
 import Timeline from '../components/timeline';
 import Repositories from '../components/repositories';
 import Articles from '../components/articles';
+import '../components/i18n';
+import { withTranslation } from 'react-i18next';
 
 const Separator = styled.hr`
   margin-top: 24px;
@@ -25,7 +27,7 @@ const Separator = styled.hr`
 `;
 const googleAnalyticsId = process.env.GA_ID;
 
-class Home extends React.Component {
+class Home extends Component {
   render() {
     // validate siteConfig settings
     if (googleAnalyticsId === 'UA-000000000-1') {
@@ -34,8 +36,10 @@ class Home extends React.Component {
       );
     }
 
-    const title = siteConfig.siteTitle;
+    const { t } = this.props;
+    const title = t("heroText");
     const { keywords } = siteConfig;
+
     return (
       <>
         <SEO title={title} keywords={keywords} />
@@ -105,7 +109,7 @@ class Home extends React.Component {
                 <About title="About" text={siteConfig.authorDescription} />
               </Col>
               <Col xs={4} sm={4}>
-                <Skills title="Skills" skills={siteConfig.skills} />
+                <Skills skills={siteConfig.skills} />
               </Col>
             </Row>
             <Separator />
@@ -121,7 +125,9 @@ class Home extends React.Component {
   }
 }
 
-export default styled(Home)`
+const homeComponent = withTranslation()(Home);
+
+export default styled(homeComponent)`
   .page-content {
     max-width: 100%;
     margin-bottom: 40px;

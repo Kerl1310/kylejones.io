@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reading renders correctly 1`] = `
+<li>
+  <strong>
+    Reading
+    : 
+  </strong>
+  <a
+    className="book-link-9780553803709"
+    href="https://www.goodreads.com/book/show/41804.I_Robot"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    I, Robot
+  </a>
+   
+  by
+   
+  <a
+    className="author-link"
+    href="https://www.goodreads.com/author/show/16667.Isaac_Asimov"
+    id="author-link-16667"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Isaac Asimov
+  </a>
+</li>
+`;

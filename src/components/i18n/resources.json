@@ -1,0 +1,44 @@
+{
+        "en": {
+                "translation": {
+                                "heroText": "Hi, I'm Kyle!",
+                                "aboutTitle": "About",
+                                "articlesTitle": "Recent Articles",
+                                "blogTitle": "Blog",
+                                "coffeeButtonText": "Buy a Coffee",
+                                "experienceTitle": "Experience",
+                                "repositoriesTitle": "Latest repositories on Github",
+                                "skillsTitle": "Skills",
+                                "nowTitle": "Now",
+                                "nowHeading": "What I'm Up To",
+                                "nowSubheading": "Last Updated: ",
+                                "readingLabel": "Reading",
+                                "learningLabel": "Learning",
+                                "listeningLabel": "Listening to",
+                                "playingLabel": "Playing",
+                                "watchingLabel": "Watching",
+                                "workingLabel": "Working on"
+                }
+        },
+        "cy": {
+                "translation": {
+                                "heroText": "Helo, Kyle Ydw I!",
+                                "aboutTitle": "Am",
+                                "articlesTitle": "Erthyglau Diweddar",
+                                "blogTitle": "Blog",
+                                "coffeeButtonText": "Prynu Coffi",
+                                "experienceTitle": "Profiad",
+                                "repositoriesTitle": "Cadwrfeydd diweddaraf ar Github",
+                                "skillsTitle": "Sgiliau",
+                                "nowTitle": "Nawr",
+                                "nowHeading": "Beth Rydw I'n Ei Wneud",
+                                "nowSubheading": "Wedi'i Ddiweddaru Ddiwethaf: ",
+                                "readingLabel": "Darllen",
+                                "learningLabel": "Dysgu",
+                                "listeningLabel": "Gwrando ar",
+                                "playingLabel": "Chwarae",
+                                "watchingLabel": "Gwylio",
+                                "workingLabel": "Gweithio ar"
+                }
+        }
+}

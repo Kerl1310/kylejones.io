@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import jsonFetch from 'simple-json-fetch';
 import styled from 'styled-components';
 import siteConfig from '../../../data/siteConfig';
 
 import Loader from '../loader';
+import '../i18n';
+import { withTranslation } from 'react-i18next';
 
 const endpoint = `https://api.github.com/users/${siteConfig.githubUsername}/repos?type=owner&sort=updated&per_page=5&page=1`;
 
-class Repositories extends React.Component {
+class Repositories extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -23,9 +25,11 @@ class Repositories extends React.Component {
   }
   render() {
     const { status } = this.state;
+    const { t } = this.props;
+
     return (
       <div className={this.props.className}>
-        <h2>Latest repositories on Github</h2>
+        <h2>{t("repositoriesTitle")}</h2>
         {status === 'loading' && (
           <div className="repositories__loader">
             <Loader />
@@ -59,7 +63,9 @@ class Repositories extends React.Component {
   }
 }
 
-export default styled(Repositories)`
+const repoComponent = withTranslation()(Repositories);
+
+export default styled(repoComponent)`
   position: relative;
   .repositories__content {
     margin-bottom: 40px;

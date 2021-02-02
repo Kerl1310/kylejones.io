@@ -6,21 +6,33 @@ import siteConfig from '../../data/siteConfig';
 import Hero from '../components/hero';
 import Wrapper from '../components/wrapper';
 import SEO from '../components/SEO';
+import Reading from '../components/now/reading';
+import Watching from '../components/now/watching';
+import Listening from '../components/now/listening';
+import Playing from '../components/now/playing';
+import Learning from '../components/now/learning';
+import Working from '../components/now/working';
+import '../components/i18n';
+import { useTranslation, withTranslation } from 'react-i18next';
 
 const googleAnalyticsId = process.env.GA_ID;
 
-class Now extends React.Component {
-  render() {
+const Now = () => {
     // Validate siteConfig settings
     if (googleAnalyticsId === 'UA-000000000-1') {
       console.error(
         'WARNING: Please set a proper googleAnalyticsId. See https://analytics.google.com for details.'
       );
     }
+    // const changeLanguage = (lng) => {
+    //   i18n.changeLanguage(lng);
+    // }
 
-    const title = siteConfig.siteTitle;
+    
     const { keywords } = siteConfig;
-
+    const { t } = useTranslation();
+    const title = t("heroText");
+  
     return (
       <StaticQuery
         query={nowQuery}
@@ -34,13 +46,13 @@ class Now extends React.Component {
             <>
               <SEO title={title} keywords={keywords} />
               <Hero heroImg={siteConfig.siteCover} title={title} />
-              <Wrapper className={this.props.className}>
+              <Wrapper>
                 <Container className="page-content" fluid>
                   <Row>
                     <Col>
                       <div>
-                        <h1>What I'm Up To Now</h1>
-                        <h2>Last Updated: {data.site.buildTime}</h2>
+                        <h1>{t("nowHeading")}</h1>
+                        <h2>{t("nowSubheading")} {data.site.buildTime}</h2>
                       </div>
                     </Col>
                   </Row>
@@ -48,62 +60,12 @@ class Now extends React.Component {
                     <Col>
                       <div className="now-content">
                         <ul>
-                          <li>
-                            <strong>Reading: </strong>
-                            <a
-                              className={`book-link-${book.isbn}`}
-                              href={book.link}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              {book.titleWithoutSeries}
-                            </a>{' '}
-                            by{' '}
-                            {authors.map(author => (
-                              <React.Fragment key={author.id}>
-                                <a
-                                  className={'author-link'}
-                                  id={`author-link-${author.id}`}
-                                  href={author.link}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                >
-                                  {author.name}
-                                </a>
-                              </React.Fragment>
-                            ))}
-                          </li>
-                          <li>
-                            <strong>Listening to: </strong>
-                            <a
-                              className={'artist-link'}
-                              href={artist.external_urls.spotify}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              {artist.name}
-                            </a>
-                          </li>
-                          <li>
-                            <strong>Watching: </strong>{siteConfig.now.watching}
-                          </li>
-                          <li>
-                            <strong>Playing: </strong>
-                            <a
-                              className={'game-link'}
-                              href={`https://store.steampowered.com/app/${game.steamId}`}
-                              target='_blank'
-                              rel='noopener noreferrer'
-                            >
-                              {game.name}
-                            </a>
-                          </li>
-                          <li>
-                            <strong>Learning about: </strong>{siteConfig.now.learning}
-                          </li>
-                          <li>
-                            <strong>Working on: </strong>{siteConfig.now.working_on}
-                          </li>
+                          <Reading book={book} authors={authors}/>
+                          <Listening artist={artist}/>
+                          <Watching/>
+                          <Playing game={game}/>
+                          <Learning/>
+                          <Working/>
                         </ul>
                       </div>
                     </Col>
@@ -115,8 +77,8 @@ class Now extends React.Component {
         }}
       />
     );
-  }
-}
+};
+
 
 export default styled(Now)`
   .page-content {

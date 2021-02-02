@@ -44,6 +44,7 @@ export default ({ location, data }) => {
   const pages = data.allSitePage.nodes.map(({ path }) => path);
   const pathname = location.pathname;
   const result = StringSimilarity.findBestMatch(pathname, pages).bestMatch;
+  
   function renderContent() {
     return result.rating > 0.7 ? (
       <>

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Listening renders correctly 1`] = `
+<li>
+  <strong>
+    Listening to
+    : 
+  </strong>
+  <a
+    className="artist-link"
+    href="6XyY86QOPPrYVGvF9ch6wz"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Linkin Park
+  </a>
+</li>
+`;

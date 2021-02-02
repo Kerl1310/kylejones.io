@@ -3,7 +3,7 @@
 exports[`About renders correctly 1`] = `
 <div>
   <h1>
-    my-title
+    About
   </h1>
   <p
     dangerouslySetInnerHTML={

@@ -15,14 +15,12 @@ exports[`Articles renders correctly 1`] = `
      
     <div
       className="sc-bwzfXH lnbGxt recent-articles-link-container"
-      id="recent-articles-link-container-/my-path"
+      id="recent-articles-link-container-./my-path"
     >
       <a
         className="recent-articles-link"
-        href="/my-path"
-        id="recent-articles-link-/my-path"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
+        href="//my-path"
+        id="recent-articles-link-./my-path"
         rel="noopener noreferrer"
         target="__blank"
       >
@@ -33,14 +31,12 @@ exports[`Articles renders correctly 1`] = `
     </div>
     <div
       className="sc-bwzfXH lnbGxt recent-articles-link-container"
-      id="recent-articles-link-container-/my-second-path"
+      id="recent-articles-link-container-./my-second-path"
     >
       <a
         className="recent-articles-link"
-        href="/my-second-path"
-        id="recent-articles-link-/my-second-path"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
+        href="//my-second-path"
+        id="recent-articles-link-./my-second-path"
         rel="noopener noreferrer"
         target="__blank"
       >

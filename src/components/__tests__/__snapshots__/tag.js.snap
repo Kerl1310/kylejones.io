@@ -1,10 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tag renders correctly 1`] = `
-<button
+<a
   className="sc-bdVaJa jqdVfZ my-tag"
   id="my-tag-text"
+  rel="noopener noreferrer"
+  target="__blank"
 >
   my-tag-text
-</button>
+</a>
 `;
