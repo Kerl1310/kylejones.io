@@ -1,17 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Playing from '../now/playing';
+import Working from '../../now/working';
 
-const testGame = {
-    steamId: '220',
-    name: 'Half Life 2'
-}
-
-describe('Playing', () => {
+describe('Working', () => {
   it('renders correctly', () => {
     const tree = renderer
-      .create(<Playing game={testGame}/>)
+      .create(<Working />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

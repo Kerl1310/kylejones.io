@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Reading from '../now/reading';
+import Reading from '../../now/reading';
 
 const testBook = {
     isbn: '9780553803709',

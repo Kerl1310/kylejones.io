@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Listening from '../now/listening';
+import Listening from '../../now/listening';
 
 const testArtist = {
     external_urls: {

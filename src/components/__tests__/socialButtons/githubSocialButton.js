@@ -1,12 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import GithubSocialButton from '../../socialButtons/githubSocialButton';
 
-import Learning from '../now/learning';
-
-describe('Learning', () => {
+describe('Github Social Button', () => {
   it('renders correctly', () => {
     const tree = renderer
-      .create(<Learning />)
+      .create(<GithubSocialButton />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

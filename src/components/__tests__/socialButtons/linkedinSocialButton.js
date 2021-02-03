@@ -1,12 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import LinkedInSocialButton from '../../socialButtons/linkedinSocialButton';
 
-import ActivityBase from '../now/activityBase';
-
-describe('ActivityBase', () => {
+describe('LinkedIn Social Button', () => {
   it('renders correctly', () => {
     const tree = renderer
-      .create(<ActivityBase label="my-label" content="my-content" />)
+      .create(<LinkedInSocialButton />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
