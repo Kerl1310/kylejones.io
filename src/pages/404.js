@@ -6,7 +6,7 @@ import SEO from '../components/SEO';
 import { Link, graphql } from 'gatsby';
 import StringSimilarity from 'string-similarity';
 import '../components/i18n';
-import { withTranslation } from 'react-i18next/';
+import { useTranslation } from 'react-i18next/';
 
 const HomeButton = styled.button`
   background-color: #25303b;
@@ -46,7 +46,7 @@ const MissingPage = ({ location, data }) => {
   const pages = data.allSitePage.nodes.map(({ path }) => path);
   const pathname = location.pathname;
   const result = StringSimilarity.findBestMatch(pathname, pages).bestMatch;
-  const { t } = this.props;
+  const { t } = useTranslation();
 
   function renderContent() {
     return result.rating > 0.7 ? (
@@ -102,7 +102,7 @@ const MissingPage = ({ location, data }) => {
   );
 };
 
-export default withTranslation()(MissingPage);
+export default MissingPage;
 
 export const pageQuery = graphql`
          {
