@@ -1,12 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Watching from '../now/watching';
+import ActivityBase from '../../now/activityBase';
 
-describe('Watching', () => {
+describe('ActivityBase', () => {
   it('renders correctly', () => {
     const tree = renderer
-      .create(<Watching />)
+      .create(<ActivityBase label="my-label" content="my-content" />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

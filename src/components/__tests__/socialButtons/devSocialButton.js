@@ -1,12 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import DevSocialButton from '../../socialButtons/devSocialButton';
 
-import Working from '../now/working';
-
-describe('Working', () => {
+describe('DEV.to Social Button', () => {
   it('renders correctly', () => {
     const tree = renderer
-      .create(<Working />)
+      .create(<DevSocialButton />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
