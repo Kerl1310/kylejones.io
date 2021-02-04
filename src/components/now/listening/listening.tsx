@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { FC } from 'react';
 import '../../i18n';
 import { useTranslation } from 'react-i18next';
+import { Artist } from './artist';
 
-const Listening = ({artist}) => {
+interface ListeningBaseProps {
+    artist: Artist
+}
+
+const Listening: FC<ListeningBaseProps> = ({artist}) => {
     const { t } = useTranslation();
     return (
         <li>
