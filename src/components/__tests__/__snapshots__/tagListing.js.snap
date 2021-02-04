@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tag Listing renders correctly 1`] = `
+<li
+  className="tag"
+  id="aws"
+>
+  <a
+    href="/tags/aws/"
+  >
+    aws
+     (
+    5
+    )
+  </a>
+</li>
+`;
