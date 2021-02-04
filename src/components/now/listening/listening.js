@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 const Listening = ({artist}) => {
     const { t } = useTranslation();
     return (
-        <li>
+        <li key={artist.name}>
             <strong>{t("listeningLabel")}: </strong>
             <a
                 className={'artist-link'}

@@ -9,7 +9,8 @@ import About from '../components/about';
 import Skills from '../components/skills';
 import Timeline from '../components/timeline';
 import Repositories from '../components/repositories';
-import Articles from '../components/articles';
+import FeaturedArticles from '../components/featuredArticles';
+import RecentArticles from '../components/recentArticles';
 import '../components/i18n';
 import { withTranslation } from 'react-i18next';
 import SocialButtons from '../components/socialButtons';
@@ -62,7 +63,9 @@ class Home extends Component {
             <Separator />
             <Timeline />
             <Separator />
-            <Articles />
+            <FeaturedArticles />
+            <Separator />
+            <RecentArticles />
             <Separator />
             <Repositories />
           </Container>

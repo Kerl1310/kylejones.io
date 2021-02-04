@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 const Playing = ({game}) => {
     const { t } = useTranslation();
     return (
-        <li>
+        <li key={game.steamId}>
             <strong>{t("playingLabel")}: </strong>
             <a
                 className={'game-link'}

@@ -13,7 +13,7 @@ import Playing from '../components/now/playing';
 import Learning from '../components/now/learning';
 import Working from '../components/now/working';
 import '../components/i18n';
-import { useTranslation, withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 const googleAnalyticsId = process.env.GA_ID;
 
@@ -24,9 +24,6 @@ const Now = () => {
         'WARNING: Please set a proper googleAnalyticsId. See https://analytics.google.com for details.'
       );
     }
-    // const changeLanguage = (lng) => {
-    //   i18n.changeLanguage(lng);
-    // }
 
     const { t } = useTranslation();
     const title = t("heroText");

@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect } from 'react';
+import React, { /*Suspense,*/ useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { ResetCSS, GlobalStyle } from '../styles';
 import Header from '../header';

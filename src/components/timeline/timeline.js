@@ -15,7 +15,7 @@ const Timeline = ({ className }) => {
       <h1>{t("experienceTitle")}</h1>
       {jobs &&
         jobs.map(job => (
-          <TimelineElement job={job} />
+          <TimelineElement key={`${job.company}-${job.begin.month}-${job.begin.year}`} job={job} />
         ))}
     </div>
   );

@@ -51,7 +51,7 @@ class TagsPage extends Component {
                       {' '}
                       <ul>
                         {group.map(tag => (
-                          <TagListing tag={tag} />
+                          <TagListing key={tag.fieldValue} tag={tag} />
                         ))}
                       </ul>
                     </Col>

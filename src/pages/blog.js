@@ -48,7 +48,7 @@ class Blog extends Component {
                       {' '}
                       <ul>
                         {articleLinks.map(articleLink => (
-                          <BlogListing articleLink={articleLink}/>
+                          <BlogListing key={`blog-post-${articleLink.node.frontmatter.date}`} articleLink={articleLink}/>
                         ))}
                       </ul>
                     </Col>

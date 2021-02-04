@@ -3,11 +3,11 @@ import React from 'react'
 const TimelineElement = ({job}) => {
     const startMonth = job.begin.month;
     const startYear = job.begin.year;
-    const key = startMonth + startYear;
+    const key = `${job.company}-${startMonth}-${startYear}`;
 
     return (
         <article
-            key={key}
+            key={`${key}`}
             className="timeline__item"
         >
             <div className="inner">

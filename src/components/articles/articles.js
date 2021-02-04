@@ -1,9 +1,7 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 import '../i18n';
-import { useTranslation } from 'react-i18next';
 
 const ArticleLinkGroup = styled.div`
   display: flex;
@@ -20,42 +18,33 @@ const ArticleLink = styled.div`
   }
 `;
 
-const Articles = () => {
-  const { t } = useTranslation();
-  
+const Articles = ({ title, articles }) => {
+
   return (
-    <StaticQuery
-      query={articlesQuery}
-      render={data => {
-        const articleLinks = data.allMarkdownRemark.edges;
-        return (
-          <div className="recent-articles-container">
-            <h2 className="recent-articles-title">{t("articlesTitle")}</h2>
-            <ArticleLinkGroup className="recent-articles-link-group-container">
-              {' '}
-              {articleLinks.map(articleLink => (
-                <React.Fragment key={articleLink.node.frontmatter.path}>
-                  <ArticleLink
-                    className="recent-articles-link-container"
-                    id={`recent-articles-link-container-${articleLink.node.frontmatter.path}`}
-                  >
-                    <Link
-                      className="recent-articles-link"
-                      id={`recent-articles-link-${articleLink.node.frontmatter.path}`}
-                      to={articleLink.node.frontmatter.path}
-                      target="__blank"
-                      rel="noopener noreferrer"
-                    >
-                      <strong>{articleLink.node.frontmatter.title}</strong>
-                    </Link>
-                  </ArticleLink>
-                </React.Fragment>
-              ))}
-            </ArticleLinkGroup>
-          </div>
-        );
-      }}
-    />
+    <div className="recent-articles-container">
+      <h2 className="recent-articles-title">{title}</h2>
+      <ArticleLinkGroup className="recent-articles-link-group-container">
+        {' '}
+        {articles.map(article => (
+          <React.Fragment key={article.node.frontmatter.path}>
+            <ArticleLink
+              className="recent-articles-link-container"
+              id={`recent-articles-link-container-${article.node.frontmatter.path}`}
+            >
+              <Link
+                className="recent-articles-link"
+                id={`recent-articles-link-${article.node.frontmatter.path}`}
+                to={article.node.frontmatter.path}
+                target="__blank"
+                rel="noopener noreferrer"
+              >
+                <strong>{article.node.frontmatter.title}</strong>
+              </Link>
+            </ArticleLink>
+          </React.Fragment>
+        ))}
+      </ArticleLinkGroup>
+    </div>
   );
 }
 
@@ -66,26 +55,5 @@ export default styled(Articles)`
     display: list-item; /* This has to be "list-item"                                               */
     list-style-type: none; /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
     list-style-position: inside;
-  }
-`;
-
-const articlesQuery = graphql`
-  query ArticlesQuery {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: frontmatter___date }
-      limit: 5
-    ) {
-      edges {
-        node {
-          frontmatter {
-            path
-            date
-            title
-            isFeatured
-            featuredImage
-          }
-        }
-      }
-    }
   }
 `;
