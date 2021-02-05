@@ -12,7 +12,6 @@ const ArticleLinkGroup = styled.div`
 const ArticleLink = styled.div`
   display: block;
   width: 100%;
-
   :not(:last-of-type) {
     margin-bottom: 16px;
   }
@@ -50,7 +49,6 @@ const Articles = ({ title, articles }) => {
 
 export default styled(Articles)`
   position: relative;
-
   a {
     display: list-item; /* This has to be "list-item"                                               */
     list-style-type: none; /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
