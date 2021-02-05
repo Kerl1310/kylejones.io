@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 import { config } from 'react-awesome-styled-grid';
-import siteConfig from '../../../data/siteConfig';
+import { jobs } from '../../../data/siteConfig';
 import '../i18n';
 import { useTranslation } from 'react-i18next';
+import TimelineElement from './timelineElement';
+
+// interface TimelineProps {
+//   className: string
+// }
 
 const Timeline = ({ className }) => {
 
@@ -12,26 +17,9 @@ const Timeline = ({ className }) => {
   return (
     <div className={className}>
       <h1>{t("experienceTitle")}</h1>
-      {siteConfig.jobs &&
-        siteConfig.jobs.map(job => (
-          <article
-            key={job.begin.month + job.begin.year}
-            className="timeline__item"
-          >
-            <div className="inner">
-              <span className="timeline__date">
-                <span className="timeline__month">{job.begin.month}</span>
-                <span className="timeline__year">{job.begin.year}</span>
-              </span>
-              <h2 className="timeline__title">
-                {job.occupation} at <a href={job.url}>{job.company}</a> <br />
-                <small className="timeline__title--small">
-                  ({job.duration || 'present'})
-                </small>
-              </h2>
-              <p>{job.description}</p>
-            </div>
-          </article>
+      {jobs &&
+        jobs.map(job => (
+          <TimelineElement key={`${job.company}-${job.begin.month}-${job.begin.year}`} job={job} />
         ))}
     </div>
   );

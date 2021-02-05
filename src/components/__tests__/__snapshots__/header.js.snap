@@ -2,35 +2,35 @@
 
 exports[`Header renders correctly 1`] = `
 <header
-  className="sc-bdVaJa jpTWEI"
+  className="sc-ifAKCX jCxHet"
 >
   <nav
-    className="sc-bwzfXH bcPshD"
+    className="sc-bxivhb bGcKe"
   >
     <div
       className="sc-htpNat kquAIx"
     >
       <a
-        className="sc-bxivhb hwDDke"
+        className="sc-bwzfXH eKSoAx"
         href="/"
       >
         Kyle Jones
       </a>
       <a
-        className="sc-bxivhb hwDDke"
+        className="sc-bwzfXH eKSoAx"
         href="/now"
       >
         Now
       </a>
       <a
-        className="sc-bxivhb hwDDke"
+        className="sc-bwzfXH eKSoAx"
         href="/blog"
       >
         Blog
       </a>
     </div>
     <a
-      className="sc-ifAKCX eGFKKa"
+      className="sc-bdVaJa fqObBR"
       href="https://github.com/kerl1310"
       rel="noopener noreferrer"
       target="_blank"

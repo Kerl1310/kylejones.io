@@ -2,7 +2,7 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'react-awesome-styled-grid';
-import siteConfig from '../../data/siteConfig';
+import { keywords, siteCover } from '../../data/siteConfig';
 import Hero from '../components/hero';
 import Wrapper from '../components/wrapper';
 import SEO from '../components/SEO';
@@ -13,23 +13,18 @@ import Playing from '../components/now/playing';
 import Learning from '../components/now/learning';
 import Working from '../components/now/working';
 import '../components/i18n';
-import { useTranslation, withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 const googleAnalyticsId = process.env.GA_ID;
 
 const Now = () => {
-    // Validate siteConfig settings
+    
     if (googleAnalyticsId === 'UA-000000000-1') {
       console.error(
         'WARNING: Please set a proper googleAnalyticsId. See https://analytics.google.com for details.'
       );
     }
-    // const changeLanguage = (lng) => {
-    //   i18n.changeLanguage(lng);
-    // }
 
-    
-    const { keywords } = siteConfig;
     const { t } = useTranslation();
     const title = t("heroText");
   
@@ -45,7 +40,7 @@ const Now = () => {
           return (
             <>
               <SEO title={title} keywords={keywords} />
-              <Hero heroImg={siteConfig.siteCover} title={title} />
+              <Hero heroImg={siteCover} title={title} />
               <Wrapper>
                 <Container className="page-content" fluid>
                   <Row>

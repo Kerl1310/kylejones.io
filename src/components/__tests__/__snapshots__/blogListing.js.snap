@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blog Listing renders correctly 1`] = `
+<li
+  className="blog-post"
+  id="blog-post-2021-02-04"
+>
+  <div
+    className="blog-post-date"
+  >
+    <h4>
+      2/4/2021
+    </h4>
+  </div>
+  <a
+    href="/test-path"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    rel="noopener noreferrer"
+    target="__blank"
+  >
+    Testing
+  </a>
+  <p>
+    Testing excerpt
+  </p>
+  <hr />
+</li>
+`;

@@ -123,7 +123,7 @@ module.exports = {
   social: {
     linkedin: 'https://www.linkedin.com/in/kylejones1310/',
     github: 'https://github.com/kerl1310/',
-    medium: 'https://medium.com/@KerlDev',
+    medium: 'https://kyle-jones.medium.com/',
     stackOverflow: 'https://stackoverflow.com/story/kylejones',
     dev: 'https://dev.to/kerldev',
     email: 'kylejones1310@outlook.com',

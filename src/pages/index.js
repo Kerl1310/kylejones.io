@@ -1,14 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'react-awesome-styled-grid';
-import {
-  FaGithub,
-  FaLinkedin,
-  FaDev,
-  FaMedium,
-  FaStackOverflow,
-  FaEnvelope,
-} from 'react-icons/fa';
 import siteConfig from '../../data/siteConfig';
 import Hero from '../components/hero';
 import SEO from '../components/SEO';
@@ -17,19 +9,18 @@ import About from '../components/about';
 import Skills from '../components/skills';
 import Timeline from '../components/timeline';
 import Repositories from '../components/repositories';
-import Articles from '../components/articles';
+import FeaturedArticles from '../components/featuredArticles';
+import RecentArticles from '../components/recentArticles';
 import '../components/i18n';
 import { withTranslation } from 'react-i18next';
+import SocialButtons from '../components/socialButtons';
+import Separator from '../components/separator';
 
-const Separator = styled.hr`
-  margin-top: 24px;
-  margin-bottom: 16px;
-`;
 const googleAnalyticsId = process.env.GA_ID;
 
 class Home extends Component {
   render() {
-    // validate siteConfig settings
+    
     if (googleAnalyticsId === 'UA-000000000-1') {
       console.error(
         'WARNING: Please set a proper googleAnalyticsId. See https://analytics.google.com for details.'
@@ -55,53 +46,7 @@ class Home extends Component {
                   src={siteConfig.authorAvatar}
                   alt="user avatar"
                 />
-                <div className="social">
-                  {siteConfig.social.github && (
-                    <a
-                      className="social-link github"
-                      href={siteConfig.social.github}
-                    >
-                      <FaGithub className="social-icon" size="32" />
-                    </a>
-                  )}
-                  {siteConfig.social.linkedin && (
-                    <a
-                      className="social-link linkedin"
-                      href={siteConfig.social.linkedin}
-                    >
-                      <FaLinkedin className="social-icon" size="32" />
-                    </a>
-                  )}
-                  {siteConfig.social.dev && (
-                    <a className="social-link dev" href={siteConfig.social.dev}>
-                      <FaDev className="social-icon" size="32" />
-                    </a>
-                  )}
-                  {siteConfig.social.medium && (
-                    <a
-                      className="social-link medium"
-                      href={siteConfig.social.medium}
-                    >
-                      <FaMedium className="social-icon" size="32" />
-                    </a>
-                  )}
-                  {siteConfig.social.stackOverflow && (
-                    <a
-                      className="social-link stackOverflow"
-                      href={siteConfig.social.stackOverflow}
-                    >
-                      <FaStackOverflow className="social-icon" size="32" />
-                    </a>
-                  )}
-                  {siteConfig.social.email && (
-                    <a
-                      className="social-link email"
-                      href={`mailto:${siteConfig.social.email}`}
-                    >
-                      <FaEnvelope className="social-icon" size="32" />
-                    </a>
-                  )}
-                </div>
+                <SocialButtons />
               </Col>
             </Row>
             <Row>
@@ -115,7 +60,9 @@ class Home extends Component {
             <Separator />
             <Timeline />
             <Separator />
-            <Articles />
+            <FeaturedArticles />
+            <Separator />
+            <RecentArticles />
             <Separator />
             <Repositories />
           </Container>

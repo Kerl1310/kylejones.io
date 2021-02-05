@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blog Canonical Link renders correctly 1`] = `
+<div>
+  <p>
+    Originally published at
+     
+    <a
+      href="https://example.com/"
+      rel="noopener noreferrer"
+      target="__blank"
+    >
+      https://example.com/
+    </a>
+  </p>
+  <hr />
+</div>
+`;

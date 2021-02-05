@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 const Reading = ({book, authors}) => {
     const { t } = useTranslation();
     return (
-        <li>
+        <li key={book.isbn}>
             <strong>{t("readingLabel")}: </strong>
             <a
             className={`book-link-${book.isbn}`}

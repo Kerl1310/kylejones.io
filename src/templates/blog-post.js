@@ -1,6 +1,5 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import Tag from '../components/tag';
 import { Container, Row, Col } from 'react-awesome-styled-grid';
@@ -10,40 +9,40 @@ import Wrapper from '../components/wrapper';
 import SEO from '../components/SEO';
 import ShareButtons from '../components/shareButtons';
 import BlogCanonicalLink from '../components/blogCanonicalLink';
-
-const Separator = styled.hr`
-  margin-top: 16px;
-  margin-bottom: 16px;
-`;
+import '../components/i18n';
+import { useTranslation } from 'react-i18next';
+import Separator from '../components/separator';
 
 const googleAnalyticsId = process.env.GA_ID;
 
-function BlogTemplate({ data }) {
+const BlogTemplate = ({ data }) => {
   if (googleAnalyticsId === 'UA-000000000-1') {
     console.error(
       'WARNING: Please set a proper googleAnalyticsId. See https://analytics.google.com for details.'
     );
   }
 
+  const { t } = useTranslation();
   const post = data.markdownRemark;
-  const title = siteConfig.siteTitle;
+  const frontmatter = post.frontmatter;
   const { keywords } = siteConfig;
-  const fullUrl = siteConfig.pathPrefix + post.frontmatter.path;
+  const fullUrl = siteConfig.pathPrefix + frontmatter.path;
   const featuredImageUrl =
-    siteConfig.pathPrefix + post.frontmatter.featuredImage;
-  const canonicalUrl = post.frontmatter.canonicalUrl;
-  const canonicalText = post.frontmatter.canonicalText;
+    siteConfig.pathPrefix + frontmatter.featuredImage;
+  const postTitle = frontmatter.title;
+  const canonicalUrl = frontmatter.canonicalUrl;
+  const canonicalText = frontmatter.canonicalText;
 
   return (
     <>
       <SEO
-        title={post.frontmatter.title}
+        title={postTitle}
         keywords={keywords}
         description={post.excerpt}
         featuredImage={featuredImageUrl}
         url={fullUrl}
       />
-      <Hero heroImg={siteConfig.siteCover} title={title} />
+      <Hero heroImg={siteConfig.siteCover} title={t("heroText")} />
       <Wrapper>
         <Container className="page-content" fluid>
           <Row>
@@ -51,12 +50,12 @@ function BlogTemplate({ data }) {
               <div className="blog-post-container">
                 {' '}
                 <Helmet
-                  title={`${post.frontmatter.title} | ${siteConfig.authorName}`}
+                  title={`${postTitle} | ${siteConfig.authorName}`}
                 />{' '}
                 <div className="blog-post">
                   {' '}
-                  <h1>{post.frontmatter.title}</h1>{' '}
-                  {post.frontmatter.tags.map(tag => (
+                  <h1>{postTitle}</h1>{' '}
+                  {frontmatter.tags.map(tag => (
                     <React.Fragment key={tag}>
                       <Tag
                         className="blog-post-tag"
@@ -75,8 +74,8 @@ function BlogTemplate({ data }) {
                 <ShareButtons
                   twitterHandle={siteConfig.twitterUsername}
                   url={canonicalUrl}
-                  title={post.frontmatter.title}
-                  tags={post.frontmatter.tags}
+                  title={postTitle}
+                  tags={frontmatter.tags}
                 />
               </div>
             </Col>

@@ -37,7 +37,6 @@ exports[`Timeline renders correctly 1`] = `
         >
           Made Tech
         </a>
-         
         <br />
         <small
           className="timeline__title--small"
@@ -82,7 +81,6 @@ exports[`Timeline renders correctly 1`] = `
         >
           AMPLYFI
         </a>
-         
         <br />
         <small
           className="timeline__title--small"
@@ -127,7 +125,6 @@ exports[`Timeline renders correctly 1`] = `
         >
           AMPLYFI
         </a>
-         
         <br />
         <small
           className="timeline__title--small"
@@ -172,7 +169,6 @@ exports[`Timeline renders correctly 1`] = `
         >
           Sapiens
         </a>
-         
         <br />
         <small
           className="timeline__title--small"
@@ -217,7 +213,6 @@ exports[`Timeline renders correctly 1`] = `
         >
           Siderise Group
         </a>
-         
         <br />
         <small
           className="timeline__title--small"

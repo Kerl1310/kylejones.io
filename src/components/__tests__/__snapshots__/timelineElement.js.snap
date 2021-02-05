@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timeline Element renders correctly 1`] = `
+<div
+  className="sc-ifAKCX KmpCT"
+>
+  <h1>
+    Experience
+  </h1>
+  <article
+    className="timeline__item"
+  >
+    <div
+      className="inner"
+    >
+      <span
+        className="timeline__date"
+      >
+        <span
+          className="timeline__month"
+        >
+          oct
+        </span>
+        <span
+          className="timeline__year"
+        >
+          2020
+        </span>
+      </span>
+      <h2
+        className="timeline__title"
+      >
+        Software Engineer 2
+         at 
+        <a
+          href="https://www.madetech.com/"
+        >
+          Made Tech
+        </a>
+        <br />
+        <small
+          className="timeline__title--small"
+        >
+          (
+          present
+          )
+        </small>
+      </h2>
+      <p>
+        
+      </p>
+    </div>
+  </article>
+  <article
+    className="timeline__item"
+  >
+    <div
+      className="inner"
+    >
+      <span
+        className="timeline__date"
+      >
+        <span
+          className="timeline__month"
+        >
+          may
+        </span>
+        <span
+          className="timeline__year"
+        >
+          2019
+        </span>
+      </span>
+      <h2
+        className="timeline__title"
+      >
+        Senior Software Engineer
+         at 
+        <a
+          href="https://www.amplyfi.com/"
+        >
+          AMPLYFI
+        </a>
+        <br />
+        <small
+          className="timeline__title--small"
+        >
+          (
+          18 months
+          )
+        </small>
+      </h2>
+      <p>
+        Leading the design, commercialisation and continuous improvement of AMPLYFI’s suite of AI powered business intelligence products including DataVoyant Analyse and DataVoyant Companies.
+      </p>
+    </div>
+  </article>
+  <article
+    className="timeline__item"
+  >
+    <div
+      className="inner"
+    >
+      <span
+        className="timeline__date"
+      >
+        <span
+          className="timeline__month"
+        >
+          may
+        </span>
+        <span
+          className="timeline__year"
+        >
+          2017
+        </span>
+      </span>
+      <h2
+        className="timeline__title"
+      >
+        Software Engineer
+         at 
+        <a
+          href="https://www.amplyfi.com/"
+        >
+          AMPLYFI
+        </a>
+        <br />
+        <small
+          className="timeline__title--small"
+        >
+          (
+          2 years
+          )
+        </small>
+      </h2>
+      <p>
+        Supporting the design, commercialisation and continuous improvement of AMPLYFI’s suite of AI powered business intelligence products including DataVoyant Analyse and DataVoyant Companies.
+      </p>
+    </div>
+  </article>
+  <article
+    className="timeline__item"
+  >
+    <div
+      className="inner"
+    >
+      <span
+        className="timeline__date"
+      >
+        <span
+          className="timeline__month"
+        >
+          apr
+        </span>
+        <span
+          className="timeline__year"
+        >
+          2016
+        </span>
+      </span>
+      <h2
+        className="timeline__title"
+      >
+        Graduate Developer
+         at 
+        <a
+          href="https://www.sapiens.com/"
+        >
+          Sapiens
+        </a>
+        <br />
+        <small
+          className="timeline__title--small"
+        >
+          (
+          1 year
+          )
+        </small>
+      </h2>
+      <p>
+        Assisted the development of Sapiens' flagship product - ALIS, a software suite enabling the creation and management of annuities, life and pension insurance quotes and policies.
+      </p>
+    </div>
+  </article>
+  <article
+    className="timeline__item"
+  >
+    <div
+      className="inner"
+    >
+      <span
+        className="timeline__date"
+      >
+        <span
+          className="timeline__month"
+        >
+          jun
+        </span>
+        <span
+          className="timeline__year"
+        >
+          2015
+        </span>
+      </span>
+      <h2
+        className="timeline__title"
+      >
+        Application Developer
+         at 
+        <a
+          href="https://www.siderise.com/"
+        >
+          Siderise Group
+        </a>
+        <br />
+        <small
+          className="timeline__title--small"
+        >
+          (
+          1 year
+          )
+        </small>
+      </h2>
+      <p>
+        Contributed to the design, customisation and extension of Siderise's various IT systems. Duties consisted of gathering requirements before researching and implementing potential solutions using C#.
+      </p>
+    </div>
+  </article>
+</div>
+`;
