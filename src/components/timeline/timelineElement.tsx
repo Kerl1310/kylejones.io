@@ -3,10 +3,10 @@ import React, { FC } from 'react'
 interface TimelineElementProps {
     job: {
         begin: {
-            month: Number,
-            year: Number
+            month: string,
+            year: string
         },
-        duration: Number,
+        duration: string,
         occupation: string,
         company: string,
         url: string,

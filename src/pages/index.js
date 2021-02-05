@@ -14,11 +14,8 @@ import RecentArticles from '../components/recentArticles';
 import '../components/i18n';
 import { withTranslation } from 'react-i18next';
 import SocialButtons from '../components/socialButtons';
+import Separator from '../components/separator';
 
-const Separator = styled.hr`
-  margin-top: 24px;
-  margin-bottom: 16px;
-`;
 const googleAnalyticsId = process.env.GA_ID;
 
 class Home extends Component {

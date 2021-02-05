@@ -1,6 +1,5 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import Tag from '../components/tag';
 import { Container, Row, Col } from 'react-awesome-styled-grid';
@@ -12,11 +11,7 @@ import ShareButtons from '../components/shareButtons';
 import BlogCanonicalLink from '../components/blogCanonicalLink';
 import '../components/i18n';
 import { useTranslation } from 'react-i18next';
-
-const Separator = styled.hr`
-  margin-top: 16px;
-  margin-bottom: 16px;
-`;
+import Separator from '../components/separator';
 
 const googleAnalyticsId = process.env.GA_ID;
 

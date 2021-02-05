@@ -1,16 +1,16 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import config from 'react-awesome-styled-grid';
+import { config } from 'react-awesome-styled-grid';
 import { jobs } from '../../../data/siteConfig';
 import '../i18n';
 import { useTranslation } from 'react-i18next';
 import TimelineElement from './timelineElement';
 
-interface TimelineProps {
-  className: string
-}
+// interface TimelineProps {
+//   className: string
+// }
 
-const Timeline : FC<TimelineProps> = ({ className }) => {
+const Timeline = ({ className }) => {
 
   const { t } = useTranslation();
 
