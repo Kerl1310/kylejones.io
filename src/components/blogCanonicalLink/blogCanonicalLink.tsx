@@ -1,13 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { FC } from 'react';
 import { Link } from 'gatsby';
+import Separator from '../separator';
 
-const Separator = styled.hr`
-  margin-top: 16px;
-  margin-bottom: 16px;
-`;
+interface BlogCanonicalLinkProps {
+    canonicalUrl: string
+    canonicalText?: string
+}
 
-const BlogCanonicalLink = ({canonicalUrl, canonicalText = null}) => {
+const BlogCanonicalLink : FC<BlogCanonicalLinkProps> = ({canonicalUrl, canonicalText = null}) => {
         if (canonicalUrl) {
             return (
             <div>
@@ -28,4 +28,4 @@ const BlogCanonicalLink = ({canonicalUrl, canonicalText = null}) => {
     }
 };
 
-export default BlogCanonicalLink
+export default BlogCanonicalLink;

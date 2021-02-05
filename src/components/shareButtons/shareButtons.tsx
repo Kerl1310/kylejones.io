@@ -1,5 +1,4 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { FC } from 'react';
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -12,35 +11,35 @@ import {
   RedditShareButton,
   RedditIcon,
 } from 'react-share';
+import Spacer from '../spacer';
 
-const Spacer = styled.span`
-  padding: 1px 4px;
-  margin-bottom: 10px;
-  color: white;
-  display: inline-block;
-`;
+interface ShareButtonsProps {
+  url: string
+  title: string
+  tags: string[]
+}
 
-const ShareButtons = ({ url, title, tags }) => {
+const ShareButtons : FC<ShareButtonsProps> = ({ url, title, tags }) => {
   return (
     <div>
       <FacebookShareButton url={url}>
-        <FacebookIcon size="48" round="true" />
+        <FacebookIcon size={48} round={true} />
       </FacebookShareButton>
       <Spacer />
       <TwitterShareButton url={url} title={title} hashtags={tags}>
-        <TwitterIcon size="48" round="true" />
+        <TwitterIcon size={48} round={true} />
       </TwitterShareButton>
       <Spacer />
       <LinkedinShareButton url={url}>
-        <LinkedinIcon size="48" round="true" />
+        <LinkedinIcon size={48} round={true} />
       </LinkedinShareButton>
       <Spacer />
       <RedditShareButton url={url} title={title}>
-        <RedditIcon size="48" round="true" />
+        <RedditIcon size={48} round={true} />
       </RedditShareButton>
       <Spacer />
       <WhatsappShareButton url={url} title={title}>
-        <WhatsappIcon size="48" round="true" />
+        <WhatsappIcon size={48} round={true} />
       </WhatsappShareButton>
     </div>
   )
