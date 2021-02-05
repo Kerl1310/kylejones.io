@@ -5,10 +5,10 @@ exports[`Hero renders correctly 1`] = `
   className="sc-bdVaJa gjdwiW sc-bxivhb cCNszn"
 >
   <div
-    className="sc-bwzfXH GNvwd"
+    className="sc-htpNat brSZyA"
   >
     <h1
-      className="sc-htpNat UaOJJ"
+      className="sc-bwzfXH fUSFxt"
     >
       my-title
     </h1>

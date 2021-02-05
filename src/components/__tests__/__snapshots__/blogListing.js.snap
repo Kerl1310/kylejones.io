@@ -24,8 +24,6 @@ exports[`Blog Listing renders correctly 1`] = `
   <p>
     Testing excerpt
   </p>
-  <hr
-    className="sc-bdVaJa coSZVw"
-  />
+  <hr />
 </li>
 `;

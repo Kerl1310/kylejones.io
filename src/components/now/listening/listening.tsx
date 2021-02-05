@@ -10,7 +10,7 @@ interface ListeningProps {
 const Listening: FC<ListeningProps> = ({artist}) => {
     const { t } = useTranslation();
     return (
-        <li>
+        <li key={artist.name}>
             <strong>{t("listeningLabel")}: </strong>
             <a
                 className={'artist-link'}

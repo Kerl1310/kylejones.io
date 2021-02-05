@@ -24,9 +24,6 @@ const Now = () => {
         'WARNING: Please set a proper googleAnalyticsId. See https://analytics.google.com for details.'
       );
     }
-    // const changeLanguage = (lng) => {
-    //   i18n.changeLanguage(lng);
-    // }
 
     const { t } = useTranslation();
     const title = t("heroText");

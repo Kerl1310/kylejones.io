@@ -3,10 +3,10 @@ import React, { FC } from 'react'
 interface TimelineElementProps {
     job: {
         begin: {
-            month: Number,
-            year: Number
+            month: string,
+            year: string
         },
-        duration: Number,
+        duration: string,
         occupation: string,
         company: string,
         url: string,
@@ -17,11 +17,11 @@ interface TimelineElementProps {
 const TimelineElement : FC<TimelineElementProps> = ({job}) => {
     const startMonth = job.begin.month;
     const startYear = job.begin.year;
-    const key = startMonth.toString() + startYear.toString();
+    const key = `${job.company}-${startMonth.toString()}-${startYear.toString()}`;
 
     return (
         <article
-            key={key}
+            key={`${key}`}
             className="timeline__item"
         >
             <div className="inner">

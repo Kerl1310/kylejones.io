@@ -11,7 +11,7 @@ exports[`SEO renders correctly 1`] = `
             "@context": "https://schema.org",
             "@type": "Author",
             "birthDate": "1992-10-13",
-            "email": "kylejones1310@outlook.com\\",
+            "email": "kylejones1310@outlook.com",
             "gender": "Male",
             "jobTitle": "Senior Software Engineer",
             "knowsLanguage": "English",

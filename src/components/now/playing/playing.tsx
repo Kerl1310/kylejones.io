@@ -10,7 +10,7 @@ interface PlayingProps {
 const Playing : FC<PlayingProps> = ({game}) => {
     const { t } = useTranslation();
     return (
-        <li>
+        <li key={game.steamId}>
             <strong>{t("playingLabel")}: </strong>
             <a
                 className={'game-link'}

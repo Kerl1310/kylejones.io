@@ -6,11 +6,11 @@ import '../i18n';
 import { useTranslation } from 'react-i18next';
 import TimelineElement from './timelineElement';
 
-interface TimelineProps {
-  className: string
-}
+// interface TimelineProps {
+//   className: string
+// }
 
-const Timeline : FC<TimelineProps> = ({ className }) => {
+const Timeline = ({ className }) => {
 
   const { t } = useTranslation();
 
@@ -19,7 +19,7 @@ const Timeline : FC<TimelineProps> = ({ className }) => {
       <h1>{t("experienceTitle")}</h1>
       {jobs &&
         jobs.map(job => (
-          <TimelineElement job={job} />
+          <TimelineElement key={`${job.company}-${job.begin.month}-${job.begin.year}`} job={job} />
         ))}
     </div>
   );

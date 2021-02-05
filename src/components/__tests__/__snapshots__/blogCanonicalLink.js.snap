@@ -13,8 +13,6 @@ exports[`Blog Canonical Link renders correctly 1`] = `
       https://example.com/
     </a>
   </p>
-  <hr
-    className="sc-bdVaJa cXkkBt"
-  />
+  <hr />
 </div>
 `;

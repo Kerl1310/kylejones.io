@@ -10,7 +10,7 @@ class CoffeeButton extends Component {
         return (
             <div id="coffee-button-span">
                 <a href="https://www.buymeacoffee.com/KyleJones">
-                    <img alt="Coffee cup image" width="192" height="60" src={source}/>
+                    <img alt="" width="192" height="60" src={source}/>
                 </a>
             </div>
         );

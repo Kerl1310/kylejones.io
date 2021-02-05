@@ -3,35 +3,35 @@
 exports[`Layout renders correctly 1`] = `
 Array [
   <header
-    className="sc-bdVaJa jpTWEI"
+    className="sc-ifAKCX jCxHet"
   >
     <nav
-      className="sc-bwzfXH bcPshD"
+      className="sc-bxivhb bGcKe"
     >
       <div
         className="sc-htpNat kquAIx"
       >
         <a
-          className="sc-bxivhb hwDDke"
+          className="sc-bwzfXH eKSoAx"
           href="/"
         >
           Kyle Jones
         </a>
         <a
-          className="sc-bxivhb hwDDke"
+          className="sc-bwzfXH eKSoAx"
           href="/now"
         >
           Now
         </a>
         <a
-          className="sc-bxivhb hwDDke"
+          className="sc-bwzfXH eKSoAx"
           href="/blog"
         >
           Blog
         </a>
       </div>
       <a
-        className="sc-ifAKCX eGFKKa"
+        className="sc-bdVaJa fqObBR"
         href="https://github.com/kerl1310"
         rel="noopener noreferrer"
         target="_blank"
@@ -64,14 +64,12 @@ Array [
     </main>
   </div>,
   <footer
-    className="sc-EHOje iJIxGv"
+    className="sc-bZQynM jfveyy"
   >
     <div
-      className="sc-bZQynM jPWtel"
+      className="sc-EHOje iHsrUV"
     >
-      <div
-        className="sc-gzVnrw fgSTpW"
-      >
+      <div>
         <div
           id="coffee-button-span"
         >
@@ -79,7 +77,7 @@ Array [
             href="https://www.buymeacoffee.com/KyleJones"
           >
             <img
-              alt="Coffee cup image"
+              alt=""
               height="60"
               src="https://img.buymeacoffee.com/button-api/?text=Buy a Coffee&emoji=☕&slug=KyleJones&button_colour=25313b&font_colour=ffffff&font_family=Poppins&outline_colour=ffffff&coffee_colour=FFDD00"
               width="192"
