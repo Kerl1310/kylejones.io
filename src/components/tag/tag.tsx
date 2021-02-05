@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
-const Tag = ({ className, text, path }) => {
+interface TagProps {
+  className: string
+  text: string,
+  path: string
+}
+
+const Tag : FC<TagProps> = ({ className, text, path }) => {
   return (
     <Link
       id={text}

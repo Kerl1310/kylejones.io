@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { FC } from 'react';
 import kebabCase from 'lodash/kebabCase';
 import { Link } from 'gatsby';
 
-const TagListing = ({ tag }) => {
+interface TagListingProps {
+    tag: {
+        fieldValue: string,
+        totalCount: number
+    }
+}
+
+const TagListing : FC<TagListingProps> = ({ tag }) => {
     const name = tag.fieldValue;
     const url = `/tags/${kebabCase(name)}/`;
     return (

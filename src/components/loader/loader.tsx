@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 
-const Loader = ({ className }) => {
+interface LoaderProps {
+  className: string
+}
+
+const Loader : FC<LoaderProps> = ({ className }) => {
   return (
     <div className={className}>
       <div></div>

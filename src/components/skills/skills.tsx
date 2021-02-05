@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 import SkillBar from './skill-bar';
 import '../i18n';
 import { useTranslation } from 'react-i18next';
 
-const Skills = ({ className, skills = [] }) => {
+interface SkillsProps {
+  className: string
+  skills: {
+    name: String,
+    level: number
+  }[]
+}
+
+const Skills : FC<SkillsProps> = ({ className, skills = [] }) => {
   const { t } = useTranslation();
 
   return (

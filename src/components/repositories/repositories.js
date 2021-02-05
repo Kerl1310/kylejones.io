@@ -16,13 +16,15 @@ class Repositories extends Component {
       repos: [],
       status: 'loading',
     };
-  }
+  };
+  
   async componentDidMount() {
     const repos = await jsonFetch(endpoint);
     if (repos.json && repos.json.length) {
       this.setState({ repos: repos.json, status: 'ready' });
     }
-  }
+  };
+
   render() {
     const { status } = this.state;
     const { t } = this.props;

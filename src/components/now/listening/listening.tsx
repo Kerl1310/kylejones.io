@@ -3,11 +3,11 @@ import '../../i18n';
 import { useTranslation } from 'react-i18next';
 import { Artist } from './artist';
 
-interface ListeningBaseProps {
+interface ListeningProps {
     artist: Artist
 }
 
-const Listening: FC<ListeningBaseProps> = ({artist}) => {
+const Listening: FC<ListeningProps> = ({artist}) => {
     const { t } = useTranslation();
     return (
         <li>
