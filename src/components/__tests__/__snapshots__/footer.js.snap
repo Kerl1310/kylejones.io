@@ -2,14 +2,12 @@
 
 exports[`Footer renders correctly 1`] = `
 <footer
-  className="sc-bdVaJa cpSThT"
+  className="sc-bwzfXH dCGeLu"
 >
   <div
-    className="sc-bwzfXH fQkwPc"
+    className="sc-bdVaJa cKGSMP"
   >
-    <div
-      className="sc-htpNat hHtpcc"
-    >
+    <div>
       <div
         id="coffee-button-span"
       >
@@ -17,7 +15,7 @@ exports[`Footer renders correctly 1`] = `
           href="https://www.buymeacoffee.com/KyleJones"
         >
           <img
-            alt="Coffee cup image"
+            alt=""
             height="60"
             src="https://img.buymeacoffee.com/button-api/?text=Buy a Coffee&emoji=☕&slug=KyleJones&button_colour=25313b&font_colour=ffffff&font_family=Poppins&outline_colour=ffffff&coffee_colour=FFDD00"
             width="192"

@@ -18,9 +18,9 @@ exports[`ShareButtons renders correctly 1`] = `
     }
   >
     <svg
-      height="48"
+      height={48}
       viewBox="0 0 64 64"
-      width="48"
+      width={48}
     >
       <circle
         cx="32"
@@ -35,9 +35,7 @@ exports[`ShareButtons renders correctly 1`] = `
       />
     </svg>
   </button>
-  <span
-    className="sc-bdVaJa gDyhoi"
-  />
+  <span />
   <button
     aria-label="twitter"
     className="react-share__ShareButton"
@@ -54,9 +52,9 @@ exports[`ShareButtons renders correctly 1`] = `
     }
   >
     <svg
-      height="48"
+      height={48}
       viewBox="0 0 64 64"
-      width="48"
+      width={48}
     >
       <circle
         cx="32"
@@ -71,9 +69,7 @@ exports[`ShareButtons renders correctly 1`] = `
       />
     </svg>
   </button>
-  <span
-    className="sc-bdVaJa gDyhoi"
-  />
+  <span />
   <button
     aria-label="linkedin"
     className="react-share__ShareButton"
@@ -90,9 +86,9 @@ exports[`ShareButtons renders correctly 1`] = `
     }
   >
     <svg
-      height="48"
+      height={48}
       viewBox="0 0 64 64"
-      width="48"
+      width={48}
     >
       <circle
         cx="32"
@@ -107,9 +103,7 @@ exports[`ShareButtons renders correctly 1`] = `
       />
     </svg>
   </button>
-  <span
-    className="sc-bdVaJa gDyhoi"
-  />
+  <span />
   <button
     aria-label="reddit"
     className="react-share__ShareButton"
@@ -126,9 +120,9 @@ exports[`ShareButtons renders correctly 1`] = `
     }
   >
     <svg
-      height="48"
+      height={48}
       viewBox="0 0 64 64"
-      width="48"
+      width={48}
     >
       <circle
         cx="32"
@@ -143,9 +137,7 @@ exports[`ShareButtons renders correctly 1`] = `
       />
     </svg>
   </button>
-  <span
-    className="sc-bdVaJa gDyhoi"
-  />
+  <span />
   <button
     aria-label="whatsapp"
     className="react-share__ShareButton"
@@ -162,9 +154,9 @@ exports[`ShareButtons renders correctly 1`] = `
     }
   >
     <svg
-      height="48"
+      height={48}
       viewBox="0 0 64 64"
-      width="48"
+      width={48}
     >
       <circle
         cx="32"
