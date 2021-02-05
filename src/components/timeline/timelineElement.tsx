@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-const TimelineElement = ({job}) => {
+interface TimelineElementProps {
+    job: {
+        begin: {
+            month: Number,
+            year: Number
+        },
+        duration: Number,
+        occupation: string,
+        company: string,
+        url: string,
+        description: string
+    }
+}
+
+const TimelineElement : FC<TimelineElementProps> = ({job}) => {
     const startMonth = job.begin.month;
     const startYear = job.begin.year;
-    const key = startMonth + startYear;
+    const key = startMonth.toString() + startYear.toString();
 
     return (
         <article

@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 
-const SkillBar = ({ className, name, level }) => {
+interface SkillBarProps {
+  className: string,
+  name: string,
+  level: Number
+}
+
+const SkillBar : FC<SkillBarProps> = ({ className, name, level }) => {
   return (
     <div className={className}>
       <label htmlFor={`${name}-bar`}>{name}</label>

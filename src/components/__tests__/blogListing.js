@@ -17,7 +17,7 @@ const testArticle = {
 describe('Blog Listing', () => {
   it('renders correctly', () => {
     const tree = renderer
-      .create(<BlogListing articleLink={testArticle} />)
+      .create(<BlogListing article={testArticle} />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

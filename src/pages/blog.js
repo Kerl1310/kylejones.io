@@ -28,7 +28,7 @@ class Blog extends Component {
       <StaticQuery
         query={blogQuery}
         render={data => {
-          const articleLinks = data.allMarkdownRemark.edges;
+          const articles = data.allMarkdownRemark.edges;
 
           return (
             <>
@@ -47,8 +47,8 @@ class Blog extends Component {
                     <Col>
                       {' '}
                       <ul>
-                        {articleLinks.map(articleLink => (
-                          <BlogListing articleLink={articleLink}/>
+                        {articles.map(article => (
+                          <BlogListing article={article}/>
                         ))}
                       </ul>
                     </Col>

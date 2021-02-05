@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { FC } from 'react';
 import '../../i18n';
 import { useTranslation } from 'react-i18next';
+import { Game } from './game';
 
-const Playing = ({game}) => {
+interface PlayingProps {
+    game: Game
+}
+
+const Playing : FC<PlayingProps> = ({game}) => {
     const { t } = useTranslation();
     return (
         <li>
