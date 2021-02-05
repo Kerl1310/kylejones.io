@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { FC } from 'react';
 import '../i18n';
 import { useTranslation } from 'react-i18next';
 
-const About = ({ text = '' }) => {
+interface AboutProps {
+  text: string
+}
+
+const About : FC<AboutProps> = ({ text = '' }) => {
   const { t } = useTranslation();
 
   return (

@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import jsonFetch from 'simple-json-fetch';
 import styled from 'styled-components';
 import { githubUsername } from '../../../data/siteConfig';
-
 import Loader from '../loader';
 import '../i18n';
 import { withTranslation } from 'react-i18next';
+import RepositoryElement from './repositoryElement';
 
 const endpoint = `https://api.github.com/users/${githubUsername}/repos?type=owner&sort=updated&per_page=5&page=1`;
 
@@ -41,21 +41,7 @@ class Repositories extends Component {
           <React.Fragment>
             <div className="repositories__content">
               {this.state.repos.map(repo => (
-                <React.Fragment key={repo.name}>
-                  <div className="repositories__repo">
-                    <a className="repositories__repo-link" href={repo.html_url}>
-                      <strong>{repo.name}</strong>
-                    </a>
-                    <div>{repo.description}</div>
-                    <div className="repositories__repo-date">
-                      Updated: {new Date(repo.updated_at).toUTCString()}
-                    </div>
-                    <div className="repositories__repo-star">
-                      ★ {repo.stargazers_count}
-                    </div>
-                  </div>
-                  <hr />
-                </React.Fragment>
+                <RepositoryElement repo={repo} />
               ))}
             </div>
           </React.Fragment>
