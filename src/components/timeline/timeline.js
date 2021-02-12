@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { config } from 'react-awesome-styled-grid';
 import { jobs } from '../../../data/siteConfig';
