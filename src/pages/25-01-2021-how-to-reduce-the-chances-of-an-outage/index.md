@@ -6,7 +6,7 @@ tags:
     - software-engineering
     - cloud
 featuredImage: "/how-to-reduce-the-chances-of-an-outage.png"
-isFeatured: false
+isFeatured: true
 ---
 The popular messaging service [Slack](https://slack.com) recently experienced a [global outage which impacted millions of users](https://status.slack.com/2021-01-04), the majority of which were individuals working from home or remote learning due to the Coronavirus pandemic. The outage lasted for an extended period, potentially impacting their service level agreements (SLAs), impacts the brand while coming hot on the heels of the [announcement of their $27.7 billion acquisition](https://slack.com/intl/en-gb/blog/news/salesforce-signs-definitive-agreement-to-acquire-slack) by [Salesforce](https://www.salesforce.com). Outages like the one Slack experienced are increasingly common in a technology focused society, so how do we avoid costly issues like this?
 
