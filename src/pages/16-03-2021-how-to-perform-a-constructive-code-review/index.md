@@ -1,11 +1,11 @@
 ---
-path: "/how-to-perform-a-constructive-code-review"
+path: "/how-to-conduct-a-constructive-code-review"
 date: "2021-03-16"
-title: "How to Perform a Constructive Code Review"
+title: "How to Conduct a Constructive Code Review"
 tags:
     - software-engineering
     - code-reviews
-featuredImage: "/how-to-perform-a-constructive-code-review.png"
+featuredImage: "/how-to-conduct-a-constructive-code-review.png"
 isFeatured: true
 ---
 Many businesses have a dedicated software engineering department, whether to maintain a website or develop apps. The majority of these departments will perform code reviews as part of their daily routine. But what’s the difference between a negative experience and a constructive review?
