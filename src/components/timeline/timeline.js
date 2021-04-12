@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { config } from 'react-awesome-styled-grid';
-import { jobs } from '../../../data/siteConfig';
 import '../i18n';
 import { useTranslation } from 'react-i18next';
 import TimelineElement from './timelineElement';
@@ -13,6 +12,9 @@ import TimelineElement from './timelineElement';
 const Timeline = ({ className }) => {
 
   const { t } = useTranslation();
+
+  const jobs = t("jobs");
+  throw(jobs)
 
   return (
     <div className={className}>

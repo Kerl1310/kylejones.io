@@ -12,7 +12,7 @@ i18n
   debug: process.env.NODE_ENV === "development",
   resources,
   fallbackLng: "en",
-  supportedLngs: ['cy', 'en'],
+  supportedLngs: ['cy', 'en', 'fr'],
   keySeparator: false, // we do not use keys in form messages.welcome
   interpolation: {
     escapeValue: false // react already safes from xss
