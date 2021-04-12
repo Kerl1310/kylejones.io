@@ -1,4 +1,84 @@
 {
+        "fr": {
+                "translation": {
+                        "heroText": "Salut, Je Suis Kyle!",
+                        "aboutTitle": "À propos de",
+                        "blogTitle": "Blog",
+                        "coffeeButtonText": "Achetez un Café",
+                        "experienceTitle": "Vivre",
+                        "featuredArticlesTitle": "Articles en Vedette",
+                        "learningLabel": "Apprentissage",
+                        "listeningLabel": "Écouter",
+                        "nowTitle": "À présent",
+                        "nowHeading": "Ce Que Je Fais",
+                        "nowSubheading": "Dernière Mise à Jour: ",
+                        "playingLabel": "En Jouant",
+                        "readingLabel": "En Lisant",
+                        "recentArticlesTitle": "Articles Récents",
+                        "repositoriesTitle": "Derniers Dépôts Sur Github",
+                        "skillsTitle": "Compétences",
+                        "tagsTitle": "Mots Clés",
+                        "watchingLabel": "En Train de Regarder",
+                        "workingLabel": "Travaille Sur",
+                        "jobs": [
+                                {
+                                        "company": "Made Tech",
+                                        "begin": {
+                                                "month": "oct",
+                                                "year": "2020"
+                                        },
+                                        "url": "https://www.madetech.com/",
+                                        "duration": null,
+                                        "occupation": "Software Engineer 2",
+                                        "description": "Building and testing high quality features for organisations in the public sector."
+                                },
+                                {
+                                        "company": "AMPLYFI",
+                                        "begin": {
+                                                "month": "mai",
+                                                "year": "2019"
+                                        },
+                                        "url": "https://www.amplyfi.com/",
+                                        "duration": "18 mois",
+                                        "occupation": "Senior Software Engineer",
+                                        "description": "Leading the design, commercialisation and continuous improvement of AMPLYFI’s suite of AI powered business intelligence products including DataVoyant Analyse and DataVoyant Companies."
+                                },
+                                {
+                                        "company": "AMPLYFI",
+                                        "begin": {
+                                                "month": "mai",
+                                                "year": "2017"
+                                        },
+                                        "duration": "2 ans",
+                                        "url": "https://www.amplyfi.com/",
+                                        "occupation": "Software Engineer",
+                                        "description": "Supporting the design, commercialisation and continuous improvement of AMPLYFI’s suite of AI powered business intelligence products including DataVoyant Analyse and DataVoyant Companies."
+                                },
+                                {
+                                        "company": "Sapiens",
+                                        "begin": {
+                                                "month": "avr",
+                                                "year": "2016"
+                                        },
+                                        "url": "https://www.sapiens.com/",
+                                        "duration": "1 an",
+                                        "occupation": "Graduate Developer",
+                                        "description": "Assisted the development of Sapiens' flagship product - ALIS, a software suite enabling the creation and management of annuities, life and pension insurance quotes and policies."
+                                },
+                                {
+                                        "company": "Siderise Group",
+                                        "begin": {
+                                                "month": "juin",
+                                                "year": "2015"
+                                        },
+                                        "url": "https://www.siderise.com/",
+                                        "duration": "1 an",
+                                        "occupation": "Application Developer",
+                                        "description": "Contributed to the design, customisation and extension of Siderise's various IT systems. Duties consisted of gathering requirements before researching and implementing potential solutions using C#."
+                                }
+                        ]
+                }
+        },
         "en": {
                 "translation": {
                         "heroText": "Hi, I'm Kyle!",
@@ -19,7 +99,64 @@
                         "skillsTitle": "Skills",
                         "tagsTitle": "Tags",
                         "watchingLabel": "Watching",
-                        "workingLabel": "Working on"
+                        "workingLabel": "Working on",
+                        "jobs": [
+                                {
+                                        "company": "Made Tech",
+                                        "begin": {
+                                                "month": "oct",
+                                                "year": "2020"
+                                        },
+                                        "url": "https://www.madetech.com/",
+                                        "duration": null,
+                                        "occupation": "Software Engineer 2",
+                                        "description": "Building and testing high quality features for organisations in the public sector."
+                                },
+                                {
+                                        "company": "AMPLYFI",
+                                        "begin": {
+                                                "month": "may",
+                                                "year": "2019"
+                                        },
+                                        "url": "https://www.amplyfi.com/",
+                                        "duration": "18 months",
+                                        "occupation": "Senior Software Engineer",
+                                        "description": "Leading the design, commercialisation and continuous improvement of AMPLYFI’s suite of AI powered business intelligence products including DataVoyant Analyse and DataVoyant Companies."
+                                },
+                                {
+                                        "company": "AMPLYFI",
+                                        "begin": {
+                                                "month": "may",
+                                                "year": "2017"
+                                        },
+                                        "duration": "2 years",
+                                        "url": "https://www.amplyfi.com/",
+                                        "occupation": "Software Engineer",
+                                        "description": "Supporting the design, commercialisation and continuous improvement of AMPLYFI’s suite of AI powered business intelligence products including DataVoyant Analyse and DataVoyant Companies."
+                                },
+                                {
+                                        "company": "Sapiens",
+                                        "begin": {
+                                                "month": "apr",
+                                                "year": "2016"
+                                        },
+                                        "url": "https://www.sapiens.com/",
+                                        "duration": "1 year",
+                                        "occupation": "Graduate Developer",
+                                        "description": "Assisted the development of Sapiens' flagship product - ALIS, a software suite enabling the creation and management of annuities, life and pension insurance quotes and policies."
+                                },
+                                {
+                                        "company": "Siderise Group",
+                                        "begin": {
+                                                "month": "jun",
+                                                "year": "2015"
+                                        },
+                                        "url": "https://www.siderise.com/",
+                                        "duration": "1 year",
+                                        "occupation": "Application Developer",
+                                        "description": "Contributed to the design, customisation and extension of Siderise's various IT systems. Duties consisted of gathering requirements before researching and implementing potential solutions using C#."
+                                }
+                        ]
                 }
         },
         "cy": {
@@ -42,7 +179,64 @@
                         "skillsTitle": "Sgiliau",
                         "tagsTitle": "Tagiau",
                         "watchingLabel": "Gwylio",
-                        "workingLabel": "Gweithio ar"
+                        "workingLabel": "Gweithio ar",
+                        "jobs": [
+                                {
+                                        "company": "Made Tech",
+                                        "begin": {
+                                                "month": "hyd",
+                                                "year": "2020"
+                                        },
+                                        "url": "https://www.madetech.com/",
+                                        "duration": null,
+                                        "occupation": "Software Engineer 2",
+                                        "description": "Building and testing high quality features for organisations in the public sector."
+                                },
+                                {
+                                        "company": "AMPLYFI",
+                                        "begin": {
+                                                "month": "mai",
+                                                "year": "2019"
+                                        },
+                                        "url": "https://www.amplyfi.com/",
+                                        "duration": "18 misoedd",
+                                        "occupation": "Senior Software Engineer",
+                                        "description": "Leading the design, commercialisation and continuous improvement of AMPLYFI’s suite of AI powered business intelligence products including DataVoyant Analyse and DataVoyant Companies."
+                                },
+                                {
+                                        "company": "AMPLYFI",
+                                        "begin": {
+                                                "month": "mai",
+                                                "year": "2017"
+                                        },
+                                        "duration": "2 mlynedd",
+                                        "url": "https://www.amplyfi.com/",
+                                        "occupation": "Software Engineer",
+                                        "description": "Supporting the design, commercialisation and continuous improvement of AMPLYFI’s suite of AI powered business intelligence products including DataVoyant Analyse and DataVoyant Companies."
+                                },
+                                {
+                                        "company": "Sapiens",
+                                        "begin": {
+                                                "month": "ebr",
+                                                "year": "2016"
+                                        },
+                                        "url": "https://www.sapiens.com/",
+                                        "duration": "1 flwyddyn",
+                                        "occupation": "Graduate Developer",
+                                        "description": "Assisted the development of Sapiens' flagship product - ALIS, a software suite enabling the creation and management of annuities, life and pension insurance quotes and policies."
+                                },
+                                {
+                                        "company": "Siderise Group",
+                                        "begin": {
+                                                "month": "meh",
+                                                "year": "2015"
+                                        },
+                                        "url": "https://www.siderise.com/",
+                                        "duration": "1 flwyddyn",
+                                        "occupation": "Application Developer",
+                                        "description": "Contributed to the design, customisation and extension of Siderise's various IT systems. Duties consisted of gathering requirements before researching and implementing potential solutions using C#."
+                                }
+                        ]
                 }
         }
 }
