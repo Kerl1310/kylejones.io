@@ -97,6 +97,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-robots-txt`,
     {
@@ -136,6 +137,13 @@ module.exports = {
         api_key: steamKey,
         user_id: steamUser
       }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+        name: 'images',
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,

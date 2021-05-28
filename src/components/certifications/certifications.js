@@ -1,28 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
 import '../i18n';
+import { useTranslation } from 'react-i18next';
+import { StaticImage } from "gatsby-plugin-image"
 
-const CertificationLinkGroup = styled.div`
+const CertificationLinkGroup = styled.span`
   display: flex;
   width: 100%;
-  flex-direction: column;
+  flex-direction: row;
 `;
 
-const CertificationLink = styled.div`
-  display: block;
-  width: 100%;
-  :not(:last-of-type) {
-    margin-bottom: 16px;
-  }
+const CertificationLink = styled.span`
+  display: inline;
+  float: left;
+  width: 15%;
+  margin-bottom: 16px;
 `;
 
-const Certifications = ({ title }) => {
+const Certifications = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="certifications-container">
-      <h2 className="certifications-title">{title}</h2>
+      <h2 className="certifications-title">{t("certificationsTitle")}</h2>
       <CertificationLinkGroup className="certifications-link-group-container">
         {' '}
-          <React.Fragment key={certification.node.frontmatter.path}>
+          <React.Fragment key="certifications-link-container">
             <CertificationLink
               className="certifications-link-container"
               id={`certifications-link-container-cloud-practitioner`}
@@ -33,6 +36,11 @@ const Certifications = ({ title }) => {
                 target="__blank"
                 rel="noopener noreferrer"
               >
+                <StaticImage src="../../images/AWS-CloudPractitioner-2020.png"
+                alt="AWS Certified Cloud Practitioner"
+                placeholder="blurred"
+                width={120}
+                height={120}/>
               </a>
             </CertificationLink>
             <CertificationLink
@@ -45,6 +53,11 @@ const Certifications = ({ title }) => {
                 target="__blank"
                 rel="noopener noreferrer"
               >
+                <StaticImage src="../../images/AWS-Developer-Associate-2020.png"
+                alt="AWS Certified Developer - Associate"
+                placeholder="blurred"
+                width={120}
+                height={120}/>
               </a>
             </CertificationLink>
             <CertificationLink
@@ -57,10 +70,16 @@ const Certifications = ({ title }) => {
                 target="__blank"
                 rel="noopener noreferrer"
               >
+                
+                <StaticImage src="../../images/AWS-SysOpAdmin-Associate-2020.png"
+                alt="AWS Certified SysOps Administrator - Associate"
+                placeholder="blurred"
+                width={120}
+                height={120}/>
+                
               </a>
             </CertificationLink>
           </React.Fragment>
-        ))
       </CertificationLinkGroup>
     </div>
   );

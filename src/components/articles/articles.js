@@ -15,6 +15,9 @@ const ArticleLink = styled.div`
   :not(:last-of-type) {
     margin-bottom: 16px;
   }
+  :last-of-type {
+    margin-bottom: 32px;
+  }
 `;
 
 const Articles = ({ title, articles }) => {

@@ -134,7 +134,7 @@ module.exports = {
   background_color: '#ffffff',
   theme_color: '#25303B',
   display: 'minimal-ui',
-  icon: 'src/assets/favicon-32x32.png',
+  icon: 'static/images/favicon-32x32.png',
   headerLinks: [
     {
       label: 'Kyle Jones',
