@@ -11,6 +11,7 @@ import Timeline from '../components/timeline';
 import Repositories from '../components/repositories';
 import FeaturedArticles from '../components/featuredArticles';
 import RecentArticles from '../components/recentArticles';
+import Certifications from '../components/certifications';
 import '../components/i18n';
 import { withTranslation } from 'react-i18next';
 import SocialButtons from '../components/socialButtons';
@@ -59,6 +60,8 @@ class Home extends Component {
             </Row>
             <Separator />
             <Timeline />
+            <Separator />
+            <Certifications />
             <Separator />
             <FeaturedArticles />
             <Separator />
