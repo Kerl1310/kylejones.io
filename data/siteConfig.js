@@ -12,6 +12,15 @@ module.exports = {
     learning: "Kubernetes, React, Ruby, TypeScript.",
     working_on: "This website and more blog posts.",
   },
+  futureSpeaking: [
+    {
+      talkTitle: 'Building Greener Software',
+      eventName: 'GitLab Commit',
+      date: '03/08/2021',
+      url: 'https://about.gitlab.com/events/commit/',
+    },
+  ],
+  pastSpeaking: [{}],
   skills: [
     {
       name: 'Amazon Web Services',
