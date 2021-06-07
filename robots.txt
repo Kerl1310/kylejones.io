@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://kylejones.io/sitemap/sitemap-index.xml
+Host: https://kylejones.io
