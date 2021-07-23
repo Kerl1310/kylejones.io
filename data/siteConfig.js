@@ -16,8 +16,20 @@ module.exports = {
     {
       talkTitle: 'Building Greener Software',
       eventName: 'GitLab Commit',
-      date: '03/08/2021',
-      url: 'https://about.gitlab.com/events/commit/',
+      date: '04/08/2021',
+      url: 'https://gitlabcommitvirtual2021.com/',
+    },
+    // {
+    //   talkTitle: 'Building Greener Software',
+    //   eventName: 'Cloud With Chris',
+    //   date: '??/08/2021',
+    //   url: 'https://www.cloudwithchris.com/',
+    // },
+    {
+      talkTitle: 'Building Greener Software',
+      eventName: 'All Things Open 2021',
+      date: '13/10/2021',
+      url: 'https://2021.allthingsopen.org/',
     },
   ],
   pastSpeaking: [{}],
