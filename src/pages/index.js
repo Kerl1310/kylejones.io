@@ -13,6 +13,7 @@ import FeaturedArticles from '../components/featuredArticles';
 import RecentArticles from '../components/recentArticles';
 import Certifications from '../components/certifications';
 import FuturePublicSpeaking from '../components/futurePublicSpeaking';
+import PastPublicSpeaking from '../components/pastPublicSpeaking';
 import '../components/i18n';
 import { withTranslation } from 'react-i18next';
 import SocialButtons from '../components/socialButtons';
@@ -65,6 +66,8 @@ class Home extends Component {
             <Certifications />
             <Separator />
             <FuturePublicSpeaking />
+            <Separator />
+            <PastPublicSpeaking />
             <Separator />
             <FeaturedArticles />
             <Separator />
