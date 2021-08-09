@@ -66,6 +66,8 @@ class Home extends Component {
             <Separator />
             <FuturePublicSpeaking />
             <Separator />
+            <PastPublicSpeaking />
+            <Separator />
             <FeaturedArticles />
             <Separator />
             <RecentArticles />
