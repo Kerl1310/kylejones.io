@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Your Site's RSS Feed]]></title><description><![CDATA[Personal website for Kyle Jones]]></description><link>https://kylejones.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 13 Aug 2021 14:52:18 GMT</lastBuildDate><item><title><![CDATA[How smart cities are helping the public sector reduce emissions]]></title><description><![CDATA[Our global population is exploding, and the latest estimates project it’s set to reach 10 billion by 2050. This growth of almost 2 billion…]]></description><link>https://kylejones.io/28-07-2021-how-smart-cities-are-helping-the-public-sector-reduce-emissions/</link><guid isPermaLink="false">https://kylejones.io/28-07-2021-how-smart-cities-are-helping-the-public-sector-reduce-emissions/</guid><pubDate>Wed, 28 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Our global population is exploding, and the latest estimates project it’s set to reach &lt;a href=&quot;https://www.un.org/development/desa/en/news/population/world-population-prospects-2019.html&quot;&gt;10 billion by 2050&lt;/a&gt;. This growth of almost 2 billion people will put an even greater demand on our existing resources, including energy. Most of us are also eager to improve our quality of life, which is often done by finding new ways to incorporate technology into our daily lives. However, with growing concern around climate change, these uses for technology need to be more efficient and sustainable. So how do we start to reduce the carbon footprint of a city while improving lives?&lt;/p&gt;
+&lt;p&gt;The answer could be in how we build smarter cities for the future.&lt;/p&gt;
+&lt;h2&gt;What are smart cities?&lt;/h2&gt;
+&lt;p&gt;Smart cities are large settlements that are data-driven, using a variety of sensors, analytics and automated processes to streamline traditionally manual services. This means that society and the overall quality of life improves, as less time and effort gets spent on mundane and repetitive tasks.&lt;/p&gt;
+&lt;p&gt;Bristol is an example of a city that is innovating in this way in order to reach their target of &lt;a href=&quot;https://use.metropolis.org/case-studies/smart-city-bristol#casestudydetail&quot;&gt;reducing CO2 emissions by 40%&lt;/a&gt; through a number of initiatives such as smart metering.&lt;/p&gt;
+&lt;p&gt;European cities like Copenhagen are pushing the boundaries through research and development undertaken by a smart cities incubator called the Copenhagen Solutions Lab. The incubator’s current focus is on air quality and the population’s flow along the roads.&lt;/p&gt;
+&lt;p&gt;Further afield, cities including Dubai and Singapore are also installing infrastructure and putting revolutionary systems in place, such as autonomous police stations where fines can be paid or incidents can be reported.&lt;/p&gt;
+&lt;h2&gt;What technologies power smart cities?&lt;/h2&gt;
+&lt;p&gt;The main requirement for many of the innovations is a fast, reliable internet connection to transmit the data from the sensors. The internet required is supported by the recent introduction and adoption of 5G across the world. 5G networks have lower latency and higher bandwidth, meaning that they provide a faster connection which will undoubtedly become the backbone of the infrastructure behind smart cities.&lt;/p&gt;
+&lt;p&gt;Most commonly, the features in smart cities are underpinned by consumer-grade electronics — particularly sensors, the same technology used in most Internet of Things (IoT) devices like Alexa speakers and Philips Hue bulbs. These electronics have exploded in popularity in recent years with the surge in interest in both smart home products and products from manufacturers like Raspberry Pi and Arduino.&lt;/p&gt;
+&lt;p&gt;Smart cities will generate more real-time data that can feed forward into other systems. It could also feed into big data analytics alongside existing data sets such as weather or event calendars to gather further insights from the combined information. For example, on a rainy day, analytics could determine whether an increased capacity for public transport is needed.&lt;/p&gt;
+&lt;h2&gt;What features of smart cities are environmentally friendly?&lt;/h2&gt;
+&lt;p&gt;As technology advances, more and more manual processes have become automated. These advances are visible across all industries — from autonomous vehicles and autopilot systems to robotics used in manufacturing. Similarly, as technology has improved, more data is being produced that can then be fed into analytics services.&lt;/p&gt;
+&lt;h3&gt;Energy&lt;/h3&gt;
+&lt;p&gt;The most common example is the adoption of smart utility meters to monitor and forecast usage. The benefits of these smart meters are that they improve the accuracy of their billing systems and empower a more streamlined, tailored support service. Over time, these smart meters will enable the suppliers to predict the required capacity at any given time. Predicting capacity in this way will pave the way for an easier transition to clean energy through evidence-based requirements for energy storage.&lt;/p&gt;
+&lt;p&gt;In anticipation of hosting COP26 in 2020, Glasgow began installing &lt;a href=&quot;https://futurecity.glasgow.gov.uk/intelligent-street-lighting/&quot;&gt;smart street lighting&lt;/a&gt; in various parts of the city. The installations use motion and noise detection to turn the lights on when triggered. Keeping these lights off when footfall is at its lowest levels saves electricity, lowering the reliance on the power grid while not compromising on safety or security.&lt;/p&gt;
+&lt;h3&gt;Transport&lt;/h3&gt;
+&lt;p&gt;Transport is another key area where some cities have made smart, environmentally-friendly changes.&lt;/p&gt;
+&lt;p&gt;One example is the 3,000 sensors installed to create &lt;a href=&quot;https://www.smartparking.com/latest/case-studies/cardiff-council&quot;&gt;smart parking spaces in Cardiff&lt;/a&gt;. Proximity sensors are installed in the ground beneath the spaces and detect whether that particular parking space is occupied by a vehicle. The status of these spaces is updated in real-time with local street signs and an app updating to inform motorists of the status of the spaces. The accompanying app also allows users to reserve a space in advance. Informing the public that there are little or no parking spaces available encourages commuters to choose more eco-friendly methods of transport like buses or trains.&lt;/p&gt;
+&lt;p&gt;Bike-sharing is another example that improves society in many ways such as improving health by empowering exercise, reducing pollution and easing congestion. Hubs are being added to various cities across Europe, with the Welsh Government recently announcing hub additions in Aberystwyth, Barry, Rhyl and Swansea.&lt;/p&gt;
+&lt;h3&gt;Waste management&lt;/h3&gt;
+&lt;p&gt;An effort introduced by Leeds Council is the use of &lt;a href=&quot;https://www.recyclingwasteworld.co.uk/products/leeds-makes-smart-move-with-smart-bins/116609/&quot;&gt;smart waste and recycling bins&lt;/a&gt;. These bins use sensors to monitor their capacity while solar panels power a compactor inside to improve the utilisation of the limited space. It is possible to monitor the bin’s capacity using an app that also sends notifications when it needs to be emptied. This functionality enables the council to adapt its refuse and recycling collections. Being able to adapt the collections enables a reduction in the number of collection vehicles on the road, which in turn reduces emissions and improves congestion.&lt;/p&gt;
+&lt;p&gt;Redcar &amp;#x26; Cleveland Borough Council has proposed a similar scheme involving adding RFID tags to household bins that will measure the weight of the contents and frequency of collections. Thinktank Social Market Foundation has theorised that a scheme like this could encourage recycling by enabling councils to provide tax cuts based on the amount of recycling done by a household. This is particularly important to councils across the UK, as the highest recycling rate in England was 64.5% in 2017 but the lowest was just 14.1%.&lt;/p&gt;
+&lt;h2&gt;What are the barriers faced by the public sector?&lt;/h2&gt;
+&lt;p&gt;There are a handful of main issues with the development of smart cities. Firstly, budget constraints are a major problem due to austerity measures and the perception that smart city infrastructure isn’t a necessary expense.&lt;/p&gt;
+&lt;p&gt;Secondly, deployment of these new technologies is slowed by regulation and bureaucracy. The time taken to develop a proposal, wait on the requested funding and then finally implement the solutions means that it can be months or even years before the changes are put in place and the organisation finally sees the dividends from their efforts.&lt;/p&gt;
+&lt;p&gt;Finally, the network capability required to effectively handle the new workloads has only recently begun rolling out. 5G networks were first introduced in late 2019, however initial estimates put a majority coverage will take until around 2025.&lt;/p&gt;
+&lt;p&gt;Despite these obstacles, more and more of the public sector is adopting smart city technologies and innovating to improve the lives of their citizens. As the availability of the infrastructure and the number of successful case studies grows, the barriers faced are receding — which in turn lowers the overall cost of adoption thanks to the maturity phase of the product life cycle. As efforts to combat climate change gain traction, levelling up our cities to become digital powerhouses will become more prominent — but it’s clear that the seeds for change have already been sown.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How can we build more sustainable software?]]></title><description><![CDATA[In 2020, Brewdog announced its latest funding round, Equity for Punks Tomorrow, aiming to push its sustainability efforts even further. No…]]></description><link>https://kylejones.io/04-06-2021-how-can-we-build-more-sustainable-software/</link><guid isPermaLink="false">https://kylejones.io/04-06-2021-how-can-we-build-more-sustainable-software/</guid><pubDate>Fri, 04 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In 2020, Brewdog announced its latest funding round, &lt;a href=&quot;https://www.brewdog.com/uk/equityforpunks/tomorrow-raise/welcome&quot;&gt;Equity for Punks Tomorrow&lt;/a&gt;, aiming to push its sustainability efforts even further. No small feat for a company that is already carbon negative. With the funding, they intend to replace their fleet of vehicles with fully electric alternatives, generate renewable energy for a number of their breweries, and a whole lot more.&lt;/p&gt;
+&lt;p&gt;But decarbonisation is not exclusively a private-sector trend — and various public-sector organisations are also turning their attention to more climate-friendly practices. Take the case of the Department for Environment, Food and Rural Affairs (DEFRA). In September 2020, DEFRA published &lt;a href=&quot;https://www.gov.uk/government/publications/greening-government-ict-and-digital-services-strategy-2020-2025/greening-government-ict-and-digital-services-strategy-2020-2025&quot;&gt;Greening Government&lt;/a&gt;, a policy paper setting out its strategy for providing digital services that are more sustainable.&lt;/p&gt;
+&lt;p&gt;This policy is not an isolated case either, with other government departments such as &lt;a href=&quot;https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/820284/190716_BEIS_Green_Finance_Strategy_Accessible_Final.pdf&quot;&gt;the Treasury&lt;/a&gt; and the &lt;a href=&quot;https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/739460/road-to-zero.pdf&quot;&gt;Department for Transport&lt;/a&gt; publishing similar papers in recent years.&lt;/p&gt;
+&lt;p&gt;As a growing number of industries are turning their attention to climate change and innovating to reduce their impact on the environment, we’re all on a journey to Net Zero — and that includes our tech. But how does software engineering fit into this picture, with the industry so handcuffed to its consumption of resources?&lt;/p&gt;
+&lt;h3&gt;What resources are needed to build software?&lt;/h3&gt;
+&lt;p&gt;With data centres already consuming an &lt;a href=&quot;https://www.independent.co.uk/climate-change/news/global-warming-data-centres-to-consume-three-times-as-much-energy-in-next-decade-experts-warn-a6830086.html&quot;&gt;estimated 3% of global electricity&lt;/a&gt;, energy is at the core of any discussion on the resources used when developing software. Electricity is used at every step of the software development life cycle — from the design and engineering all the way to deployment and hosting. Every interaction has an associated cost that could be measured in kWh and can therefore also be measured in tonnes of carbon dioxide equivalents (CO₂e).&lt;/p&gt;
+&lt;p&gt;When we think about this in real terms, it all adds up. For example, a weekly one-hour meeting on Zoom with 6 participants releases an estimated 0.05kg of CO₂e per meeting. Over the course of a year, that results in the same emissions as driving a petrol car almost 10 miles.&lt;/p&gt;
+&lt;p&gt;There is also an indirect impact associated with the hardware required for the software — materials (especially metals and plastics) are required to manufacture the underlying hardware needed for servers and networking devices.&lt;/p&gt;
+&lt;p&gt;Finally, many data centres use liquid cooling to alleviate the excess heat produced by the servers, preventing damage to their components. The coolant used for these systems is usually water, a resource that is already scarce for over 3.2 billion people.&lt;/p&gt;
+&lt;h2&gt;How can software engineers make greener services?&lt;/h2&gt;
+&lt;h3&gt;Migrating to the cloud&lt;/h3&gt;
+&lt;p&gt;Traditional on-premises infrastructure &lt;a href=&quot;https://www.nrdc.org/energy/files/data-center-efficiency-assessment-IP.pdf&quot;&gt;only utilises between 12% and 18% of its capacity&lt;/a&gt;, whereas cloud server utilisation is around 65%. This statistic, alongside the fact that cloud customers consume 77% fewer servers means that those same customers &lt;a href=&quot;https://aws.amazon.com/blogs/aws/cloud-computing-server-utilization-the-environment/&quot;&gt;reduce their carbon footprint by a whopping 88%&lt;/a&gt;. Cloud infrastructure processed 60% of workloads in 2019, with that figure &lt;a href=&quot;https://www.cisco.com/c/en/us/solutions/executive-perspectives/annual-internet-report/index.html&quot;&gt;estimated to hit 94% by the end of 2021&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;These statistics mean that the question is no longer whether or not we should migrate to the cloud. Instead, we should consider whether the cloud providers are providing their services in a sustainable manner.&lt;/p&gt;
+&lt;p&gt;Each cloud provider approaches sustainability differently — Azure is leading the way in innovating to reduce its impact. Microsoft has &lt;a href=&quot;https://azure.microsoft.com/en-us/global-infrastructure/sustainability/#carbon-benefits&quot;&gt;committed to four key environmental targets&lt;/a&gt;, including using 100% renewable energy by 2025. They introduced &lt;a href=&quot;https://news.microsoft.com/innovation-stories/datacenter-liquid-cooling/&quot;&gt;liquid immersion cooling&lt;/a&gt; in its data centres to help them reach these lofty targets.&lt;/p&gt;
+&lt;p&gt;At AWS, &lt;a href=&quot;https://www.aboutamazon.com/news/aws/reducing-water-usage-in-aws-data-centers&quot;&gt;servers use free-air cooling systems&lt;/a&gt; that incorporate reclaimed or recycled water to provide direct evaporative cooling in summer months, ensuring the air is of a low enough temperature to sufficiently cool the infrastructure. Some sites have even installed on-site water treatment systems to reduce their overall water usage footprint.&lt;/p&gt;
+&lt;p&gt;Amazon, Microsoft and Google are also purchasing varying quantities of renewable energy from external sources to further reduce their reliance on fossil fuels.&lt;/p&gt;
+&lt;h3&gt;Adopting serverless architecture&lt;/h3&gt;
+&lt;p&gt;Migrating applications to the cloud is only one piece of the puzzle, however. Adopting a serverless architecture is critical as it enables us to use what is necessary with little-to-no waste. Using a serverless architecture means that your application runs on infrastructure managed by a cloud provider.&lt;/p&gt;
+&lt;p&gt;Examples of these types of infrastructure are AWS’ Fargate, Azure’s CosmosDB and GCP’s Cloud Functions. This infrastructure is shared (unless a dedicated host/instance is requested) and billed on usage. Sharing infrastructure means utilisation of the underlying infrastructure is maximised while billing based on usage encourages reduction and optimisation wherever possible.&lt;/p&gt;
+&lt;h3&gt;Optimise your functionality&lt;/h3&gt;
+&lt;p&gt;The final method of reducing the &lt;a href=&quot;https://webkit.org/blog/8970/how-web-content-can-affect-power-usage/&quot;&gt;impact your services have on the environment is to optimise&lt;/a&gt;. Optimising the functionality working behind-the-scenes on an application or website, even if it only accounts for a performance boost of a few milliseconds, contributes exponentially when we change our viewpoint. A few additional milliseconds taken when a single piece of functionality is used quickly multiplies when talking about millions of uses and multiple applications that are powering hundreds of products.&lt;/p&gt;
+&lt;p&gt;So how can we make websites more energy efficient?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add a Dark Mode&lt;/li&gt;
+&lt;li&gt;Block bots and web scrapers&lt;/li&gt;
+&lt;li&gt;Design to use static content wherever possible&lt;/li&gt;
+&lt;li&gt;Implement caching and use a CDN&lt;/li&gt;
+&lt;li&gt;Reduce the quantity or size of images and videos&lt;/li&gt;
+&lt;li&gt;Reduce the variety of fonts&lt;/li&gt;
+&lt;li&gt;Use system fonts where possible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some are even taking things a step further, developing free and open tools that allow users to make sustainability more visible. Examples include the &lt;a href=&quot;https://pauldjohnston.medium.com/climate-change-and-seeing-your-cloud-carbon-footprint-4e03c195a799&quot;&gt;Cloud Sustainability Console&lt;/a&gt;, &lt;a href=&quot;https://www.thegreenwebfoundation.org/&quot;&gt;green hosting checks&lt;/a&gt; and &lt;a href=&quot;https://www.websitecarbon.com/&quot;&gt;carbon footprint calculators&lt;/a&gt; for websites.&lt;/p&gt;
+&lt;h3&gt;How can non-technical teams help?&lt;/h3&gt;
+&lt;p&gt;Other teams can reduce a company’s impact in several ways. They can contribute indirectly by setting sustainability targets and monitoring how the business adheres to these targets. Microsoft has built a &lt;a href=&quot;https://appsource.microsoft.com/en-GB/product/power-bi/coi-sustainability.sustainability_dashboard&quot;&gt;Sustainability Calculator&lt;/a&gt; to make monitoring and reporting progress towards environmental targets easier for their customers.&lt;/p&gt;
+&lt;p&gt;They can also impact the company’s carbon footprint more directly. Organisations must empower their teams to participate in actions that, although small, all add up, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Car sharing&lt;/li&gt;
+&lt;li&gt;Cycle to Work schemes&lt;/li&gt;
+&lt;li&gt;Recycling bins in office spaces&lt;/li&gt;
+&lt;li&gt;Sustainable suppliers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Net Zero is no small feat for any industry or geography. We all have to take whatever small steps we can to wean ourselves off wasteful, carbon-emitting processes. These small steps can then grow exponentially into visibly significant changes. This is particularly difficult for any industries that have become accustomed to a particular way of working, of which software engineering is far from alone.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How Can We Identify Emerging Influencers Using Machine Learning?]]></title><description><![CDATA[In the age of social media more than ever, marketing teams are turning to influencers to advertise their new, innovative products or…]]></description><link>https://kylejones.io/13-04-2021-how-can-we-identify-emerging-influencers-using-machine-learning/</link><guid isPermaLink="false">https://kylejones.io/13-04-2021-how-can-we-identify-emerging-influencers-using-machine-learning/</guid><pubDate>Tue, 13 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In the age of social media more than ever, marketing teams are turning to influencers to advertise their new, innovative products or services. The number of followers, impressions and engagements all impact traffic, which in turn helps drive one very important metric - sales. This makes the ability to identify the next up-and-coming influencer all the more important and valuable, with 61% of marketers agreeing that it’s difficult to find the right influencers for a campaign.&lt;/p&gt;
+&lt;p&gt;Influencer marketing is an industry that has seen rapid growth over the past few years with an increase between 40 and 50 percent year on year, according to &lt;a href=&quot;https://influencermarketinghub.com/influencer-marketing-benchmark-report-2020/&quot;&gt;Influencer Marketing Hub&lt;/a&gt;. It allows companies to increase brand awareness and trust through directly interacting with their target audience in a way never seen before in other strands of marketing.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f2e0c2d69770a46f21264fd38d2826ee/a2510/influencer-marketing-graph.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 85%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAARABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAd0gsJcigf/EABkQAAMAAwAAAAAAAAAAAAAAAAACMQEQQf/aAAgBAQABBQLos0sMw//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABQQAQAAAAAAAAAAAAAAAAAAADD/2gAIAQEABj8CH//EABsQAQABBQEAAAAAAAAAAAAAAAEAESExQZEQ/9oACAEBAAE/IaV27EDb2Ks3MRHLLfYYn//aAAwDAQACAAMAAAAQszcA/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEQMf/aAAgBAwEBPxAWCn//xAAYEQACAwAAAAAAAAAAAAAAAAAAARAhMf/aAAgBAgEBPxAe1P8A/8QAHhABAAICAQUAAAAAAAAAAAAAAQARMWFBECGRscH/2gAIAQEAAT8QQluHCPs7k+VEJdxEcreZTMpVq7gpGsuHfTNPdP/Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Graph showing estimated year-on-year growth of the influencer marketing industry&quot;
+        title=&quot;Graph taken from InfluencerMarketingHub&amp;#39;s State of Influencer Marketing report&quot;
+        src=&quot;/static/f2e0c2d69770a46f21264fd38d2826ee/4b190/influencer-marketing-graph.jpg&quot;
+        srcset=&quot;/static/f2e0c2d69770a46f21264fd38d2826ee/e07e9/influencer-marketing-graph.jpg 200w,
+/static/f2e0c2d69770a46f21264fd38d2826ee/066f9/influencer-marketing-graph.jpg 400w,
+/static/f2e0c2d69770a46f21264fd38d2826ee/4b190/influencer-marketing-graph.jpg 800w,
+/static/f2e0c2d69770a46f21264fd38d2826ee/a2510/influencer-marketing-graph.jpg 1000w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Take &lt;a href=&quot;https://www.gymshark.com/&quot;&gt;Gymshark&lt;/a&gt;, recently valued at £1.3bn, this fitness clothing brand was one of the earliest adopters of the influencer marketing model. They are renowned for marketing products through their community of Instagram influencers and YouTubers, with their success being a testament to the importance of influencer marketing, showing that when done right it can be a key driver to exponential growth. &lt;/p&gt;
+&lt;p&gt;As an industry, influencer marketing is expected to hit &lt;a href=&quot;https://digitalmarketinginstitute.com/en-gb/blog/20-influencer-marketing-statistics-that-will-surprise-you&quot;&gt;$10bn in 2020&lt;/a&gt;, growing enormously from just $3bn in 2017. Increasingly companies are valuing the involvement of influencers in their marketing, so it is now more important than ever to be able to identify emerging influencers and those with the most potential to drive success for a brand. &lt;/p&gt;
+&lt;h2&gt;So what makes an influencer?&lt;/h2&gt;
+&lt;p&gt;The most obvious type of influencer are celebrities - individuals with large numbers of followers who are often idolized. Similarly, other types of influencers include industry experts, thought leaders and bloggers.
+These categories, although relatively vague terms, all have some similar traits that provide us with some insight on what features to look for when trying to identify the next big influencer.
+Common traits in these categories are that the individuals often have a sizable audience that they engage with through some kind of platform, and in most cases, they are individuals who talk about topics in a particular niche. For example, Andrew Ng could be considered an influencer due to his sizeable audience on Twitter, where he regularly posts about machine learning.&lt;/p&gt;
+&lt;h2&gt;How do we quantify influence?&lt;/h2&gt;
+&lt;p&gt;As with a large amount of machine learning problems, being able to express a complex idea like influence is paramount to identifying trends. In the context of social media, there are three main types of data we can use:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Number of Followers&lt;/li&gt;
+&lt;li&gt;Number of Impressions&lt;/li&gt;
+&lt;li&gt;Engagements&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The number of followers and impressions, when measured over time, gives us an idea of the reach of the potential influencer. Engagements then give us information about how the individual is able to convert that reach, giving us insight into how likely the users that are viewing the posts are to be motivated into doing a particular thing, such as purchasing a product.&lt;/p&gt;
+&lt;h2&gt;How do we predict an emerging influencer?&lt;/h2&gt;
+&lt;p&gt;A &lt;a href=&quot;http://cs229.stanford.edu/proj2014/Ruishan%20Liu,%20Yang%20Zhao,%20Liuyu%20Zhou,%20Predict%20Influencers%20in%20the%20Social%20Network.pdf&quot;&gt;paper published by students at Stanford University&lt;/a&gt; discusses a potential solution, while Kaggle (a website which hosts data science and machine learning competitions) &lt;a href=&quot;https://www.kaggle.com/c/predict-who-is-more-influential-in-a-social-network&quot;&gt;has several others&lt;/a&gt;. Kaggle&apos;s most effective entry makes use of a Bayesian Optimized Light Gradient Boosted Machine that is trained using data that compares two individual&apos;s social media statistics, including those discussed above. Bayesian optimization is a process that allows us to fine-tune hyper-parameters for a machine learning model. &lt;a href=&quot;https://medium.com/@pushkarmandot/https-medium-com-pushkarmandot-what-is-lightgbm-how-to-implement-it-how-to-fine-tune-the-parameters-60347819b7fc&quot;&gt;LightGBM is a relatively new gradient boosting framework that uses tree-based learning&lt;/a&gt; and differs from other tree-based algorithms in that the tree grows vertically (leaf-wise) rather than horizontally (level-wise).&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 769px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3f5b87c2c32efdfd33184be1e182b492/227ba/leaf-wise.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 34.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABD0lEQVQY022QS0+DQBSF+fXuXbl266JL3TSxqGiFDCCFUtumFXCIPISSQOfRmcEJGETjtzjJmXtOcu8oCOFn8NJ2CCGk5sVBNxeD7dWwFmleDLZHSYtc080jwjViMGsQpvAjMRc+JvLlBDM5OWFMTMePk5RxlpY4PyDZ5Fwomvdgup4OnJmVnV+tLW/7aFhydjNVb0F8dunmFb6eqhjR9fvK3rgXk91k9iYDmFBlvEndNHcasLd2lEXSMs6lWo5vu6v7ORAd47wyvoEQCuM0KZOqqYZQ9lk6y80cOEVZ9dsODaX9DRecEooRPn6DKCGqpjve65Nhd2X+82F/yoyxqANCGIZhEAT7/a6u6/Y/vgAvaYgd9PDO/AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Diagram Illustrating Leaf-wise Tree Growth&quot;
+        title=&quot;Illustration of Leaf-wise Growth&quot;
+        src=&quot;/static/3f5b87c2c32efdfd33184be1e182b492/227ba/leaf-wise.png&quot;
+        srcset=&quot;/static/3f5b87c2c32efdfd33184be1e182b492/772e8/leaf-wise.png 200w,
+/static/3f5b87c2c32efdfd33184be1e182b492/e17e5/leaf-wise.png 400w,
+/static/3f5b87c2c32efdfd33184be1e182b492/227ba/leaf-wise.png 769w&quot;
+        sizes=&quot;(max-width: 769px) 100vw, 769px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 596px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/255136baf2eaeec7841db3a2e45ca5a1/699b7/level-wise.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 39.49999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAA7DAAAOwwHHb6hkAAABKklEQVQY03VRTU+DQBDlx3r1P3j05sXES3v01sRIE4VG6aWpJLTYWkH5/mijsnwpBNKWsjhbYiUYJ9nJ233zZt/OUlVVYYyrRrS2LapJUrB6/cFYmAEoS9zUoyA671xuNtv/ehHxXFKd5VutKXFZ7HY1l6TZiJ9ui4JQ+xOgDhcQMSPciLo4mAwke6Y4+fGZcNIlLno0e3s/AkAzw2uGA3Bx9Xp0ynOTd8BhFBdFQYVJlOSpF6Mk/8rXpWzFmvuJKywpummvoE4zXdVwAKxQ9mREUbLee/yx3QywDXk450RDfHgZd9nO3SMrO3Kfpw/sr21MutRTJMlxl6ZlGZZp2raqq88KOFAX0kI1NagmL26Mm2r9BELI9/04jsMwggj8wPvwfORnafZ32t+Z77+syj9mWAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Diagram Illustrating Level-wise Tree Growth&quot;
+        title=&quot;Illustration of Level-wise Growth&quot;
+        src=&quot;/static/255136baf2eaeec7841db3a2e45ca5a1/699b7/level-wise.png&quot;
+        srcset=&quot;/static/255136baf2eaeec7841db3a2e45ca5a1/772e8/level-wise.png 200w,
+/static/255136baf2eaeec7841db3a2e45ca5a1/e17e5/level-wise.png 400w,
+/static/255136baf2eaeec7841db3a2e45ca5a1/699b7/level-wise.png 596w&quot;
+        sizes=&quot;(max-width: 596px) 100vw, 596px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Some advantages of LightGBM is that it is fast, requires a lower amount of memory and supports GPU learning, however, it is quite sensitive to overtraining. In this implementation, the LightGBM manages to correctly identify which of the two individuals are the most influential with around 87% accuracy, making this model ideal for assisting in deciding between a relatively low number of potential influencers. However, despite this being one of the most accurate machine learning solutions for this problem, it is held back by the need for a large amount of curated data in order to be effective. This means that access to a large volume of user data needs to be accessed via an API or by web scraping, before then pre-processing the data into a given format to be used by the model.&lt;/p&gt;
+&lt;h2&gt;What can we do to improve the implementation?&lt;/h2&gt;
+&lt;p&gt;The difficulty in quantifying influence is that these values better describe an individual’s reach rather than their influence. However, we could also use Natural Language Processing techniques such as sentiment analysis, named entity recognition and document classification to analyse the post itself, along with the text-based engagements. This would give us a better understanding of what topics and what type of posts get a better reach as well as which of these garner the most positive interactions.&lt;/p&gt;
+&lt;h2&gt;How do you decide if the influencer you’ve predicted is right for you?&lt;/h2&gt;
+&lt;p&gt;Even with the work mentioned above, the influencer may not necessarily be the right fit for the strategy you have in mind. In order to build brand awareness or to increase a social following, you might need to choose a macro-influencer, whereas to reach an ideal audience a micro-influencer might be a better choice. The relevancy of the influencer&apos;s usual posts and the quality of the post could also contribute to choosing a different influencer.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Conduct a Constructive Code Review]]></title><description><![CDATA[Many businesses have a dedicated software engineering department, whether to maintain a website or develop apps. The majority of these…]]></description><link>https://kylejones.io/16-03-2021-how-to-perform-a-constructive-code-review/</link><guid isPermaLink="false">https://kylejones.io/16-03-2021-how-to-perform-a-constructive-code-review/</guid><pubDate>Tue, 16 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Many businesses have a dedicated software engineering department, whether to maintain a website or develop apps. The majority of these departments will perform code reviews as part of their daily routine. But what’s the difference between a negative experience and a constructive review?&lt;/p&gt;
+&lt;h2&gt;What is a code review?&lt;/h2&gt;
+&lt;p&gt;A code review is a common practice in software engineering that aims to ensure the quality of an implementation is maintained by having the author’s work examined by one or more of their peers.&lt;/p&gt;
+&lt;h2&gt;Where should you start with a code review?&lt;/h2&gt;
+&lt;p&gt;Productive code reviews should always start with two elements: the ticket for the issue and any test files in the change request.
+The ticket will include an overview of the scenario and any further information required for the review, such as designs or non-technical considerations. These help to understand the context behind the work.
+The test files detail the various scenarios and outcomes that the functional changes are hoping to solve and achieve, giving the reviewer a better understanding of the problem and the proposed solution. When reviewing the test files (and later on the functional code itself), it is essential to consider any edge cases that may have gotten overlooked. These edge cases may seem insignificant but could result in a service outage due to unexpected behaviour.
+Following on from these, the reviewer should turn their attention towards the files with the most changes in them. These files are likely to be the core of the implementation and therefore saves time when reviewing.&lt;/p&gt;
+&lt;h2&gt;How should you conduct the code review?&lt;/h2&gt;
+&lt;p&gt;A constructive code review is often tough to achieve. Teams and individuals will often only identify the problems with the change request. Some will even solutionise after spotting a potential issue. The pitfall that many forget is that a review is an evaluation of both the strong and weak points. Not many reviewers praise the positives of an implementation, even when a solution is elegant or when edge cases are addressed.
+As mentioned above, some reviewers will identify a problem and proceed to solutionise. Solutionising is the responsibility of the author of the change and not the reviewer. Reviewers that solutionise squander time when it could be spent on other problems while also demotivating the author. Many software engineers thrive on the problem-solving element of their work and would prefer to do this themselves.&lt;/p&gt;
+&lt;h2&gt;What about the finer things?&lt;/h2&gt;
+&lt;p&gt;The reviewer should also avoid demanding that trivial changes are made before approving the work. Identifying issues such as spelling mistakes, poor naming &amp;#x26; micro-optimizations are useful as they affect the code quality. However, concerns like these should be noted and fixed in a follow-up change — the purpose of a change request is to improve the overall product and codebase, so it doesn’t necessarily have to be perfect on the first iteration.
+When reviewing a change request, pay attention to the finer details like file paths and names referenced in the code. These are easily overlooked, particularly during refactoring, but will break the feature if they are not correct. Similarly, with any resources or files referenced, confirm that these are in the change.&lt;/p&gt;
+&lt;h2&gt;When should you do the review?&lt;/h2&gt;
+&lt;p&gt;Many engineers are reluctant to carry out code reviews because of the need to context switch. To avoid unnecessarily context switching, conduct code reviews before or after another unavoidable context switch such as a break or meeting. Doing so provides the reviewer with a choice of regular but flexible times to conduct reviews. Despite the focus on flexibility, code reviews should not stagnate for more than a day. The velocity of the team is more important than the velocity of the individual. It’s easy for multiple reviews to stack up and begin to block other engineers or tickets.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Perform a Successful Incident Postmortem]]></title><description><![CDATA[When growing a business from a startup to a large enterprise, it's software systems also expand in complexity, meaning that encountering…]]></description><link>https://kylejones.io/16-02-2021-how-to-conduct-a-successful-incident-postmortem/</link><guid isPermaLink="false">https://kylejones.io/16-02-2021-how-to-conduct-a-successful-incident-postmortem/</guid><pubDate>Tue, 16 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;When growing a business from a startup to a large enterprise, it&apos;s software systems also expand in complexity, meaning that encountering incidents is inevitable. These incidents have indirect costs that can include loss of trust in the product or brand. However, incidents occurring are not necessarily a bad thing - it provides the business with new learning opportunities and the chance to improve its operational practices. But how do we learn from such a failure?&lt;/p&gt;
+&lt;h2&gt;What is a postmortem?&lt;/h2&gt;
+&lt;p&gt;An incident postmortem is a meeting that brings together all of the people that were involved, whether directly or indirectly, to discuss, document and derive value. Postmortems should remain positive to avoid demotivating the technical teams further. Postmortems should also be blameless - this empowers engineers to provide details of their contribution, and prevents the establishment of a fear culture. Learning should be the focus rather than dwelling on what went wrong, and so any past tense discussions should stick to facts instead of opinions - avoiding phrases that include would have, could have or should have is essential.&lt;/p&gt;
+&lt;h2&gt;Who should get invites?&lt;/h2&gt;
+&lt;p&gt;A variety of different stakeholders should get invites to the postmortem, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Individuals/Teams that First Logged the Incident&lt;/li&gt;
+&lt;li&gt;Individuals/Teams that Responded to the Incident&lt;/li&gt;
+&lt;li&gt;Individuals/Teams that Diagnosed the Issue(s)&lt;/li&gt;
+&lt;li&gt;Individuals/Teams that Rectified the Issue(s)
+It may also be appropriate to invite a user that was directly affected by the incident. Invite a range of different people like this maintains transparency and allows us to glean as much information as possible to document.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What should get documented?&lt;/h2&gt;
+&lt;p&gt;Thorough documentation of the event is vital. Memories are short, and in time important details fade into obscurity. Some key facts to document are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Date and Time that the Incident Started&lt;/li&gt;
+&lt;li&gt;Date and Time that the Incident was First Logged&lt;/li&gt;
+&lt;li&gt;Which Teams/Individuals Responded to the Incident&lt;/li&gt;
+&lt;li&gt;Number of Users/Accounts Affected&lt;/li&gt;
+&lt;li&gt;Number of Support Requests Raised&lt;/li&gt;
+&lt;li&gt;Date and Time that the Incident was Fixed&lt;/li&gt;
+&lt;li&gt;Any Solutions or Mitigations
+In addition to the above details getting recorded in a postmortem document, the meeting should also have minutes taken, and a timeline of the incident constructed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What should you do after the postmortem?&lt;/h2&gt;
+&lt;p&gt;The postmortem produces discussion points to bring into further sessions and documentation that will prove valuable in the future. Values recorded should be compared against any service level agreements (&lt;a href=&quot;https://www.atlassian.com/itsm/service-request-management/slas&quot;&gt;SLAs&lt;/a&gt;) that may be in place, to confirm that the incident did not result in any breaches. Any issues identified as a result of the incident should be discussed in-depth, with potential solutions or mitigations planned into the roadmap, alongside rigid delivery dates. These solutions/mitigations should have tickets written to capture the work, each of which should be &lt;a href=&quot;https://www.atlassian.com/blog/productivity/how-to-write-smart-goals&quot;&gt;SMART&lt;/a&gt;. Depending on the incident, particularly regarding who first logged the incident and how long it had been ongoing before being logged, improvements to the observability may be required. Observability improvements should be a priority alongside immediate solutions to the faults.&lt;/p&gt;
+&lt;p&gt;If an external user reported the issue, it might be pertinent to publish the postmortem&apos;s findings openly, allowing anyone access. Publishing postmortem outcomes publicly has most &lt;a href=&quot;https://monzo.com/blog/2019/09/08/why-monzo-wasnt-working-on-july-29th&quot;&gt;notably been utilised by Monzo&lt;/a&gt;. It enables them to maintain transparency, ensures accountability as a business and has provided their users with greater trust in the brand.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Reduce the Chances of an Outage]]></title><description><![CDATA[The popular messaging service Slack recently experienced a global outage which impacted millions of users, the majority of which were…]]></description><link>https://kylejones.io/25-01-2021-how-to-reduce-the-chances-of-an-outage/</link><guid isPermaLink="false">https://kylejones.io/25-01-2021-how-to-reduce-the-chances-of-an-outage/</guid><pubDate>Mon, 25 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The popular messaging service &lt;a href=&quot;https://slack.com&quot;&gt;Slack&lt;/a&gt; recently experienced a &lt;a href=&quot;https://status.slack.com/2021-01-04&quot;&gt;global outage which impacted millions of users&lt;/a&gt;, the majority of which were individuals working from home or remote learning due to the Coronavirus pandemic. The outage lasted for an extended period, potentially impacting their service level agreements (SLAs), impacts the brand while coming hot on the heels of the &lt;a href=&quot;https://slack.com/intl/en-gb/blog/news/salesforce-signs-definitive-agreement-to-acquire-slack&quot;&gt;announcement of their $27.7 billion acquisition&lt;/a&gt; by &lt;a href=&quot;https://www.salesforce.com&quot;&gt;Salesforce&lt;/a&gt;. Outages like the one Slack experienced are increasingly common in a technology focused society, so how do we avoid costly issues like this?&lt;/p&gt;
+&lt;h2&gt;What causes an outage?&lt;/h2&gt;
+&lt;p&gt;An outage (also known as downtime) is a period of time when a given service or system is unavailable, failing to provide and perform  it&apos;s primary functionality. Completely removing the possibility of experiencing an outage is almost impossible, however there are a number of ways in which the odds of an outage can be significantly reduced. Some of the things that can be done to try and avoid an incident are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Testing&lt;/li&gt;
+&lt;li&gt;Horizontal Scaling&lt;/li&gt;
+&lt;li&gt;Chaos Engineering&lt;/li&gt;
+&lt;li&gt;Resiliency Improvements to the Software&lt;/li&gt;
+&lt;li&gt;Improving Observability&lt;/li&gt;
+&lt;li&gt;Improving Processes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What testing should be carried out?&lt;/h2&gt;
+&lt;p&gt;Having a high test coverage is only part of the story when it comes to testing an application&apos;s robustness - a high unit test coverage can be deceiving as this simply proves that the software functions as expected, in isolation. Unit testing should be combined with other forms of testing including integration testing, security testing and performance testing (which should also cover various subtypes such as load testing and stress testing). Including a wider array of testing types ensures that both the functional and non-functional factors that could impact the overall system are being checked under various conditions that could occur in production.&lt;/p&gt;
+&lt;h2&gt;What is horizontal scaling?&lt;/h2&gt;
+&lt;p&gt;Horizontal scaling improves the application&apos;s stability and robustness, but simply means that each component in the system can increase it&apos;s capacity by adding more instances. For example, a simple CRUD application that uses &lt;a href=&quot;https://aws.amazon.com/rds/?nc2=h_ql_prod_db_rds&quot;&gt;RDS&lt;/a&gt; in &lt;a href=&quot;https://aws.amazon.com&quot;&gt;AWS&lt;/a&gt; might horizontally scale by adding additional &lt;a href=&quot;https://www.mysql.com&quot;&gt;MySQL&lt;/a&gt; RDS instances as read replicas in multiple availability zones (AZs).&lt;/p&gt;
+&lt;h2&gt;What is chaos engineering?&lt;/h2&gt;
+&lt;p&gt;Chaos engineering is a form of resiliency testing &lt;a href=&quot;https://netflixtechblog.com/5-lessons-weve-learned-using-aws-1f2a28588e4c&quot;&gt;created by Netflix&lt;/a&gt; when they built their &lt;a href=&quot;https://netflix.github.io/chaosmonkey/&quot;&gt;Chaos Monkey&lt;/a&gt; application, and functions by turning off random components in their architecture to simulate outages for particular services. This aided Netflix in their migration to a cloud hosted infrastructure by allowing them to identify potential pitfalls, particularly by finding dependencies that, when removed, would have caused incidents in a production environment. Doing this regularly in a non-production environment allowed these incidents to occur in a controlled environment that does not impact customers, mitigating the potential impact to the business.&lt;/p&gt;
+&lt;h2&gt;How do we improve resiliency?&lt;/h2&gt;
+&lt;p&gt;There are a number of resiliency improvements that can be made to an application in order to reduce the chances of it causing or intensifying an outage. Some simple improvements can include adding an &lt;a href=&quot;https://dzone.com/articles/understanding-retry-pattern-with-exponential-back&quot;&gt;exponential backoff retry strategy to calls to other services, building circuit breaker&lt;/a&gt; functionality into the system and &lt;a href=&quot;https://aws.amazon.com/message-queue/benefits/&quot;&gt;implementing queues&lt;/a&gt; between services in order to provide a smoother, more consistent throughput to the service. Implementing queues also brings with it the advantage of assisting in decoupling the components from each other, meaning that each part of the system is more independent and has fewer dependencies. These strategies can also help to reduce load and enhance the fault tolerance of the application, both of which result in a higher level of resiliency.&lt;/p&gt;
+&lt;h2&gt;What about observability?&lt;/h2&gt;
+&lt;p&gt;Successful deployment of a component is only part of the story. Many deployments appear successful at first before running into issues due to use of resources such as memory, an unexpected failure that occurs irregularly or even security issues that are not at first apparent. These reasons are why observability is incredibly important as logs, metrics and traces allow you to continually monitor your system as well as notifying your technical team when a component begins to show signs of an underlying problem using alerts.&lt;/p&gt;
+&lt;h2&gt;What processes should be in place?&lt;/h2&gt;
+&lt;p&gt;Good processes should underpin the entire engineering practice and ensure that human error is avoided or that any incidents that occur are recitified swiftly. Code reviews should be carried out to mitigate as many potential issues as possible, whereas processes like on-call policies and incident post-mortems foster a culture of continually iterating and learning from mistakes when they do occur.&lt;/p&gt;
+&lt;p&gt;While these methods do not necessarily prevent outages, they are strong foundations when it comes to reducing the odds of an incident occurring and it causing a total outage. These incidents are rare, but when they do occur they can prove costly to an organisation and preparation should be in place to minimise these costs and the chances of such an occurrence.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How Hacktoberfest and Open-Source Software are Driving Innovation]]></title><description><![CDATA[Business landscapes around the world are constantly evolving with every organisation clambering to innovate so that they can better react to…]]></description><link>https://kylejones.io/01-10-2020-how-hacktoberfest-and-open-source-are-driving-innovation/</link><guid isPermaLink="false">https://kylejones.io/01-10-2020-how-hacktoberfest-and-open-source-are-driving-innovation/</guid><pubDate>Thu, 01 Oct 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Business landscapes around the world are constantly evolving with every organisation clambering to innovate so that they can better react to the changing conditions in which they exist and uncover new opportunities to help them to drive their growth and profits. However, in a world where true innovation is scarce and many companies resort to rehashing old ideas, how do you foster an environment that truly cultivates ideation?&lt;/p&gt;
+&lt;h2&gt;Why open-source?&lt;/h2&gt;
+&lt;p&gt;Open-source software has seen its fair share of innovative languages, tools, frameworks, and products in recent years. Some notable examples include &lt;a href=&quot;https://www.docker.com/&quot;&gt;Docker&lt;/a&gt;, &lt;a href=&quot;https://kubernetes.io/&quot;&gt;Kubernetes&lt;/a&gt;, &lt;a href=&quot;https://www.gatsbyjs.com/&quot;&gt;Gatsby&lt;/a&gt;, &lt;a href=&quot;https://reactjs.org/&quot;&gt;React&lt;/a&gt; and &lt;a href=&quot;https://www.elastic.co/elasticsearch/&quot;&gt;Elasticsearch&lt;/a&gt;, not to mention numerous machine learning frameworks like &lt;a href=&quot;https://scikit-learn.org/&quot;&gt;Scikit-Learn&lt;/a&gt;, &lt;a href=&quot;https://www.tensorflow.org/&quot;&gt;Tensorflow&lt;/a&gt;, and &lt;a href=&quot;https://pytorch.org/&quot;&gt;PyTorch&lt;/a&gt;. The most interesting element of this growth is the fact that a number of these open-source products and tools are generating revenue like regular software development companies that do not openly publish their source code, often through hybrid licensing or hosting. The industry as a whole is already estimated to be worth over $20bn and is expected to continue growing to reach around &lt;a href=&quot;https://www.statista.com/statistics/270805/projected-revenue-of-open-source-software-since-2008/#statisticContainer&quot;&gt;$33bn by 2022&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In 2014, &lt;a href=&quot;https://do.co&quot;&gt;Digital Ocean&lt;/a&gt; unveiled its first open-source hackathon, &lt;a href=&quot;https://hacktoberfest.digitalocean.com/&quot;&gt;Hacktoberfest&lt;/a&gt;. The requirements have changed over the years but the core message has stayed the same: several contributions to public code repositories that positively impact the projects earn you a limited edition t-shirt and some stickers. Fast forward to 2020 and Hacktoberfest has grown to become a juggernaut that drives the open-source community to new heights year after year. Key metrics for the event have soared, from &lt;a href=&quot;https://www.digitalocean.com/blog/looking-back-at-hacktoberfest/&quot;&gt;768 participants in their first year&lt;/a&gt; to a whopping &lt;a href=&quot;https://hacktoberfest.digitalocean.com/&quot;&gt;61,871&lt;/a&gt; completing the challenge in 2019 - an impressive growth of over 8,000 percent! But why has this explosive growth happened, and how does it affect businesses?&lt;/p&gt;
+&lt;h2&gt;Why has this explosive growth happened?&lt;/h2&gt;
+&lt;p&gt;Both open-source software and hackathons encourage collaboration between a number of skilled individuals, often rallying them around a single goal or challenge. This leads to a positive and collaborative environment for a number of like-minded people to bounce ideas off each other for new features (or even whole new products). In the case of hackathons, people are also motivated by the prospect of a reward or prize. Hacktoberfest’s offering of merchandise in return for contributions is part marketing campaign and part motivator, encouraging participation and contributions to both the event and the wider open-source community. This amalgamation motivates by fulfilling a number of elements from &lt;a href=&quot;https://www.thoughtco.com/maslows-hierarchy-of-needs-4582571&quot;&gt;Maslow’s Hierarchy of Needs&lt;/a&gt;, fostering a sense of esteem, belonging, and recognition amongst contributors, as well as also providing them with clothing and shared knowledge in return.&lt;/p&gt;
+&lt;h2&gt;How does it affect businesses?&lt;/h2&gt;
+&lt;p&gt;Over the years, a variety of well-known companies have contributed to, sponsored, and supported Hacktoberfest (notable examples ranging from &lt;a href=&quot;https://www.indeed.co.uk/&quot;&gt;Indeed&lt;/a&gt; to &lt;a href=&quot;https://twilio.com/&quot;&gt;Twilio&lt;/a&gt; to &lt;a href=&quot;https://auth0.com/&quot;&gt;Auth0&lt;/a&gt;). A handful of these, including Indeed and &lt;a href=&quot;https://sendgrid.com/&quot;&gt;SendGrid&lt;/a&gt; (which has recently been acquired by Twilio), have published papers and hosted talks discussing their takeaways and the associated statistics from their participation in Hacktoberfest.&lt;/p&gt;
+&lt;p&gt;Companies participating in Hacktoberfest have seen the participation in their projects increase in recent years, helping to accelerate their product development. &lt;a href=&quot;https://umbraco.com/blog/pr-team-update-november-2019-hacktoberfest-round-up/&quot;&gt;Umbraco recorded an increase of 40% in participation between 2018 and 2019&lt;/a&gt;, with the total number of pull requests in 2019 coming in at 436. Most recently, &lt;a href=&quot;https://www.youtube.com/watch?v=uweScYvtUts&amp;#x26;feature=youtu.be&quot;&gt;Indeed talked about the statistics from their internal Hacktoberfest events at DevRelCon Earth 2020&lt;/a&gt;. Between 2018 and 2019, they recorded an increase of 1,322 contributions and 170 pull requests. &lt;a href=&quot;https://sendgrid.com/wp-content/uploads/pdf/SendGrid-Hacktoberfest.pdf&quot;&gt;SendGrid&lt;/a&gt; saw the number of pull requests increase from 43 in 2016 to 1,249 in 2017, with over 1,000 of those being changes to source code. These pull requests equated to 1,385 story points of effort (equivalent to around 3.4 years’ worth of work!).&lt;/p&gt;
+&lt;p&gt;Innovation is vital in a highly competitive world, with each organisation scrambling to stay one step ahead of their competitors. Companies that participate in open-source hackathons and Hacktoberfest create a culture of innovation and are seeing dividends in the form of increased development velocity. Failing to iterate and innovate means that a business’ products or services can start to stagnate. This can be catastrophic in fast-changing markets. Cultivating and encouraging horizon scanning, ideation, and iteration through open-source channels such as Hacktoberfest are fundamental to survival in the modern world of business.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[AWS Technical Primers - S3]]></title><description><![CDATA[Amazon Simple Storage Service (S3) is a key-based object storage cloud service with 99.999999999% (11 9s) of durability across multiple…]]></description><link>https://kylejones.io/02-06-2020-aws-technical-primers-s3/</link><guid isPermaLink="false">https://kylejones.io/02-06-2020-aws-technical-primers-s3/</guid><pubDate>Tue, 02 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://aws.amazon.com/s3&quot;&gt;Amazon Simple Storage Service (S3)&lt;/a&gt; is a key-based object storage cloud service with 99.999999999% (11 9s) of durability across multiple availability zones. It is infinitely scalable with a maximum individual object size of 5TB, and a maximum single upload size of 5GB. Amazon recommends that objects larger than 100MB should be uploaded using the service&apos;s Multipart Upload feature. S3 features a number of different storage classes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Standard&lt;/li&gt;
+&lt;li&gt;Intelligent-Tiering&lt;/li&gt;
+&lt;li&gt;Standard-Infrequent Access (IA)&lt;/li&gt;
+&lt;li&gt;One Zone-Infrequent Access (One Zone-IA)&lt;/li&gt;
+&lt;li&gt;Glacier&lt;/li&gt;
+&lt;li&gt;Glacier Deep Archive&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ec38679098af7b27aa0922b51a02606c/0940f/s3-storage-classes.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.49999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACGklEQVQoz21SyY7aQBD1j0SJRrLbO97ddtsDXhAMKIZhLgEUhnCKcsj/316qOnGUQw5ld7+uerU9w/M8KKVwf3/H7XbD5XLBbrfD+XzGt8cD1+sV9/ud7l8QRRFs2wbHuK77XzP44zgOkjRFkiRYLBYIyBYUnOc5iixDHMeazHVsOEQohCBiQXE2LIv/QnMwbszZfjQjujSHaZnoXr8iVkuIp0+Ipguy3Rusjx8QLdcoL98ReIISdpDqJ8KQzxMK+aCEJgzHc2BTplPbocpyOK6D1/0BddPCJvJsfEHZDbDMJ0SVgtxO8F0bQViQzwlB4BDZBqv+DT6djcSL4AkXFc0xiRMiEdjTDGVRQtD5uVZ4LhVCEUBmBd1rIvQR+j6aWkKYAo2q8Hn7gsSPYcTuAjIt0K86JFFMRBJVWdHsChQ5VVHVaAqFMszQSKqwlCgJb1VLRA2170NR5WWcwzdpKRYNt31uMU0T0ixF13faeBFFUWAcR417gY9+GFBVFXyqbrVaoSxLPf9hHNC0DRzvz5ZT2rCi1niTbdtioECWB+ObzQbL5RKBH6Dve6zXa1pEiKZp9FtNI2DsdDqhktXvLVuWpVfOf858PB61NjOSDFfOREEQYLvdYr/fa2mx3+Fw0BUzKZvWIRNyNbMeuR2ulKvgN259lhbj/M7+nIB97L+6tLVpQgaYbAb5zjaTMOlsjP3rNwua25dS4heDqmSiL0NIYAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;S3 Storage Classes in order from fastest, most frequently accessed to the slowest and least frequently accessed.&quot;
+        title=&quot;S3 Storage Classes in order from fastest, most frequently accessed to the slowest and least frequently accessed.&quot;
+        src=&quot;/static/ec38679098af7b27aa0922b51a02606c/5a190/s3-storage-classes.png&quot;
+        srcset=&quot;/static/ec38679098af7b27aa0922b51a02606c/772e8/s3-storage-classes.png 200w,
+/static/ec38679098af7b27aa0922b51a02606c/e17e5/s3-storage-classes.png 400w,
+/static/ec38679098af7b27aa0922b51a02606c/5a190/s3-storage-classes.png 800w,
+/static/ec38679098af7b27aa0922b51a02606c/0940f/s3-storage-classes.png 1154w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Security&lt;/h2&gt;
+&lt;p&gt;As a part of &lt;a href=&quot;https://aws.amazon.com/compliance/shared-responsibility-model/&quot;&gt;Amazon&apos;s Shared Responsibility Model&lt;/a&gt; for security, S3 requires both an appropriate &lt;a href=&quot;https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html&quot;&gt;Access Control List (ACL)&lt;/a&gt; and an &lt;a href=&quot;https://aws.amazon.com/iam&quot;&gt;Identity and Access Management (IAM)&lt;/a&gt; policy to allow a user to access the service or a particular resource, whether that resource is a bucket or an object.&lt;/p&gt;
+&lt;h4&gt;Example IAM Policy&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;{
+   &quot;Version&quot;:&quot;2012-10-17&quot;,
+   &quot;Statement&quot;:[
+      {
+         &quot;Effect&quot;:&quot;Allow&quot;,
+         &quot;Action&quot;:[
+            &quot;s3:ListAllMyBuckets&quot;
+         ],
+         &quot;Resource&quot;:&quot;arn:aws:s3:::*&quot;
+      },
+      {
+         &quot;Effect&quot;:&quot;Allow&quot;,
+         &quot;Action&quot;:[
+            &quot;s3:ListBucket&quot;,
+            &quot;s3:GetBucketLocation&quot;
+         ],
+         &quot;Resource&quot;:&quot;arn:aws:s3:::my-bucket&quot;
+      },
+      {
+         &quot;Effect&quot;:&quot;Allow&quot;,
+         &quot;Action&quot;:[
+            &quot;s3:PutObject&quot;,
+            &quot;s3:PutObjectAcl&quot;,
+            &quot;s3:GetObject&quot;,
+            &quot;s3:GetObjectAcl&quot;,
+            &quot;s3:DeleteObject&quot;
+         ],
+         &quot;Resource&quot;:&quot;arn:aws:s3:::my-bucket/*&quot;
+      }
+   ]
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The majority of S3&apos;s storage classes offer secure upload and downloading using SSL endpoints via HTTPS as well as encryption at rest using server-side encryption (SSE). The SSE provides three options for secret keys:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;S3 Managed Keys (SSE-S3) is an integrated solution where Amazon handles key management and key protection using &lt;a href=&quot;https://www.atpinc.com/blog/what-is-aes-256-encryption&quot;&gt;AES-256&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Customer Managed Keys (SSE-C) allows you to use S3 to perform the encryption and decryption of your objects using AES-256 while retaining control of the keys.&lt;/li&gt;
+&lt;li&gt;Key Management Service Keys (SSE-KMS) allows you to use &lt;a href=&quot;https://aws.amazon.com/kms/&quot;&gt;AWS Key Management Service (AWS KMS)&lt;/a&gt; to manage encryption keys, which provides additional security benefits including separate permissions for the master key, a number of different encryption algorithms (including &lt;a href=&quot;https://hackernoon.com/how-does-rsa-work-f44918df914b&quot;&gt;RSA&lt;/a&gt;) and an audit trail. This option supports efforts to comply with &lt;a href=&quot;https://www.pcicomplianceguide.org/faq/&quot;&gt;PCI-DSS&lt;/a&gt;, &lt;a href=&quot;https://cpl.thalesgroup.com/faq/americas-compliance/what-hipaa-hitech&quot;&gt;HIPAA/HITECH&lt;/a&gt; and &lt;a href=&quot;https://www.fedramp.gov&quot;&gt;FedRAMP&lt;/a&gt;.
+Glacier and Glacier Deep Archive storage classes are encrypted at rest by default, whereas with the other classes encryption at rest is optional.
+Additionally, AWS also offers the ability to turn on Multi-Factor Authentication (MFA) for delete operations in S3.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Pricing&lt;/h2&gt;
+&lt;p&gt;S3 is priced by usage, with each tier priced slightly differently. The service is billed on a number of factors:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Storage - billed per GB (Generally the highest cost of using the service)&lt;/li&gt;
+&lt;li&gt;Requests and data retrievals&lt;/li&gt;
+&lt;li&gt;Data transfer&lt;/li&gt;
+&lt;li&gt;Management and replication
+AWS offers a &lt;a href=&quot;https://aws.amazon.com/free/&quot;&gt;Free Usage Tier&lt;/a&gt; for every month for the first year in all regions except GovCloud, which includes&lt;/li&gt;
+&lt;li&gt;5GB storage&lt;/li&gt;
+&lt;li&gt;20,000 GET requests&lt;/li&gt;
+&lt;li&gt;2,000 PUT requests&lt;/li&gt;
+&lt;li&gt;15GB data transfer out&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Additionally, buckets accessed from another AWS account can be set up to charge the requester rather than the host.&lt;/p&gt;
+&lt;h2&gt;Additional Functionality&lt;/h2&gt;
+&lt;h3&gt;Transfer Acceleration&lt;/h3&gt;
+&lt;p&gt;S3 Transfer Acceleration makes use of &lt;a href=&quot;https://aws.amazon.com/cloudfront&quot;&gt;Amazon Cloudfront&apos;s&lt;/a&gt; global Edge Locations, by optimizing the delivery path, with some customers reporting up to 500% improvement in transfer speeds.&lt;/p&gt;
+&lt;h3&gt;Event Notifications&lt;/h3&gt;
+&lt;p&gt;S3 can be used as part of a pipeline, triggering actions based on requests like PUT, POST, DELETE or COPY. These triggers can be sent through to other services including &lt;a href=&quot;https://aws.amazon.com/lambda/&quot;&gt;Lambda&lt;/a&gt;, &lt;a href=&quot;https://aws.amazon.com/sns/&quot;&gt;SNS&lt;/a&gt; or &lt;a href=&quot;https://aws.amazon.com/sqs/&quot;&gt;SQS&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Query in Place&lt;/h3&gt;
+&lt;p&gt;Running sophisticated querying against data stored in S3 buckets is provided using &lt;a href=&quot;https://aws.amazon.com/blogs/aws/s3-glacier-select/&quot;&gt;S3 Select&lt;/a&gt;, &lt;a href=&quot;https://aws.amazon.com/athena/&quot;&gt;Amazon Athena&lt;/a&gt; and &lt;a href=&quot;https://docs.aws.amazon.com/redshift/latest/dg/c-getting-started-using-spectrum.html&quot;&gt;Amazon Redshift Spectrum&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Storage Class Analysis&lt;/h3&gt;
+&lt;p&gt;Storage Class Analysis policy analyzes storage patterns in order to identify infrequent access patterns to transfer between different storage classes. It can be applied to an entire bucket, a prefix or an object tag. When an infrequent access pattern is identified, a Lifecycle age policy can be used to move the identified objects to a lower storage class, reducing the cost.&lt;/p&gt;
+&lt;h3&gt;Inventory&lt;/h3&gt;
+&lt;p&gt;Inventory provides a scheduled alternative to the List functionality of S3 to provide a CSV, ORC or Apache Parquet file listing the objects and their metadata on a daily or weekly basis for a given prefix or a whole bucket. A common use of this is to verify encryption and replication required for business, compliance or regulatory needs.&lt;/p&gt;
+&lt;h3&gt;Object Locking&lt;/h3&gt;
+&lt;p&gt;Object Lock is a feature that prevents the deletion of a version of an object in a given retention period in order to provide added data protection and to help meet regulatory compliance. This is done by applying either a Retain Until Date or a Legal Hold to the object - the difference in the two is that with the latter, the protection must be manually removed, whereas applying a Retain Until Date allows the protection to expire. Object locking features two different operation modes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Governance, which allows users with specific permissions to remove the protection from an object.&lt;/li&gt;
+&lt;li&gt;Compliance, where no-one can remove the protection.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Batch Operations&lt;/h3&gt;
+&lt;p&gt;Batch Operations allow you to perform large-scale batch operations on S3 objects, such as updating acess control lists (ACLs), copying objects, updating object tags or triggering Lambda functions.&lt;/p&gt;
+&lt;h2&gt;Common Use Cases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Backup and File Storage&lt;/li&gt;
+&lt;li&gt;Application hosting (An example of this is &lt;a href=&quot;https://aws.amazon.com/cloudformation/&quot;&gt;AWS CloudFormation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Media hosting (such as using a presigned URL to securely serve images or videos within a web app)&lt;/li&gt;
+&lt;li&gt;Software/File hosting for others to download (An example of this use is with &lt;a href=&quot;https://docs.aws.amazon.com/AmazonS3/latest/dev/S3TorrentPublish.html&quot;&gt;BitTorrent&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Code Snippets&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;import boto3
+
+client = boto3.client(&apos;s3&apos;)
+resource = boto3.resource(&apos;s3&apos;)
+BUCKET_NAME = &apos;my-bucket&apos;
+OBJECT_KEY = &apos;my-object&apos;
+OBJECT_BODY = b&apos;my contents&apos;
+
+bucket_create_response = client.create_bucket(
+    ACL = &apos;public-read&apos;,
+    Bucket = BUCKET_NAME,
+    CreateBucketConfiguration = {
+        &apos;LocationConstraint&apos;: &apos;eu-west-1&apos;
+    },
+)
+
+list_response = client.list_buckets()
+
+if BUCKET_NAME in list_response:
+
+    put_object_response = client.put_object(
+        Bucket = BUCKET_NAME,
+        Body = OBJECT_BODY,
+        ContentLength = len(OBJECT_BODY)
+        ServerSideEncryption = &apos;AES256&apos;,
+        ObjectLockMode = &apos;COMPLIANCE&apos;,
+        ContentType = &apos;application/json&apos;,
+        Key = OBJECT_KEY
+    )
+
+    list_objects_response = client.list_objects(
+        Bucket = BUCKET_NAME,
+        Key = OBJECT_KEY
+    )
+
+    get_object_response = client.get_object(
+        Bucket = BUCKET_NAME,
+        Key = OBJECT_KEY
+    )
+
+    return get_object_response
+&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[A Deep Dive into AWS Firecracker]]></title><description><![CDATA[Firecracker is a Virtual Machine Monitor, written in Rust that Amazon Web Services use to power it's Serverless Compute services - Lambda…]]></description><link>https://kylejones.io/02-04-2020-a-deep-dive-into-aws-firecracker/</link><guid isPermaLink="false">https://kylejones.io/02-04-2020-a-deep-dive-into-aws-firecracker/</guid><pubDate>Thu, 02 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Firecracker is a Virtual Machine Monitor, written in &lt;a href=&quot;https://www.rust-lang.org/&quot;&gt;Rust&lt;/a&gt; that Amazon Web Services use to power it&apos;s Serverless Compute services - &lt;a href=&quot;https://aws.amazon.com/lambda/&quot;&gt;Lambda&lt;/a&gt; and &lt;a href=&quot;https://aws.amazon.com/fargate/&quot;&gt;Fargate&lt;/a&gt;. Firecracker makes use of Linux&apos;s &lt;a href=&quot;https://www.linux-kvm.org/page/Main_Page&quot;&gt;Kernel-based Virtual Machine&lt;/a&gt; virtualisation infrastructure to provide its products with MicroVMs.&lt;/p&gt;
+&lt;h2&gt;What&apos;s the Point?&lt;/h2&gt;
+&lt;p&gt;The development of Firecracker was undertaken to meet several objectives. These were:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To run thousands of functions (up to 8000) on a single machine with minimal wasted resources.&lt;/li&gt;
+&lt;li&gt;To allow thousands of functions to run on the same hardware, protected against a variety of risks including security vulnerabilities, such as side-channel attacks like &lt;a href=&quot;https://meltdownattack.com/&quot;&gt;Spectre&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;To perform similarly to running natively, with no impact from the consumption of resources by other functions, retaining the possibility of over committing resources while providing functions with only the resources it needs.&lt;/li&gt;
+&lt;li&gt;To be able to start new and clean up old functions quickly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;So How Does It Work?&lt;/h2&gt;
+&lt;p&gt;The invoke traffic gets delivered via the Invoke REST API, which authenticates requests, checks for authorization and then loads the function metadata.&lt;/p&gt;
+&lt;p&gt;The requests are then handled by the Worker Manager, which sticky-routes to as few workers as possible to improve cache locality, enable connection re-use and amortize the cost of moving and loading customer code. Once the Worker Manager has identified which worker should run the code, it advises the Invoke service, cutting down on round-trips by having it send the payload directly to the worker.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 285px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/99c56ec1cfc9cc627ef0d09d97813ba6/6c669/firecracker-data-flow.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 103.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAVABQDASIAAhEBAxEB/8QAGAABAQADAAAAAAAAAAAAAAAAAAECAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHu4hsBIFB//8QAGBAAAwEBAAAAAAAAAAAAAAAAAAEREEH/2gAIAQEAAQUCpc6kmiEEf//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABYQAAMAAAAAAAAAAAAAAAAAABAgMf/aAAgBAQAGPwIxv//EABsQAAICAwEAAAAAAAAAAAAAAAABIVERMbFB/9oACAEBAAE/IWFeBShrfokFvotDaxY+iYP/2gAMAwEAAgADAAAAENDAPP/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EAB0QAQEBAAICAwAAAAAAAAAAAAERACFBMVFhkaH/2gAIAQEAAT8QgpS9HGWczkn0zOD7wFfDi1kYb807YAA8ZCyR6mQw/N0aLa3f/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Architectural diagram showing that the Frontend sends data directly to the Workers.&quot;
+        title=&quot;Architectural diagram showing that the Frontend sends data directly to the Workers.&quot;
+        src=&quot;/static/99c56ec1cfc9cc627ef0d09d97813ba6/6c669/firecracker-data-flow.jpg&quot;
+        srcset=&quot;/static/99c56ec1cfc9cc627ef0d09d97813ba6/e07e9/firecracker-data-flow.jpg 200w,
+/static/99c56ec1cfc9cc627ef0d09d97813ba6/6c669/firecracker-data-flow.jpg 285w&quot;
+        sizes=&quot;(max-width: 285px) 100vw, 285px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Each worker potentially offers thousands of MicroVMs, each providing a single slot and Firecracker process, with each slot only ever used for a single concurrent invocation of a function, but many serial invocations. Each slot supplies a pre-loaded execution environment for a function, including a minimized Linux kernel, userland and a shim control process. This method is like that offered by &lt;a href=&quot;https://www.qemu.org/&quot;&gt;QEMU&lt;/a&gt;, &lt;a href=&quot;https://grapheneproject.io/&quot;&gt;Graphene&lt;/a&gt;, &lt;a href=&quot;https://cloud.google.com/blog/products/gcp/open-sourcing-gvisor-a-sandboxed-container-runtime&quot;&gt;gVisor&lt;/a&gt; and &lt;a href=&quot;https://www.microsoft.com/en-us/research/project/drawbridge/&quot;&gt;Drawbridge&lt;/a&gt; (and by extension, &lt;a href=&quot;https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bascule_eurosys13.pdf&quot;&gt;Bascule&lt;/a&gt;) in that they provide some of the operating system functionality within the userspace to reduce the kernel surface and so improve security. On serial invocations, the MicroVM and the process the function runs in are re-used.&lt;/p&gt;
+&lt;p&gt;If a slot is available, the Worker Manager performs a lightweight concurrency control protocol and informs the front-end that the slot is available for utilization. The front-end then calls the MicroManager with the details of the slot and payload, which is then passed onto the shim running inside the MicroVM for that slot. The MicroManager keeps a small pool of pre-booted MicroVMs ready to be used, as the already fast 125ms boot-up time offered by Firecracker is still not fast enough for the scale-up path of Lambda. Upon completion, the MicroManager gets given either a response payload, or the details of an error which are then returned to the front-end.&lt;/p&gt;
+&lt;p&gt;However, if no slots are available, the Worker Manager calls the Placement service to request that a new slot gets created for the function. This service then optimizes the process (taking less than 20ms on average), ensuring that the use of resources such as CPU is even across the fleet, before requesting that a particular worker generates a new slot. To reduce blocking of user requests, the MicroManager keeps a small pool of pre-booted MicroVMs ready to be used when requested by the Placement service.&lt;/p&gt;
+&lt;p&gt;For each MicroVM, the Firecracker process handles creating and managing the MicroVM, providing device emulation and handling VM exits. &lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 356px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f42193b6e53b890c77c971294a3ad13f/65bea/firecracker-worker-architecture.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 53%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAECAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHbVsRgH//EABcQAAMBAAAAAAAAAAAAAAAAAAEQESD/2gAIAQEAAQUCqGP/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAaEAADAAMBAAAAAAAAAAAAAAAAAREQITFB/9oACAEBAAE/IbdVPd2HGGk+iP/aAAwDAQACAAMAAAAQAM//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAcEAEAAgIDAQAAAAAAAAAAAAABABEhMUFRcbH/2gAIAQEAAT8QEkHoDMFLo25U+y+8QpxNCH2Yk//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Diagram showing the overall architecture of the Lambda Worker.&quot;
+        title=&quot;Diagram showing the overall architecture of the Lambda Worker.&quot;
+        src=&quot;/static/f42193b6e53b890c77c971294a3ad13f/65bea/firecracker-worker-architecture.jpg&quot;
+        srcset=&quot;/static/f42193b6e53b890c77c971294a3ad13f/e07e9/firecracker-worker-architecture.jpg 200w,
+/static/f42193b6e53b890c77c971294a3ad13f/65bea/firecracker-worker-architecture.jpg 356w&quot;
+        sizes=&quot;(max-width: 356px) 100vw, 356px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The shim process communicates through the MicroVM boundary using a TCP/IP socket with the MicroManager - a process that manages a single worker&apos;s Firecracker processes. The MicroManager provides slot management and locking APIs to the Placement service and an invoke API to the front-end.&lt;/p&gt;
+&lt;p&gt;As an extra level of security against unwanted behaviour (including code injection), a jailer implements a wrapper around Firecracker which puts it in a restrictive sandbox before booting the guest.&lt;/p&gt;
+&lt;h3&gt;Further Reading&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.usenix.org/system/files/nsdi20-paper-agache.pdf&quot;&gt;Firecracker: Lightweight Virtualization
+for Serverless Applications&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://kylejones.io/how-smart-cities-are-helping-the-public-sector-reduce-emissions</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/how-can-we-build-more-sustainable-software</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/how-can-we-identify-emerging-influencers-using-machine-learning</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/how-to-conduct-a-constructive-code-review</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/how-to-perform-a-successful-incident-postmortem</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/how-to-reduce-the-chances-of-an-outage</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/how-hacktoberfest-and-open-source-software-are-driving-innovation</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/aws-technical-primers-s3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/a-deep-dive-into-aws-firecracker</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/tags/aws/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/tags/climate-change/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/tags/cloud/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/tags/code-reviews/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/tags/environment/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/tags/hacktoberfest/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/tags/internet-of-things/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/tags/opensource/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/tags/product-management/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/tags/project-management/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/tags/serverless/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/tags/smart-cities/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/tags/software-engineering/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/now/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kylejones.io/tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+</urlset>
