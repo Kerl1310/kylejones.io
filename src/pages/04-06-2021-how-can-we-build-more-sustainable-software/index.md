@@ -7,7 +7,7 @@ tags:
     - cloud
     - environment
     - climate-change
-featuredImage: "/pexels-cristian-dina.jpg"
+featuredImage: ""
 isFeatured: true
 ---
 In 2020, Brewdog announced its latest funding round, [Equity for Punks Tomorrow](https://www.brewdog.com/uk/equityforpunks/tomorrow-raise/welcome), aiming to push its sustainability efforts even further. No small feat for a company that is already carbon negative. With the funding, they intend to replace their fleet of vehicles with fully electric alternatives, generate renewable energy for a number of their breweries, and a whole lot more.
