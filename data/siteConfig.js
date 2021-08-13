@@ -13,14 +13,26 @@ module.exports = {
     working_on: "This website and more blog posts.",
   },
   futureSpeaking: [
+    // {
+    //   talkTitle: 'Building Greener Software',
+    //   eventName: 'Cloud With Chris',
+    //   date: '??/08/2021',
+    //   url: 'https://www.cloudwithchris.com/',
+    // },
     {
       talkTitle: 'Building Greener Software',
-      eventName: 'GitLab Commit',
-      date: '03/08/2021',
-      url: 'https://about.gitlab.com/events/commit/',
+      eventName: 'All Things Open 2021',
+      date: '13/10/2021',
+      url: 'https://2021.allthingsopen.org/',
     },
   ],
-  pastSpeaking: [{}],
+  pastSpeaking: [
+    {
+      talkTitle: 'Building Greener Software',
+      eventName: 'GitLab Commit Virtual 2021',
+      date: '04/08/2021',
+      url: 'https://www.youtube.com/watch?v=4dj5dhyakj0',
+    },],
   skills: [
     {
       name: 'Amazon Web Services',
@@ -78,7 +90,7 @@ module.exports = {
       duration: null,
       occupation: 'Software Engineer 2',
       description:
-        '',
+        'Helping public sector leaders to modernise legacy applications and working practices.',
     },
     {
       company: 'AMPLYFI',
