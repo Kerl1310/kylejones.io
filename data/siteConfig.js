@@ -8,8 +8,8 @@ module.exports = {
   authorAvatar: '/images/avatar.jpeg',
   authorDescription: `Passionate backend software engineer with significant experience in several programming languages such as <strong>C#</strong>, <strong>C++</strong> and <strong>Python</strong>. I have worked with a variety of tools including <strong>Amazon Web Services</strong> and <strong>Docker</strong>, as well as with established frameworks such as <strong>Serverless</strong> and <strong>Terraform</strong>.<br>When I'm not coding, you can find me reading (especially science fiction novels), going for walks or runs and playing video games.`,
   now: {
-    watching: "Star Wars: The Clone Wars",
-    learning: "Kubernetes, React, Ruby, TypeScript.",
+    watching: "The Mandalorian",
+    learning: "Kubernetes, React, Ruby and TypeScript.",
     working_on: "This website and more blog posts.",
   },
   futureSpeaking: [
@@ -22,7 +22,7 @@ module.exports = {
     {
       talkTitle: 'Building Greener Software',
       eventName: 'All Things Open 2021',
-      date: '13/10/2021',
+      date: '19/10/2021',
       url: 'https://2021.allthingsopen.org/',
     },
   ],
@@ -146,6 +146,7 @@ module.exports = {
     github: 'https://github.com/kerl1310/',
     medium: 'https://kyle-jones.medium.com/',
     stackOverflow: 'https://stackoverflow.com/story/kylejones',
+    polywork: 'https://www.polywork.com/kerl1310',
     dev: 'https://dev.to/kerldev',
     email: 'kylejones1310@outlook.com',
   },
